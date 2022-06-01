@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid= maxhyper.dynamictreestheaether.DynamicTreesTheAether.MODID, name= maxhyper.dynamictreestheaether.DynamicTreesTheAether.NAME, dependencies = maxhyper.dynamictreestheaether.DynamicTreesTheAether.DEPENDENCIES, updateJSON = "https://github.com/supermassimo/DynamicTrees-ExC/blob/1.12.2/.DONE/DynamicTrees-TheAether/version_info.json?raw=true")
+@Mod(modid= maxhyper.dynamictreestheaether.DynamicTreesTheAether.MODID, name= maxhyper.dynamictreestheaether.DynamicTreesTheAether.NAME, dependencies = maxhyper.dynamictreestheaether.DynamicTreesTheAether.DEPENDENCIES, updateJSON = "https://github.com/DynamicTreesTeam/DynamicTreesVersionInfo/blob/master/Add-ons/TheAetherLegacy.json?raw=true")
 public class DynamicTreesTheAether {
 	
 	public static final String MODID = "dynamictreestheaether";

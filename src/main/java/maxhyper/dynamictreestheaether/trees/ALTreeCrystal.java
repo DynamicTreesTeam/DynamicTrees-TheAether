@@ -2,11 +2,7 @@ package maxhyper.dynamictreestheaether.trees;
 
 import com.ferreusveritas.dynamictrees.ModTrees;
 import com.ferreusveritas.dynamictrees.api.TreeRegistry;
-import com.ferreusveritas.dynamictrees.api.treedata.ITreePart;
-import com.ferreusveritas.dynamictrees.blocks.BlockDynamicLeaves;
-import com.ferreusveritas.dynamictrees.blocks.BlockRooty;
 import com.ferreusveritas.dynamictrees.systems.dropcreators.DropCreatorSeed;
-import com.ferreusveritas.dynamictrees.systems.featuregen.FeatureGenConiferTopper;
 import com.ferreusveritas.dynamictrees.systems.featuregen.FeatureGenFruit;
 import com.ferreusveritas.dynamictrees.trees.Species;
 import com.ferreusveritas.dynamictrees.trees.TreeFamily;
@@ -14,9 +10,9 @@ import com.gildedgames.the_aether.blocks.BlocksAether;
 import com.gildedgames.the_aether.blocks.natural.BlockAetherLog;
 import com.gildedgames.the_aether.blocks.util.EnumLogType;
 import com.gildedgames.the_aether.items.ItemsAether;
-import maxhyper.dynamictreestheaether.DynamicTreesTheAether;
 import maxhyper.dynamictreestheaether.ModConfigs;
 import maxhyper.dynamictreestheaether.ModContent;
+import maxhyper.dynamictreestheaether.genfeatures.FeatureGenCrystalTopper;
 import maxhyper.dynamictreestheaether.genfeatures.FeatureGenRandomLeaves;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -27,7 +23,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.BiomeDictionary.Type;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.List;
@@ -93,7 +88,7 @@ public class ALTreeCrystal extends TreeFamily {
 			clearAcceptableSoils();
 			addAcceptableSoils(ModContent.AETHERLIKE);
 
-			addGenFeature(new FeatureGenConiferTopper(getLeavesProperties()));
+			addGenFeature(new FeatureGenCrystalTopper(getLeavesProperties()));
 		}
 
 		@Override
