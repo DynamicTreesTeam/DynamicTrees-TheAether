@@ -1,57 +1,83 @@
 buildscript {
     repositories {
-        jcenter()
-        maven { url = "https://files.minecraftforge.net/maven" }
+        maven { url = 'https://maven.minecraftforge.net/' }
+        mavenCentral()
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
     }
 }
 
-repositories {
-    maven {
-        name 'LDTTeam - Modding'
-        url 'https://ldtteam.jfrog.io/ldtteam/modding/'
-    }
-}
-
-apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'net.minecraftforge.gradle'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
-version = "1.12.2-1.0.13"
-group = "maxhyper.dynamictreestheaether" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "DynamicTreesTheAether"
+repositories {
+    flatDir {
+        dirs("libs")
+    }
+}
+
+version = "$project.mc_version-$project.mod_version"
+group = package_group
+archivesBaseName = mod_name
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
     sourceCompatibility = targetCompatibility = '1.8'
 }
 
-minecraft {
-    version = "1.12.2-14.23.5.2838"
-    runDir = "run"
+sourceSets { main { output.resourcesDir = output.classesDir } }
 
-    mappings = "snapshot_20171003"
+minecraft {
+    mappings channel: 'snapshot', version: project.mappings_version
+
+    accessTransformer = file("src/main/resources/dynamictreestbl_at.cfg")
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+
+            args '-Dfml.coreMods.load=thebetweenlands.core.TheBetweenlandsLoadingPlugin'
+        }
+
+        server {
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+
+            args '-Dfml.coreMods.load=thebetweenlands.core.TheBetweenlandsLoadingPlugin'
+        }
+    }
 }
 
 dependencies {
-    compile "mcp.mobius.waila:Hwyla:1.8.26-B41_1.12.2"
+    minecraft "net.minecraftforge:forge:$project.mc_version-$project.forge_version"
+
+    implementation fg.deobf("blank:DynamicTrees-1.12.2-0.9.29")
+    implementation fg.deobf("blank:Hwyla-1.8.26-B41_1.12.2")
+    implementation fg.deobf("blank:aether-1.12.2-v1.5.3.2")
+
 }
 
 processResources {
-    // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
+    inputs.property "version", project.mod_version
+    inputs.property "mcversion", project.mc_version
 
-    // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-                
-        // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+
+        expand 'version':project.mod_version, 'mcversion':project.mc_version
     }
-        
-    // copy everything else except the mcmod.info
+
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
