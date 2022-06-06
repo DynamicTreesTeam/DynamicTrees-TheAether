@@ -1,0 +1,17 @@
+item.dynamictreestheaether:skyrootseed.name=天根种子
+item.dynamictreestheaether:goldenoakseed.name=黄金橡木种子
+item.dynamictreestheaether:crystalseed.name=白色苹果仁
+item.dynamictreestheaether:holidayseed.name=节日树桩
+
+species.dynamictreestheaether:skyroot.name=天根
+species.dynamictreestheaether:goldenoak.name=黄金橡木
+species.dynamictreestheaether:crystal.name=水晶
+species.dynamictreestheaether:holiday.name=节日
+
+tile.dynamictreestheaether:leaves0.name=树叶
+tile.dynamictreestheaether:leaves_crystal.name=树叶
+
+tile.dynamictreestheaether:skyrootbranch.name=天根树
+tile.dynamictreestheaether:goldenoakbranch.name=黄金橡树
+tile.dynamictreestheaether:crystalbranch.name=水晶树
+tile.dynamictreestheaether:holidaybranch.name=节日树
