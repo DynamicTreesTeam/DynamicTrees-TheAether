@@ -1,0 +1,6 @@
+{
+  "primitive_leaves": "aether:skyroot_leaves",
+  "texture_overrides": {
+    "leaves": "aether:block/natural/skyroot_leaves"
+  }
+}

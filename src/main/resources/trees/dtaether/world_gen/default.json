@@ -1,0 +1,15 @@
+[
+  {
+    "select" : { "name": "aether:skyroot.*" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:skyroot" : 25,
+          "dtaether:golden_oak" : 1
+        }
+      },
+      "density" : [ 0.1 ],
+      "chance" : 1
+    }
+  }
+]

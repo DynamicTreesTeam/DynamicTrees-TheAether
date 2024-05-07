@@ -1,0 +1,16 @@
+{
+  "block.dtaether.skyroot_branch":"Skyroot Tree",
+  "block.dtaether.golden_oak_branch":"Golden Oak Tree",
+  "block.dtaether.crystal_branch":"Crystal Tree",
+  "block.dtaether.holiday_branch":"Holiday Tree",
+
+  "species.dtaether.skyroot":"Skyroot",
+  "species.dtaether.golden_oak":"Golden Oak",
+  "species.dtaether.crystal":"Crystal",
+  "species.dtaether.holiday":"Holiday",
+
+  "item.dtaether.skyroot_seed":"Skyroot Seed",
+  "item.dtaether.golden_oak_seed":"Golden Oak Acorn",
+  "item.dtaether.crystal_seed":"White Apple Pip",
+  "item.dtaether.holiday_seed":"Holiday Tree Cone"
+}

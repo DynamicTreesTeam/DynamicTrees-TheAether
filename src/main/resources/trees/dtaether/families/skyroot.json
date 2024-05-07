@@ -1,0 +1,13 @@
+{
+  "common_leaves": "dtaether:skyroot",
+  "common_species": "dtaether:skyroot",
+  "primitive_log": "aether:skyroot_log",
+  "primitive_stripped_log": "aether:stripped_skyroot_log",
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "aether:block/natural/skyroot_log",
+    "branch_top": "aether:block/natural/skyroot_log_top",
+    "stripped_branch": "aether:block/natural/stripped_skyroot_log",
+    "stripped_branch_top": "aether:block/natural/stripped_skyroot_log_top"
+  }
+}

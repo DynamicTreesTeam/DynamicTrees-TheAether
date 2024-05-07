@@ -15,35 +15,35 @@ description='''
 Compatibility Mod between Dynamic trees and The Aether
 '''
 
-[[dependencies.dtbyg]]
+[[dependencies.dtaether]]
     modId="forge"
     mandatory=true
     versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dtbyg]]
+[[dependencies.dtaether]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19,1.19.3)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dtbyg]]
+[[dependencies.dtaether]]
     modId="dynamictrees"
     mandatory=true
     versionRange="[1.2.0-BETA1,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.dtbyg]]
+[[dependencies.dtaether]]
     modId="dynamictreesplus"
     mandatory=true
     versionRange="[1.1.0,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.dtbyg]]
+[[dependencies.dtaether]]
     modId="aether"
     mandatory=true
     versionRange="[1.4.2,)"
