@@ -1,0 +1,51 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+
+[[mods]]
+modId="dtaether"
+version="${file.jarVersion}"
+displayName="Dynamic Trees for The Aether"
+updateJSONURL="https://github.com/DynamicTreesTeam/DynamicTreesVersionInfo/blob/master/Add-ons/Aether.json?raw=true"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-the-aether-legacy"
+logoFile=""
+credits=""
+authors="Max Hyper"
+description='''
+Compatibility Mod between Dynamic trees and The Aether
+'''
+
+[[dependencies.dtbyg]]
+    modId="forge"
+    mandatory=true
+    versionRange="[41,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dtbyg]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,1.19.3)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dtbyg]]
+    modId="dynamictrees"
+    mandatory=true
+    versionRange="[1.2.0-BETA1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dtbyg]]
+    modId="dynamictreesplus"
+    mandatory=true
+    versionRange="[1.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dtbyg]]
+    modId="aether"
+    mandatory=true
+    versionRange="[1.4.2,)"
+    ordering="AFTER"
+    side="BOTH"

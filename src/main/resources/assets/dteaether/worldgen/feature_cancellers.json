@@ -1,0 +1,9 @@
+[
+  {
+    "select" : { "name": "aether:skyroot.*" },
+    "cancellers": {
+      "types": [ "tree" ],
+      "namespaces": ["aether", "minecraft"]
+    }
+  }
+]
