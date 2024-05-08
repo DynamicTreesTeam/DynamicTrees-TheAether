@@ -1,0 +1,8 @@
+{
+  "primitive_leaves": "aether:crystal_leaves",
+  "texture_overrides": {
+    "leaves": "aether:block/natural/crystal_leaves"
+  },
+  "smother": 3,
+  "cell_kit": "dynamictrees:conifer"
+}

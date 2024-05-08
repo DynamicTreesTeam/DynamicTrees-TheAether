@@ -1,5 +1,9 @@
 {
   "values": [
+    "dtaether:crystal_leaves",
+    "dtaether:decorated_holiday_leaves",
+    "dtaether:golden_oak_leaves",
+    "dtaether:holiday_leaves",
     "dtaether:skyroot_leaves"
   ]
 }

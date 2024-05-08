@@ -1,10 +1,16 @@
-// 1.19.2	2024-05-07T13:24:14.5858106	Block States: dtaether
+// 1.19.2	2024-05-07T23:50:06.1778488	Block States: dtaether
+56da95f6ae86421e293556cfce3bb31e16f1379e assets/dtaether/blockstates/crystal_leaves.json
+34126ee99f65898e6a2a2312c3dd86eb7510e58e assets/dtaether/blockstates/decorated_holiday_leaves.json
+6b653704b5fd752a9d1aa581ac57f15dc4f86173 assets/dtaether/blockstates/golden_oak_leaves.json
+76f883ca48809c9c29e5a5a6a076e688a0e2dbaf assets/dtaether/blockstates/holiday_leaves.json
+35f6a6732740e742c2c81a2b0e38a9868ef13179 assets/dtaether/blockstates/imbued_skyroot_branch.json
 af6e947683ff37708d33c0e36a1fbf53f6c041f7 assets/dtaether/blockstates/rooty_aether_dirt.json
 90a7827a5a1e463e313ea8f1fc19fc8cfeaefd40 assets/dtaether/blockstates/rooty_aether_grass_block.json
 3df2a8b699c4d9502a63c6c63efdb8622103b57c assets/dtaether/blockstates/skyroot_branch.json
 55451162e1954ca09b0c98b7b77d95de7b63d52a assets/dtaether/blockstates/skyroot_leaves.json
 4566ee5ccafc571b2cc87e671283ca19939b29ea assets/dtaether/blockstates/skyroot_sapling.json
 7c81c175c6eddc8f899524c47d349448d71d1f00 assets/dtaether/blockstates/stripped_skyroot_branch.json
+78306a454ba962dfe519b743c73c3229e5e54240 assets/dtaether/models/block/imbued_skyroot_branch.json
 eb554094178b5bfe619e0112025157cbacb39c02 assets/dtaether/models/block/saplings/skyroot.json
 c81c54617137bb15bf64a5ed53368588b2ce605e assets/dtaether/models/block/skyroot_branch.json
 5e808220375a678f2db56ff24e866fa74eddb902 assets/dtaether/models/block/stripped_skyroot_branch.json

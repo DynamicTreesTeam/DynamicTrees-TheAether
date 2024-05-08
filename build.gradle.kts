@@ -97,6 +97,13 @@ dependencies {
     //implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
     implementation(fg.deobf("curse.maven:aether-255308:5302176"))
 
+    //Aether addons, cause why not
+    runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:5178797"))
+    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:5076615"))
+    runtimeOnly(fg.deobf("curse.maven:aether-redux-867237:5314318"))
+
+    runtimeOnly(fg.deobf("curse.maven:geckolib-388172:4407241"))
+    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:4618490"))
     runtimeOnly(fg.deobf("curse.maven:jade-324717:4433884"))
     runtimeOnly(fg.deobf("curse.maven:jei-238222:4615177"))
     runtimeOnly(fg.deobf("org.squiddev:cc-tweaked-$mcVersion:${property("ccVersion")}"))

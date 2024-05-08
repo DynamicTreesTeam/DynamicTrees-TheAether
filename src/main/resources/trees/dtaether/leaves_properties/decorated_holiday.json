@@ -1,0 +1,8 @@
+{
+  "primitive_leaves": "aether:decorated_holiday_leaves",
+  "texture_overrides": {
+    "leaves": "aether:block/natural/decorated_holiday_leaves"
+  },
+  "smother": 3,
+  "cell_kit": "dynamictrees:conifer"
+}

@@ -11,9 +11,11 @@ import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
+import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.cells.DTAetherCellKits;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
+import maxhyper.dtaether.trees.ImbuedLogFamily;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -61,7 +63,7 @@ public class DTAetherRegistries {
     
     @SubscribeEvent
     public static void registerFamilyTypes (final TypeRegistryEvent<Family> event) {
-
+        event.registerType(DynamicTreesAether.location("imbued_log"), ImbuedLogFamily.TYPE);
     }
 
     @SubscribeEvent

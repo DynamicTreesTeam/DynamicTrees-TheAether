@@ -1,6 +1,15 @@
-// 1.19.2	2024-05-07T13:21:01.9322919	dtaether
+// 1.19.2	2024-05-07T23:50:06.1823334	dtaether
+be4e19565d740b6646bbe038e340c60a90058737 data/dtaether/loot_tables/blocks/crystal_leaves.json
+a243566508de3b24c9b7f31f23ac75072d8dba0b data/dtaether/loot_tables/blocks/decorated_holiday_leaves.json
+3ec2a1930c082401da8d20053556fab16a635f1b data/dtaether/loot_tables/blocks/golden_oak_leaves.json
+609e6c07566c4cc89af30b4db03186a1bf65e95d data/dtaether/loot_tables/blocks/holiday_leaves.json
 bd25e7e4eeaf91a9d92c921e9adf2da4647562a6 data/dtaether/loot_tables/blocks/skyroot_leaves.json
+c8f530e1c9c87464500a442e51f3e5b63a7bc546 data/dtaether/loot_tables/trees/branches/imbued_skyroot.json
 2c34f15daf2ab486e5330f2d78f26ee6f25279b5 data/dtaether/loot_tables/trees/branches/skyroot.json
 b84d27a8ed266750a881ab0506bdb654b126d742 data/dtaether/loot_tables/trees/branches/stripped_skyroot.json
+986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/crystal.json
+986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/decorated_holiday.json
+986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/golden_oak.json
+986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/holiday.json
 986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/skyroot.json
 5b6d1ecad03942374dad8d261009e5170ff633c0 data/dtaether/loot_tables/trees/voluntary/skyroot.json

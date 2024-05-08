@@ -1,0 +1,6 @@
+{
+  "primitive_leaves": "aether:golden_oak_leaves",
+  "texture_overrides": {
+    "leaves": "aether:block/natural/golden_oak_leaves"
+  }
+}

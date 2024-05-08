@@ -7,6 +7,10 @@ import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.google.gson.JsonElement;
 import maxhyper.dtaether.DynamicTreesAether;
+import maxhyper.dtaether.trees.ImbuedLogFamily;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -38,8 +42,12 @@ public final class RegisterJSONAppliers {
     }
 
     public static void registerFamilyAppliers(PropertyAppliers<Family, JsonElement> appliers) {
-//        appliers.register("primitive_imbued_log", ImbuedLogFamily.class, Block.class,
-//                ImbuedLogFamily::setPrimitiveImbuedLog);
+        appliers.register("primitive_imbued_log", ImbuedLogFamily.class, Block.class,
+                ImbuedLogFamily::setPrimitiveImbuedLog)
+                .register("imbued_drop", ImbuedLogFamily.class, Item.class,
+                        ImbuedLogFamily::setImbuedDropItem)
+                .register("imbued_branch_name", ImbuedLogFamily.class, ResourceLocation.class,
+                        ImbuedLogFamily::setImbuedBranchName);
     }
 
     public static void registerCapPropertiesAppliers(PropertyAppliers<CapProperties, JsonElement> appliers) {

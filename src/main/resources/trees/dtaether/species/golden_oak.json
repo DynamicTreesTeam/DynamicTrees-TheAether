@@ -1,0 +1,23 @@
+{
+  "family": "dtaether:skyroot",
+  "tapering": 0.3,
+  "signal_energy": 12.0,
+  "growth_rate": 0.8,
+  "leaves_properties": "dtaether:golden_oak",
+  "environment_factors" : {
+    "#forge:is_hot": 0.5,
+    "#forge:is_dry": 0.5
+  },
+  "generate_seed": true,
+  "generate_sapling": true,
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "aether:golden_oak_sapling",
+  "features" : [
+    {
+      "name": "dtaether:alt_branch",
+      "properties": {
+        "alternative_branch_block": "dtaether:imbued_skyroot_branch"
+      }
+    }
+  ]
+}
