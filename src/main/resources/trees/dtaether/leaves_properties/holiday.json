@@ -3,6 +3,5 @@
   "texture_overrides": {
     "leaves": "aether:block/natural/holiday_leaves"
   },
-  "smother": 3,
   "cell_kit": "dynamictrees:conifer"
 }

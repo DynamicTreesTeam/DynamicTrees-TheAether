@@ -31,11 +31,8 @@ public class DynamicTreesAether
         eventBus.addListener(this::commonSetup);
         eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::gatherData);
-        //VegetationReplacement.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
-
-        //MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, DTBYGRegistries::onBiomeLoading);
 
         RegistryHandler.setup(MOD_ID);
         DTAetherRegistries.setup(eventBus);

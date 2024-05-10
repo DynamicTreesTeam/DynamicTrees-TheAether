@@ -3,6 +3,6 @@
   "texture_overrides": {
     "leaves": "aether:block/natural/crystal_leaves"
   },
-  "smother": 3,
+  "smother": 6,
   "cell_kit": "dynamictrees:conifer"
 }

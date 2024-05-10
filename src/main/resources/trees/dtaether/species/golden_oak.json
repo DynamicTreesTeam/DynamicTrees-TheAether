@@ -1,22 +1,37 @@
 {
   "family": "dtaether:skyroot",
-  "tapering": 0.3,
-  "signal_energy": 12.0,
+  "tapering": 0.6,
+  "signal_energy": 20.0,
+  "up_probability": 4,
+  "lowest_branch_height": 6,
   "growth_rate": 0.8,
   "leaves_properties": "dtaether:golden_oak",
   "environment_factors" : {
-    "#forge:is_hot": 0.5,
-    "#forge:is_dry": 0.5
+    "#forge:is_hot": 0.7,
+    "#forge:is_dry": 0.7
   },
   "generate_seed": true,
   "generate_sapling": true,
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "aether:golden_oak_sapling",
+  "fruits": [
+    "dtaether:golden_apple"
+  ],
   "features" : [
     {
       "name": "dtaether:alt_branch",
       "properties": {
-        "alternative_branch_block": "dtaether:imbued_skyroot_branch"
+        "alternative_branch_block": "dtaether:imbued_skyroot_branch",
+        "world_gen_place_chance": 0.8,
+        "place_chance": 0.4
+      }
+    },
+    {
+      "name": "fruit",
+      "properties": {
+        "fruit": "dtaether:golden_apple",
+        "quantity": 1,
+        "place_chance": 0.04
       }
     }
   ]

@@ -95,7 +95,7 @@ public class ImbuedLogFamily extends Family {
             BranchBlock branch = state.getBlock() instanceof ImbuedBranchBlock ?
                     getImbuedBranch().orElse(null) :
                     getBranch().orElse(null);
-            if (branch != null){
+            if (branch != null && !branch.isStrippedBranch()){
                 branch.stripBranch(state, level, pos, player, heldItem);
                 if (level.isClientSide) {
                     level.playSound(player, pos, SoundEvents.AXE_STRIP, SoundSource.BLOCKS, 1.0F, 1.0F);

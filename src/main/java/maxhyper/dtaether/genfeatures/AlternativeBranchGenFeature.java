@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
  */
 public class AlternativeBranchGenFeature extends GenFeature {
 
-    public static final ConfigurationProperty<Float> WORLDGEN_PLACE_CHANCE = ConfigurationProperty.floatProperty("worldgen_place_chance");
+    public static final ConfigurationProperty<Float> WORLD_GEN_PLACE_CHANCE = ConfigurationProperty.floatProperty("world_gen_place_chance");
     public static final ConfigurationProperty<Block> ALT_BRANCH_BLOCK = ConfigurationProperty.block("alternative_branch_block");
     public static final ConfigurationProperty<Integer> MIN_RADIUS = ConfigurationProperty.integer("minimum_radius");
 
@@ -49,15 +49,15 @@ public class AlternativeBranchGenFeature extends GenFeature {
     public GenFeatureConfiguration createDefaultConfiguration() {
         return super.createDefaultConfiguration()
                 .with(ALT_BRANCH_BLOCK, Blocks.AIR)
-                .with(PLACE_CHANCE, 0.1f)
-                .with(WORLDGEN_PLACE_CHANCE, 0.8f)
+                .with(PLACE_CHANCE, 0.01f)
+                .with(WORLD_GEN_PLACE_CHANCE, 0.2f)
                 .with(MIN_RADIUS, 5)
                 .with(FRUITING_RADIUS, 6);
     }
 
     @Override
     protected void registerProperties() {
-        this.register(ALT_BRANCH_BLOCK, PLACE_CHANCE, WORLDGEN_PLACE_CHANCE, MIN_RADIUS, FRUITING_RADIUS);
+        this.register(ALT_BRANCH_BLOCK, PLACE_CHANCE, WORLD_GEN_PLACE_CHANCE, MIN_RADIUS, FRUITING_RADIUS);
     }
 
     @Override
@@ -99,7 +99,7 @@ public class AlternativeBranchGenFeature extends GenFeature {
         if (!validSpots.isEmpty()) {
             if (isWorldgen){
                 for (BlockPos listPos : validSpots.unwrap().stream().map(WeightedEntry.Wrapper::getData).collect(Collectors.toList()))
-                    if (world.getRandom().nextFloat() < configuration.get(WORLDGEN_PLACE_CHANCE))
+                    if (world.getRandom().nextFloat() < configuration.get(WORLD_GEN_PLACE_CHANCE))
                         placeBranch(configuration, world, listPos);
             } else {
                 WeightedEntry.Wrapper<BlockPos> posWrapper = validSpots.getRandom(world.getRandom()).orElse(null);
