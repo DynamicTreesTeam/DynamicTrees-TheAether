@@ -38,7 +38,7 @@ public class DynamicTreesAether
         //MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, DTBYGRegistries::onBiomeLoading);
 
         RegistryHandler.setup(MOD_ID);
-        DTAetherRegistries.setup();
+        DTAetherRegistries.setup(eventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

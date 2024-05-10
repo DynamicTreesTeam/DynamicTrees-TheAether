@@ -17,21 +17,14 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = DynamicTreesAether.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class RegisterJSONAppliers {
 
+    //SPECIES
     @SubscribeEvent
-    public static void registerAppliersSpecies(final ApplierRegistryEvent.Reload<Species, JsonElement> event) {
+    public static void registerReloadAppliersSpecies(final ApplierRegistryEvent.Reload<Species, JsonElement> event) {
         registerSpeciesAppliers(event.getAppliers());
     }
-
-    @SubscribeEvent
-    public static void registerAppliersFamily(final ApplierRegistryEvent.Reload<Family, JsonElement> event) {
-        registerFamilyAppliers(event.getAppliers());
+    @SubscribeEvent public static void registerDataAppliersSpecies(final ApplierRegistryEvent.GatherData<Species, JsonElement> event) {
+        registerSpeciesAppliers(event.getAppliers());
     }
-
-    @SubscribeEvent
-    public static void registerAppliersCapProperties(final ApplierRegistryEvent.Reload<CapProperties, JsonElement> event) {
-        registerCapPropertiesAppliers(event.getAppliers());
-    }
-
     public static void registerSpeciesAppliers(PropertyAppliers<Species, JsonElement> appliers) {
 //        appliers.register("alternative_species", LamentSpecies.class, Species.class,
 //                LamentSpecies::setAltSpecies)
@@ -41,15 +34,33 @@ public final class RegisterJSONAppliers {
 //                GenOnExtraSoilSpecies::setSoilReplacement);
     }
 
+    //FAMILY
+    @SubscribeEvent
+    public static void registerSetupAppliersFamily(final ApplierRegistryEvent.Setup<Family, JsonElement> event) {
+        registerFamilyAppliers(event.getAppliers());
+    }
+//    @SubscribeEvent
+//    public static void registerLoadAppliersFamily(final ApplierRegistryEvent.Load<Family, JsonElement> event) {
+//        event.getAppliers().register("imbued_branch_name", ImbuedLogFamily.class, ResourceLocation.class,
+//                ImbuedLogFamily::setImbuedBranchName);
+//    }
+    @SubscribeEvent public static void registerDataAppliersFamily(final ApplierRegistryEvent.GatherData<Family, JsonElement> event) {
+        registerFamilyAppliers(event.getAppliers());
+    }
     public static void registerFamilyAppliers(PropertyAppliers<Family, JsonElement> appliers) {
         appliers.register("primitive_imbued_log", ImbuedLogFamily.class, Block.class,
-                ImbuedLogFamily::setPrimitiveImbuedLog)
+                        ImbuedLogFamily::setPrimitiveImbuedLog)
                 .register("imbued_drop", ImbuedLogFamily.class, Item.class,
                         ImbuedLogFamily::setImbuedDropItem)
                 .register("imbued_branch_name", ImbuedLogFamily.class, ResourceLocation.class,
                         ImbuedLogFamily::setImbuedBranchName);
     }
 
+    //MUSHROOM
+    @SubscribeEvent
+    public static void registerReloadAppliersCapProperties(final ApplierRegistryEvent.Reload<CapProperties, JsonElement> event) {
+        registerCapPropertiesAppliers(event.getAppliers());
+    }
     public static void registerCapPropertiesAppliers(PropertyAppliers<CapProperties, JsonElement> appliers) {
 //        appliers.register("shroomlight_block", WartyCapProperties.class, Block.class,
 //                WartyCapProperties::setShroomlightBlock)
@@ -60,8 +71,5 @@ public final class RegisterJSONAppliers {
 //                .register("shroomlight_requires_support", WartyCapProperties.class, Boolean.class,
 //                        WartyCapProperties::setShroomlightRequireSupport);
     }
-
-    @SubscribeEvent public static void registerAppliersSpecies(final ApplierRegistryEvent.GatherData<Species, JsonElement> event) { registerSpeciesAppliers(event.getAppliers()); }
-    @SubscribeEvent public static void registerAppliersFamily(final ApplierRegistryEvent.GatherData<Family, JsonElement> event) { registerFamilyAppliers(event.getAppliers()); }
 
 }

@@ -1,11 +1,13 @@
 [
   {
+    "_comment": "holidays tree get replaced with skyroot trees when its not christmas",
     "select" : { "name": "aether:skyroot.*" },
     "apply" : {
       "species" : {
         "random" : {
-          "dtaether:skyroot" : 25,
-          "dtaether:golden_oak" : 1
+          "dtaether:skyroot" : 24,
+          "dtaether:golden_oak" : 1,
+          "dtaether:holiday" : 1
         }
       },
       "density" : [ 0.1 ],

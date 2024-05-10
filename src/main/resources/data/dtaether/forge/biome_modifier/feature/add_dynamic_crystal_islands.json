@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#aether:is_aether",
+  "features": "dtaether:dynamic_crystal_island",
+  "step": "top_layer_modification"
+}

@@ -13,17 +13,37 @@ import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
 import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.cells.DTAetherCellKits;
+import maxhyper.dtaether.features.DynamicCrystalIslandFeature;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
+import net.minecraft.core.Registry;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class DTAetherRegistries {
 
-    public static void setup() {
+    public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES, DynamicTreesAether.MOD_ID);
+    //public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, DynamicTreesAether.MOD_ID);
+    //public static final DeferredRegister<Codec<? extends BiomeModifier>> BIOME_MODIFIER_SERIALIZERS = DeferredRegister.create(ForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, DynamicTreesAether.MOD_ID);;
 
+    //public static final RegistryObject<Codec<AddDynamicCrystalIslandBiomeModifier>> ADD_DYNAMIC_CRYSTAL_ISLAND_BIOME_MODIFIER = BIOME_MODIFIER_SERIALIZERS.register("add_dynamic_crystal_island", () -> Codec.unit(AddDynamicCrystalIslandBiomeModifier::new));
+
+    public static final RegistryObject<DynamicCrystalIslandFeature> DYNAMIC_CRYSTAL_ISLAND_FEATURE = FEATURES.register("crystal_island", DynamicCrystalIslandFeature::new);
+    //public static final RegistryObject<ConfiguredFeature<NoneFeatureConfiguration, ?>> CRYSTAL_ISLAND_CONFIGURED_FEATURE = CONFIGURED_FEATURES.register("crystal_island", () -> new ConfiguredFeature<>(DYNAMIC_CRYSTAL_ISLAND_FEATURE.get(), NoneFeatureConfiguration.INSTANCE));
+
+    public static void setup(IEventBus modBus) {
+        FEATURES.register(modBus);
+        //CONFIGURED_FEATURES.register(modBus);
+        //BIOME_MODIFIER_SERIALIZERS.register(modBus);
     }
 
     public static void setupBlocks() {

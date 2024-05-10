@@ -49,3 +49,10 @@ Compatibility Mod between Dynamic trees and The Aether
     versionRange="[1.4.2,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.dtaether]]
+    modId="aether_redux"
+    mandatory=false
+    versionRange="[2.0.0,)"
+    ordering="AFTER"
+    side="BOTH"

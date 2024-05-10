@@ -13,6 +13,12 @@
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "features" : [
     {
+      "name": "dtaether:seasonal_condition",
+      "properties": {
+        "alternative_species": "dtaether:skyroot"
+      }
+    },
+    {
       "name": "alt_leaves",
       "properties": {
         "alternative_leaves": "dtaether:decorated_holiday",
