@@ -96,9 +96,9 @@ public class ImbuedBranchBlock extends ThickBranchBlock {
                 // and a fortune bonus
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(this.getImbuedDropItem().get())
-                                .apply(() -> new MultiplyCount(new LootItemCondition[0], 1.5F))//With large amounts of 'random between 1 and 2', it ends up being the same as multiplying by 1.5
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))
                                 .apply(MultiplyLogsCount.multiplyLogsCount())
+                                .apply(() -> new MultiplyCount(new LootItemCondition[0], 1.5F))//With large amounts of 'random between 1 and 2', it ends up being the same as multiplying by 1.5
                                 .apply(ApplyExplosionDecay.explosionDecay())
                                 .when(MatchTool.toolMatches(ItemPredicate.Builder.item().of(AetherTags.Items.GOLDEN_AMBER_HARVESTERS)))
                                 .when(InvertedLootItemCondition.invert(

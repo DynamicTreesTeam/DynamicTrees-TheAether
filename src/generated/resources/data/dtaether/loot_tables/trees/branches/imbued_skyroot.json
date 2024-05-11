@@ -92,16 +92,16 @@
           ],
           "functions": [
             {
-              "function": "dynamictrees:multiply_count",
-              "multiplier": 1.5
-            },
-            {
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:ore_drops",
               "function": "minecraft:apply_bonus"
             },
             {
               "function": "dynamictrees:multiply_logs_count"
+            },
+            {
+              "function": "dynamictrees:multiply_count",
+              "multiplier": 1.5
             },
             {
               "function": "minecraft:explosion_decay"

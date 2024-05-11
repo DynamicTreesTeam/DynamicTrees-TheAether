@@ -17,6 +17,7 @@
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "features" : [
     "conifer_topper",
+    "dtaether:holiday_decoration",
     {
       "name": "dtaether:seasonal_condition",
       "properties": {

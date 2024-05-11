@@ -9,9 +9,37 @@
           "dtaether:golden_oak" : 1,
           "dtaether:holiday" : 1
         }
-      },
+      }
+    }
+  },
+  {
+    "select" : { "name": "aether:skyroot_forest" },
+    "apply" : {
       "density" : [ 0.1 ],
-      "chance" : 1
+      "chance" : 0.9,
+      "forestness": 1
+    }
+  },
+  {
+    "select" : { "name": "aether:skyroot_woodland" },
+    "apply" : {
+      "density" : [ 1 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select" : { "name": "aether:skyroot_meadow" },
+    "apply" : {
+      "density" : [ 0.1 ],
+      "chance" : 0.2
+    }
+  },
+  {
+    "select" : { "name": "aether:skyroot_grove" },
+    "apply" : {
+      "density" : [ 0.6 ],
+      "chance" : 0.2
     }
   }
 ]
