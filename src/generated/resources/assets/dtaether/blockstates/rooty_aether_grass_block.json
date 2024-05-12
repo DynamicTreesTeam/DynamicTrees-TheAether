@@ -7,7 +7,7 @@
     },
     {
       "apply": {
-        "model": "dynamictrees:block/roots"
+        "model": "dynamictrees:block/roots_tint_2"
       }
     }
   ]

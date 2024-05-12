@@ -12,6 +12,7 @@ import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
 import maxhyper.dtaether.DynamicTreesAether;
+import maxhyper.dtaether.blocks.AltTintSoilProperties;
 import maxhyper.dtaether.cells.DTAetherCellKits;
 import maxhyper.dtaether.features.DynamicCrystalIslandFeature;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
@@ -88,7 +89,7 @@ public class DTAetherRegistries {
 
     @SubscribeEvent
     public static void registerSoilPropertiesTypes (final TypeRegistryEvent<SoilProperties> event) {
-
+        event.registerType(DynamicTreesAether.location("alt_tint"), AltTintSoilProperties.TYPE);
     }
 
     @SubscribeEvent
