@@ -7,7 +7,7 @@
     }
   },
   {
-    "only_if_loaded": "aether_redux",
+    "only_if_loaded": "_",
     "select" : { "name": "aether_redux:.*" },
     "cancellers": {
       "types": [ "tree" ],
@@ -15,7 +15,7 @@
     }
   },
   {
-    "only_if_loaded": "deep_aether",
+    "only_if_loaded": "_",
     "select" : { "name": "deep_aether:.*" },
     "cancellers": {
       "types": [ "tree" ],
