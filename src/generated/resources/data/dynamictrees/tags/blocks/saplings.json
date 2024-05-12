@@ -1,8 +1,17 @@
 {
   "values": [
+    "dtaether:blighted_skyroot_sapling",
+    "dtaether:blightwillow_sapling",
+    "dtaether:cruderoot_sapling",
     "dtaether:crystal_sapling",
+    "dtaether:fieldsproot_sapling",
+    "dtaether:gilded_oak_sapling",
+    "dtaether:glacia_sapling",
     "dtaether:golden_oak_sapling",
     "dtaether:holiday_sapling",
-    "dtaether:skyroot_sapling"
+    "dtaether:purple_glacia_sapling",
+    "dtaether:roseroot_sapling",
+    "dtaether:skyroot_sapling",
+    "dtaether:yagroot_sapling"
   ]
 }

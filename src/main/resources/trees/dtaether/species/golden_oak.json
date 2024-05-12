@@ -31,7 +31,7 @@
       "properties": {
         "fruit": "dtaether:golden_apple",
         "quantity": 1,
-        "place_chance": 0.04
+        "place_chance": 0.01
       }
     }
   ]

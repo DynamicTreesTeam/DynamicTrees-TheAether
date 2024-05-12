@@ -1,0 +1,22 @@
+{
+  "only_if_loaded": "deep_aether",
+  "family": "dtaether:cruderoot",
+  "tapering": 0.2,
+  "up_probability": 4,
+  "signal_energy": 10.0,
+  "growth_rate": 1.1,
+  "soil_longevity": 12,
+  "leaves_properties": "dtaether:cruderoot",
+  "growth_logic_kit": {
+    "name": "conifer",
+    "properties": {
+      "energy_divisor": 6,
+      "height_variation": 10
+    }
+  },
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "deep_aether:cruderoot_sapling",
+  "features" : [
+    "conifer_topper"
+  ]
+}

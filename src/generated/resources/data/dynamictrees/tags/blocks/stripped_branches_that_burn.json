@@ -1,5 +1,14 @@
 {
   "values": [
-    "dtaether:stripped_skyroot_branch"
+    "dtaether:stripped_blightwillow_branch",
+    "dtaether:stripped_conberry_branch",
+    "dtaether:stripped_cruderoot_branch",
+    "dtaether:stripped_crystal_branch",
+    "dtaether:stripped_fieldsproot_branch",
+    "dtaether:stripped_glacia_branch",
+    "dtaether:stripped_roseroot_branch",
+    "dtaether:stripped_skyroot_branch",
+    "dtaether:stripped_sunroot_branch",
+    "dtaether:stripped_yagroot_branch"
   ]
 }

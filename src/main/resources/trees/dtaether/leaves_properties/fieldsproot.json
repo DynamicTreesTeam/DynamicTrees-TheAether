@@ -1,0 +1,13 @@
+{
+  "only_if_loaded": "aether_redux",
+  "type": "scruffy",
+  "scruffy_max_hydro": 3,
+  "primitive_leaves": "aether_redux:fieldsproot_leaves",
+  "cell_kit": "dynamictrees:acacia",
+  "texture_overrides": {
+    "leaves": "aether_redux:block/natural/fieldsproot_leaves_0"
+  },
+  "model_overrides": {
+    "leaves": "aether_redux:block/fieldsproot_leaves_0"
+  }
+}

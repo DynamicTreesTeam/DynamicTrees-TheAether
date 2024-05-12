@@ -1,8 +1,17 @@
 {
   "values": [
+    "dtaether:blighted_skyroot_seed",
+    "dtaether:blightwillow_seed",
+    "dtaether:cruderoot_seed",
     "dtaether:crystal_seed",
+    "dtaether:fieldsproot_seed",
+    "dtaether:gilded_oak_seed",
+    "dtaether:glacia_seed",
     "dtaether:golden_oak_seed",
     "dtaether:holiday_seed",
-    "dtaether:skyroot_seed"
+    "dtaether:purple_glacia_seed",
+    "dtaether:roseroot_seed",
+    "dtaether:skyroot_seed",
+    "dtaether:yagroot_seed"
   ]
 }

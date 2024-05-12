@@ -1,0 +1,5 @@
+{
+  "only_if_loaded": "deep_aether",
+  "primitive_soil": "deep_aether:aether_coarse_dirt",
+  "acceptable_soils": [ "mud_like", "dirt_like", "aether_like" ]
+}

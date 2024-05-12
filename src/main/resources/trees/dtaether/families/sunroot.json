@@ -1,0 +1,9 @@
+{
+  "only_if_loaded": "deep_aether",
+  "common_leaves": "dtaether:sunroot",
+  "common_species": "dtaether:sunroot",
+  "primitive_log": "deep_aether:sunroot_log",
+  "primitive_stripped_log": "deep_aether:stripped_sunroot_log",
+  "stick": "aether:skyroot_stick",
+  "max_branch_radius": 24
+}

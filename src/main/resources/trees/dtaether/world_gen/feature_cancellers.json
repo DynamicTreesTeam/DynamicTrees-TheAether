@@ -7,19 +7,19 @@
     }
   },
   {
-    "only_if_loaded": "_",
-    "select" : { "name": "aether_redux:.*" },
-    "cancellers": {
-      "types": [ "tree" ],
-      "namespaces": ["aether", "aether_redux", "minecraft"]
-    }
-  },
-  {
-    "only_if_loaded": "_",
+    "only_if_loaded": "deep_aether",
     "select" : { "name": "deep_aether:.*" },
     "cancellers": {
       "types": [ "tree" ],
       "namespaces": ["aether", "deep_aether", "minecraft"]
+    }
+  },
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:.*" },
+    "cancellers": {
+      "types": [ "tree" ],
+      "namespaces": ["aether", "aether_redux", "minecraft"]
     }
   }
 ]

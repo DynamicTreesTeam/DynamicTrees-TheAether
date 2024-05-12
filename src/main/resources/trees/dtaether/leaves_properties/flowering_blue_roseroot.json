@@ -1,0 +1,7 @@
+{
+  "only_if_loaded": "deep_aether",
+  "type": "scruffy",
+  "primitive_leaves": "deep_aether:flowering_blue_roseroot_leaves",
+  "cell_kit": "dynamictrees:conifer",
+  "smother": 8
+}

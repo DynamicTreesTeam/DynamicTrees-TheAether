@@ -1,8 +1,7 @@
 {
   "type": "spreadable",
   "primitive_soil": "aether:aether_dirt",
-  "acceptable_soils": [ "dirt_like" ],
-
+  "acceptable_soils": [ "dirt_like", "aether_like" ],
   "required_light": 9,
   "spreadable_soils": [ "aether:aether_grass_block" ]
 }

@@ -1,9 +1,23 @@
 {
   "values": [
+    "dtaether:blighted_skyroot_leaves",
+    "dtaether:blightwillow_leaves",
+    "dtaether:blue_roseroot_leaves",
+    "dtaether:conberry_leaves",
+    "dtaether:cruderoot_leaves",
     "dtaether:crystal_leaves",
     "dtaether:decorated_holiday_leaves",
+    "dtaether:fieldsproot_leaves",
+    "dtaether:flowering_blue_roseroot_leaves",
+    "dtaether:flowering_roseroot_leaves",
+    "dtaether:gilded_oak_leaves",
+    "dtaether:glacia_leaves",
     "dtaether:golden_oak_leaves",
     "dtaether:holiday_leaves",
-    "dtaether:skyroot_leaves"
+    "dtaether:purple_glacia_leaves",
+    "dtaether:roseroot_leaves",
+    "dtaether:skyroot_leaves",
+    "dtaether:sunroot_leaves",
+    "dtaether:yagroot_leaves"
   ]
 }

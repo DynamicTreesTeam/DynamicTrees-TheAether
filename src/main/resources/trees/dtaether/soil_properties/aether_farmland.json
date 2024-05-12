@@ -1,5 +1,5 @@
 {
   "primitive_soil": "aether:aether_farmland",
-  "acceptable_soils": [ "dirt_like" ],
+  "acceptable_soils": [ "dirt_like", "aether_like" ],
   "substitute_soil" : "dtaether:aether_dirt"
 }

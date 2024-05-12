@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "deep_aether:block/stripped_yagroot_log",
+    "rings": "deep_aether:block/stripped_yagroot_log_top"
+  }
+}

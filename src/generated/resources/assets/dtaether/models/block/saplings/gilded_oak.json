@@ -1,0 +1,8 @@
+{
+  "parent": "dynamictrees:block/smartmodel/sapling",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "leaves": "aether_redux:block/natural/gilded_oak_leaves",
+    "log": "aether:block/natural/skyroot_log"
+  }
+}

@@ -1,5 +1,14 @@
 {
   "values": [
-    "dtaether:skyroot_branch"
+    "dtaether:blightwillow_branch",
+    "dtaether:conberry_branch",
+    "dtaether:cruderoot_branch",
+    "dtaether:crystal_branch",
+    "dtaether:fieldsproot_branch",
+    "dtaether:glacia_branch",
+    "dtaether:roseroot_branch",
+    "dtaether:skyroot_branch",
+    "dtaether:sunroot_branch",
+    "dtaether:yagroot_branch"
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "only_if_loaded": "aether_redux",
+  "type": "dtaether_redux:imbued_log",
+  "common_leaves": "dtaether:blightwillow",
+  "common_species": "dtaether:blightwillow",
+  "primitive_log": "aether_redux:blightwillow_log",
+  "primitive_stripped_log": "aether_redux:stripped_blightwillow_log",
+  "primitive_imbued_log": "aether_redux:sporing_blightwillow_log",
+  "imbued_drop": "aether_redux:blighted_spores",
+  "imbued_branch_name": "dtaether:sporing_blightwillow_branch",
+  "stick": "aether:blightwillow_stick",
+  "max_branch_radius": 24,
+  "texture_overrides": {
+    "branch": "aether_redux:block/natural/blightwillow_log",
+    "branch_top": "aether_redux:block/natural/blightwillow_log_top",
+    "stripped_branch": "aether_redux:block/natural/stripped_blightwillow_log",
+    "stripped_branch_top": "aether_redux:block/natural/stripped_blightwillow_log_top",
+    "imbued_branch": "aether_redux:block/natural/sporing_blightwillow_log"
+  }
+}

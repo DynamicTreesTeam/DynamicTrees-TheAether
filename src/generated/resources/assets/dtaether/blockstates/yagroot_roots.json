@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "layer=covered": {
+      "model": "deep_aether:block/aether_mud"
+    },
+    "layer=exposed": {
+      "model": "dtaether:block/yagroot_roots"
+    },
+    "layer=filled": {
+      "model": "dtaether:block/yagroot_roots_filled"
+    }
+  }
+}

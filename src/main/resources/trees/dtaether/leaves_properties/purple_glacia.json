@@ -1,0 +1,10 @@
+{
+  "only_if_loaded": "aether_redux",
+  "type": "scruffy",
+  "primitive_leaves": "aether_redux:purple_glacia_leaves",
+  "cell_kit": "dynamictrees:conifer",
+  "smother": 8,
+  "texture_overrides": {
+    "leaves": "aether_redux:block/natural/purple_glacia_leaves"
+  }
+}

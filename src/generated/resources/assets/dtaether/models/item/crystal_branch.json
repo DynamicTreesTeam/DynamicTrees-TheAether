@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "aether_redux:block/natural/crystal_log",
+    "rings": "aether_redux:block/natural/crystal_log_top"
+  }
+}

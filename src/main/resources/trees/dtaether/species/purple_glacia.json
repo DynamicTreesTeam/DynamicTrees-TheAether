@@ -1,0 +1,24 @@
+{
+  "only_if_loaded": "aether_redux",
+  "family": "dtaether:glacia",
+  "tapering": 0.2,
+  "up_probability": 4,
+  "signal_energy": 10.0,
+  "growth_rate": 1.1,
+  "soil_longevity": 12,
+  "leaves_properties": "dtaether:purple_glacia",
+  "growth_logic_kit": {
+    "name": "conifer",
+    "properties": {
+      "energy_divisor": 6,
+      "height_variation": 10
+    }
+  },
+  "generate_seed": true,
+  "generate_sapling": true,
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "aether_redux:purple_glacia_sapling",
+  "features" : [
+    "conifer_topper"
+  ]
+}

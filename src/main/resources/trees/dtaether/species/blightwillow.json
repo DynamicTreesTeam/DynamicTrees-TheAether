@@ -1,0 +1,12 @@
+{
+  "only_if_loaded": "aether_redux",
+  "family": "dtaether:blightwillow",
+  "tapering": 0.3,
+  "signal_energy": 10.0,
+  "growth_rate": 0.8,
+  "leaves_properties": "dtaether:blightwillow",
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "aether:skyroot_sapling",
+  "features" : [
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "only_if_loaded": "aether_redux",
+  "primitive_soil": "aether_redux:blightmoss_block",
+  "acceptable_soils": [ "dirt_like", "aether_like" ]
+}

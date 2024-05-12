@@ -1,5 +1,5 @@
 {
   "type": "dtaether:alt_tint",
   "primitive_soil": "aether:aether_grass_block",
-  "acceptable_soils": [ "dirt_like" ]
+  "acceptable_soils": [ "dirt_like", "aether_like" ]
 }

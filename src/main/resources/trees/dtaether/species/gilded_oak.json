@@ -1,0 +1,49 @@
+{
+  "only_if_loaded": "aether_redux",
+  "family": "dtaether:skyroot",
+  "tapering": 0.6,
+  "signal_energy": 20.0,
+  "up_probability": 4,
+  "lowest_branch_height": 6,
+  "growth_rate": 0.8,
+  "leaves_properties": "dtaether:gilded_oak",
+  "environment_factors" : {
+    "#forge:is_hot": 0.7,
+    "#forge:is_dry": 0.7
+  },
+  "generate_seed": true,
+  "generate_sapling": true,
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "aether_redux:gilded_oak_sapling",
+  "fruits": [
+    "dtaether:golden_apple"
+  ],
+  "features" : [
+    {
+      "name": "dtaether:alt_branch",
+      "properties": {
+        "alternative_branch_block": "dtaether:imbued_skyroot_branch",
+        "world_gen_place_chance": 0.2,
+        "place_chance": 0.04
+      }
+    },
+    {
+      "name": "fruit",
+      "properties": {
+        "fruit": "dtaether:golden_apple",
+        "quantity": 1,
+        "place_chance": 0.01
+      }
+    },
+    {
+      "name": "vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "aether_redux:gilded_vines_plant",
+        "tip_block": "aether_redux:gilded_vines",
+        "max_length": 5,
+        "quantity": 12
+      }
+    }
+  ]
+}

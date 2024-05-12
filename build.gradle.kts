@@ -77,7 +77,9 @@ minecraft {
                 "--existing", file("src/main/resources"),
                 "--existing-mod", "dynamictrees",
                 "--existing-mod", "dynamictreesplus",
-                "--existing-mod", "aether"
+                "--existing-mod", "aether",
+                "--existing-mod", "deep_aether",
+                "--existing-mod", "aether_redux"
             )
         }
     }
@@ -98,9 +100,9 @@ dependencies {
     implementation(fg.deobf("curse.maven:aether-255308:5302176"))
 
     //Aether addons, cause why not
-//    runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:5178797"))
-//    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:5076615"))
-//    runtimeOnly(fg.deobf("curse.maven:aether-redux-867237:5314318"))
+    runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:5178797"))
+    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:5076615"))
+    runtimeOnly(fg.deobf("curse.maven:aether-redux-867237:5314318"))
 
     runtimeOnly(fg.deobf("curse.maven:geckolib-388172:4407241"))
     runtimeOnly(fg.deobf("curse.maven:terrablender-563928:4618490"))
@@ -144,7 +146,7 @@ curseforge {
     apiKey = property("curseApiKey")
 
     project {
-        id = "562143"
+        id = "387443"
 
         addGameVersion(mcVersion)
 

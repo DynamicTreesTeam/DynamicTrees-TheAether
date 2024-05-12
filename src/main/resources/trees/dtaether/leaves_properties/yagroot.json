@@ -1,0 +1,6 @@
+{
+  "only_if_loaded": "deep_aether",
+  "primitive_leaves": "deep_aether:yagroot_leaves",
+  "cell_kit": "dynamictrees:acacia",
+  "smother": 6
+}

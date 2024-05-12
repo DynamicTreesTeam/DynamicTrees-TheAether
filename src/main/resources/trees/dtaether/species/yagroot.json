@@ -1,0 +1,35 @@
+{
+  "only_if_loaded": "deep_aether",
+  "type": "mangrove",
+  "family": "dtaether:yagroot",
+  "tapering": 0.25,
+  "root_tapering": 0.2,
+  "signal_energy": 20.0,
+  "root_signal_energy": 20.0,
+  "up_probability": 8,
+  "lowest_branch_height": 2,
+  "growth_rate": 0.6,
+  "leaves_properties": "dtaether:yagroot",
+  "roots_growth_logic_kit": "dtaether:yagroot_roots",
+  "environment_factors" : {
+    "#forge:is_cold": 0.75,
+    "#forge:is_dry": 0.2
+  },
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "dtaether:yagroot_sapling",
+  "sapling_shape": "slim_sapling",
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/water_sapling_thin"
+  },
+  "acceptable_soils": ["dirt_like", "mud_like"],
+  "plantable_on_fluid": false,
+  "features" : [
+    {
+      "name": "vines",
+      "properties": {
+        "max_length": 7,
+        "quantity": 24
+      }
+    }
+  ]
+}

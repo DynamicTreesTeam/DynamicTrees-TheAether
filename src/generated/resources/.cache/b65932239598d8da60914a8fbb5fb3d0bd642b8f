@@ -1,6 +1,24 @@
-// 1.19.2	2024-05-09T22:15:27.1259754	Item Models: dtaether
+// 1.19.2	2024-05-12T19:19:17.0656692	Item Models: dtaether
+5141125890b3310009897a2f132d54fded846d09 assets/dtaether/models/item/blighted_skyroot_seed.json
+7685e5bf29d7f0c98a938c3f86583d564c1ebc52 assets/dtaether/models/item/blightwillow_branch.json
+db26ebcfc5e045ae9fa975027ad468c3f39b88ab assets/dtaether/models/item/blightwillow_seed.json
+9bf86c3656a7ed66d1f263a664e8ac852f4bd323 assets/dtaether/models/item/cruderoot_branch.json
+e88bace07e774c588e96cfa6f84bd0144815161a assets/dtaether/models/item/cruderoot_seed.json
+87502aa02e80e7317fc8b6d3c77d58477ddb32b0 assets/dtaether/models/item/crystal_branch.json
 befc95a864dadc1c1cd34d169fee2d0cd87b4071 assets/dtaether/models/item/crystal_seed.json
+4c8c7eaa38fa7e1ea2e193daaff80b5eabed14e9 assets/dtaether/models/item/fieldsproot_branch.json
+f193c7186475ab8f2f78b340093c1e217a6a0542 assets/dtaether/models/item/fieldsproot_seed.json
+6bde0b4a04e151f01b70eadf98f2903c4681403a assets/dtaether/models/item/gilded_oak_seed.json
+2f1843ae85129f29010f677cac7657500b3b788c assets/dtaether/models/item/glacia_branch.json
+4c19c6be75db9895acbf50e373b0d1afb51e9989 assets/dtaether/models/item/glacia_seed.json
 85b958343bb7261898a8bdba59ed7ab03b6bc405 assets/dtaether/models/item/golden_oak_seed.json
 631fef48d478d0f28068dec72b87a7d1e4cb191c assets/dtaether/models/item/holiday_seed.json
+90e8f028695f1c2541fdb93b59f94645ee333c64 assets/dtaether/models/item/purple_glacia_seed.json
+2a5cc4535a5d62b33f0b80cc9f4d622674a1dc4d assets/dtaether/models/item/roseroot_branch.json
+9096ffacc9580df762ac0d7aed966a1043911d2c assets/dtaether/models/item/roseroot_seed.json
 317cf13b675d61dd423f35e96958fb353e3457d4 assets/dtaether/models/item/skyroot_branch.json
 fc3cc796e8656e8980112303412c0db35338762c assets/dtaether/models/item/skyroot_seed.json
+e9e5a2480d964ad4db38b562e4c3e418eb953c23 assets/dtaether/models/item/sunroot_branch.json
+257ef69198d93df22f3ffedbd64051b2b9f98224 assets/dtaether/models/item/yagroot_branch.json
+6d35847206607f92e11f7db9bcbecbc1d78fdb58 assets/dtaether/models/item/yagroot_roots.json
+ce5be71f44efb5872e4687e1bf50d7f038a20c54 assets/dtaether/models/item/yagroot_seed.json

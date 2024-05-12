@@ -1,0 +1,15 @@
+{
+  "type": "mangrove",
+  "only_if_loaded": "deep_aether",
+  "common_leaves": "dtaether:yagroot",
+  "common_species": "dtaether:yagroot",
+  "primitive_log": "deep_aether:yagroot_log",
+  "primitive_stripped_log": "deep_aether:stripped_yagroot_log",
+  "stick": "aether:skyroot_stick",
+  "max_branch_radius": 8,
+  "default_soil": "dtaether:yagroot_aerial_roots",
+  "primitive_root": "deep_aether:yagroot_roots",
+  "primitive_filled_root": "deep_aether:muddy_yagroot_roots",
+  "primitive_covered_root": "deep_aether:aether_mud",
+  "root_system_acceptable_soils": ["dirt_like", "mud_like"]
+}
