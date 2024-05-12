@@ -53,8 +53,8 @@ public class HolidayDecorationGenFeature extends GenFeature {
 
     @Override
     protected boolean postGenerate(GenFeatureConfiguration configuration, PostGenerationContext context) {
-        BlockPos.MutableBlockPos tipPos = context.pos().mutable();
         int tipHeight = 0;
+        BlockPos.MutableBlockPos tipPos = context.pos().above(tipHeight).mutable();
         for (int i=0; i<32; i++){
             tipPos.move(0, 1, 0);
             BlockState testState = context.level().getBlockState(tipPos);
@@ -63,7 +63,7 @@ public class HolidayDecorationGenFeature extends GenFeature {
                 break;
             }
         }
-        if (tipHeight < 10) return false;
+        if (tipHeight <= 1) return false; //If its 1 or 0 then something failed
         placeCircle(configuration, context.level(), context.random(), tipPos, tipHeight);
         return true;
     }

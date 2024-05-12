@@ -1,4 +1,6 @@
 {
+  "type": "dtaether:particle_leaves",
+  "particle_type": "aether:crystal_leaves",
   "primitive_leaves": "aether:crystal_leaves",
   "texture_overrides": {
     "leaves": "aether:block/natural/crystal_leaves"

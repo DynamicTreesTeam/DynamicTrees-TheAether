@@ -1,12 +1,13 @@
 package maxhyper.dtaether.resources;
 
 import com.ferreusveritas.dynamictrees.api.applier.ApplierRegistryEvent;
+import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.deserialisation.PropertyAppliers;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.google.gson.JsonElement;
 import maxhyper.dtaether.DynamicTreesAether;
+import maxhyper.dtaether.blocks.ParticleLeavesProperties;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -56,20 +57,14 @@ public final class RegisterJSONAppliers {
                         ImbuedLogFamily::setImbuedBranchName);
     }
 
-    //MUSHROOM
+    //LEAVES
     @SubscribeEvent
-    public static void registerReloadAppliersCapProperties(final ApplierRegistryEvent.Reload<CapProperties, JsonElement> event) {
-        registerCapPropertiesAppliers(event.getAppliers());
+    public static void registerReloadAppliersLeavesProperties(final ApplierRegistryEvent.Reload<LeavesProperties, JsonElement> event) {
+        registerLeavesPropertiesAppliers(event.getAppliers());
     }
-    public static void registerCapPropertiesAppliers(PropertyAppliers<CapProperties, JsonElement> appliers) {
-//        appliers.register("shroomlight_block", WartyCapProperties.class, Block.class,
-//                WartyCapProperties::setShroomlightBlock)
-//                .register("shroomlight_above_place_chance", WartyCapProperties.class, Float.class,
-//                        WartyCapProperties::setShroomlightUpChance)
-//                .register("shroomlight_below_place_chance", WartyCapProperties.class, Float.class,
-//                        WartyCapProperties::setShroomlightDownChance)
-//                .register("shroomlight_requires_support", WartyCapProperties.class, Boolean.class,
-//                        WartyCapProperties::setShroomlightRequireSupport);
+
+    public static void registerLeavesPropertiesAppliers(PropertyAppliers<LeavesProperties, JsonElement> appliers) {
+        appliers.register("particle_type", ParticleLeavesProperties.class, ResourceLocation.class, ParticleLeavesProperties::setParticleResLoc);
     }
 
 }
