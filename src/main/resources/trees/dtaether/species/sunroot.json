@@ -1,0 +1,38 @@
+{
+  "only_if_loaded": "deep_aether",
+  "family": "dtaether:sunroot",
+  "tapering": 0.3,
+  "signal_energy": 16.0,
+  "up_probability": 2,
+  "lowest_branch_height": 8,
+  "growth_rate": 0.8,
+  "leaves_properties": "dtaether:sunroot",
+  "growth_logic_kit": "azalea",
+  "environment_factors" : {
+    "#forge:is_cold": 0.8,
+    "#forge:is_wet": 0.6
+  },
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "aether:sunroot_sapling",
+  "features" : [
+    "bottom_flare",
+    "mound",
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 8,
+        "scale_factor": 24
+      }
+    },
+    {
+      "name": "vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "deep_aether:sunroot_hanger",
+        "tip_block": "deep_aether:sunroot_hanger",
+        "max_length": 5,
+        "quantity": 12
+      }
+    }
+  ]
+}

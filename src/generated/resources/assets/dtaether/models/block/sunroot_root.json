@@ -1,0 +1,6 @@
+{
+  "loader": "dynamictrees:surface_root",
+  "textures": {
+    "bark": "deep_aether:block/sunroot_log"
+  }
+}

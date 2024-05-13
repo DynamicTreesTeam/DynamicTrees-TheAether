@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "deep_aether",
-  "family": "dtaether:blue_roseroot",
+  "family": "dtaether:roseroot",
   "tapering": 0.2,
   "up_probability": 4,
   "signal_energy": 10.0,
@@ -17,11 +17,10 @@
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "deep_aether:blue_roseroot_sapling",
   "features" : [
-    "conifer_topper",
     {
       "name": "alt_leaves",
       "properties": {
-        "alternative_leaves": "dtaether_flowering_blue_roseroot",
+        "alternative_leaves": "dtaether:flowering_blue_roseroot",
         "place_chance": 0.35
       }
     }

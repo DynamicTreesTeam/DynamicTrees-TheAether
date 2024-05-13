@@ -18,6 +18,7 @@ import maxhyper.dtaether.features.DynamicCrystalIslandFeature;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
+import maxhyper.dtaether.trees.ModDependentSpecies;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -66,7 +67,7 @@ public class DTAetherRegistries {
 
     @SubscribeEvent
     public static void registerSpeciesTypes (final TypeRegistryEvent<Species> event) {
-
+        event.registerType(DynamicTreesAether.location("mod_dependent"), ModDependentSpecies.TYPE);
     }
     
     @SubscribeEvent

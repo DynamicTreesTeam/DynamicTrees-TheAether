@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "deep_aether:block/aether_coarse_dirt"
+        "model": "deep_aether:block/aether_mud"
       }
     },
     {

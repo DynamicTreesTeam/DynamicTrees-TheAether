@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-12T19:19:17.0573048	dtaether
+// 1.19.2	2024-05-13T19:21:59.1227773	dtaether
 aed9909c058f0428231a25d9b87f086b826f3598 data/dtaether/loot_tables/blocks/blighted_skyroot_leaves.json
 b5b27b89ba179d932b12d55dc50e7aafd988cbdf data/dtaether/loot_tables/blocks/blightwillow_leaves.json
 79d4d04b45affeb39e277c379b134bfcc73c21f7 data/dtaether/loot_tables/blocks/blue_roseroot_leaves.json
@@ -71,4 +71,5 @@ d80e8314b307463e6a5a2cd516a1b714bd0cdc4a data/dtaether/loot_tables/trees/volunta
 e7ad4bcd8c3a7efcfe8665c269fcee20ab9f385f data/dtaether/loot_tables/trees/voluntary/purple_glacia.json
 3996c5ac6083cceb2fb34477c9194c4f65bdb034 data/dtaether/loot_tables/trees/voluntary/roseroot.json
 5b6d1ecad03942374dad8d261009e5170ff633c0 data/dtaether/loot_tables/trees/voluntary/skyroot.json
+9038fbd58296de9884ebbf307e1404c5a059e89b data/dtaether/loot_tables/trees/voluntary/sunroot.json
 42f95dc509bbcafac2a5536b86953264a8a79d9e data/dtaether/loot_tables/trees/voluntary/yagroot.json

@@ -2,6 +2,6 @@
   "only_if_loaded": "deep_aether",
   "type": "scruffy",
   "primitive_leaves": "deep_aether:blue_roseroot_leaves",
-  "cell_kit": "dynamictrees:conifer",
+  "cell_kit": "dynamictrees:azalea",
   "smother": 8
 }

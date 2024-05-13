@@ -1,5 +1,10 @@
 {
+  "type": "dtaether:mod_dependent",
   "family": "dtaether:skyroot",
+  "variant_properties": {
+    "only_if_loaded": "aether_redux",
+    "family": "dtaether:glacia"
+  },
   "tapering": 0.25,
   "signal_energy": 16.0,
   "up_probability": 3,

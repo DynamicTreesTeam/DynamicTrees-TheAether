@@ -1,6 +1,11 @@
 {
+  "type": "dtaether:mod_dependent",
   "family": "dtaether:skyroot",
-  "tapering": 0.3,
+  "variant_properties": {
+    "only_if_loaded": "aether_redux",
+    "family": "dtaether:crystal"
+  },
+  "tapering": 0.6,
   "signal_energy": 8.0,
   "lowest_branch_height": 1,
   "growth_rate": 0.6,

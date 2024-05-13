@@ -2,37 +2,48 @@ package maxhyper.dtaether.resources;
 
 import com.ferreusveritas.dynamictrees.api.applier.ApplierRegistryEvent;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
+import com.ferreusveritas.dynamictrees.deserialisation.JsonHelper;
 import com.ferreusveritas.dynamictrees.deserialisation.PropertyAppliers;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.blocks.ParticleLeavesProperties;
+import maxhyper.dtaether.trees.ModDependentSpecies;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+
+import java.util.Objects;
 
 @Mod.EventBusSubscriber(modid = DynamicTreesAether.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class RegisterJSONAppliers {
 
     //SPECIES
     @SubscribeEvent
+    public static void registerLoadAppliersSpecies(final ApplierRegistryEvent.Load<Species, JsonElement> event) {
+        registerLoadSpeciesAppliers(event.getAppliers());
+    }
+    @SubscribeEvent
     public static void registerReloadAppliersSpecies(final ApplierRegistryEvent.Reload<Species, JsonElement> event) {
-        registerSpeciesAppliers(event.getAppliers());
+        registerReloadSpeciesAppliers(event.getAppliers());
     }
     @SubscribeEvent public static void registerDataAppliersSpecies(final ApplierRegistryEvent.GatherData<Species, JsonElement> event) {
-        registerSpeciesAppliers(event.getAppliers());
+        //registerLoadSpeciesAppliers(event.getAppliers());
     }
-    public static void registerSpeciesAppliers(PropertyAppliers<Species, JsonElement> appliers) {
-//        appliers.register("alternative_species", LamentSpecies.class, Species.class,
-//                LamentSpecies::setAltSpecies)
-//                .register("extra_soil_for_worldgen", GenOnExtraSoilSpecies.class, Block.class,
-//                GenOnExtraSoilSpecies::setExtraSoil)
-//                .register("soil_replacement_for_worldgen", GenOnExtraSoilSpecies.class, Block.class,
-//                GenOnExtraSoilSpecies::setSoilReplacement);
+    public static void registerLoadSpeciesAppliers(PropertyAppliers<Species, JsonElement> appliers) {
+        appliers.register("variant_properties", ModDependentSpecies.class, JsonObject.class,
+                ModDependentSpecies::setLoadVariantProperties);
+    }
+    public static void registerReloadSpeciesAppliers(PropertyAppliers<Species, JsonElement> appliers) {
+       appliers.register("variant_properties", ModDependentSpecies.class, JsonObject.class,
+                ModDependentSpecies::setReloadVariantProperties);
     }
 
     //FAMILY

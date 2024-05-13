@@ -17,11 +17,10 @@
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "deep_aether:roseroot_sapling",
   "features" : [
-    "conifer_topper",
     {
       "name": "alt_leaves",
       "properties": {
-        "alternative_leaves": "dtaether_flowering_roseroot",
+        "alternative_leaves": "dtaether:flowering_roseroot",
         "place_chance": 0.35
       }
     }

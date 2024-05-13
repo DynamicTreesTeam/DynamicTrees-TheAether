@@ -41,7 +41,7 @@
         "vine_type": "ceiling",
         "block": "aether_redux:gilded_vines_plant",
         "tip_block": "aether_redux:gilded_vines",
-        "max_length": 5,
+        "max_length": 3,
         "quantity": 12
       }
     }

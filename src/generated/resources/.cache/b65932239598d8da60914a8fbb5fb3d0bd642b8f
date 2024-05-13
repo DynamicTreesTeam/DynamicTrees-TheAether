@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-12T19:19:17.0656692	Item Models: dtaether
+// 1.19.2	2024-05-13T19:21:59.1102653	Item Models: dtaether
 5141125890b3310009897a2f132d54fded846d09 assets/dtaether/models/item/blighted_skyroot_seed.json
 7685e5bf29d7f0c98a938c3f86583d564c1ebc52 assets/dtaether/models/item/blightwillow_branch.json
 db26ebcfc5e045ae9fa975027ad468c3f39b88ab assets/dtaether/models/item/blightwillow_seed.json
@@ -19,6 +19,7 @@ f193c7186475ab8f2f78b340093c1e217a6a0542 assets/dtaether/models/item/fieldsproot
 317cf13b675d61dd423f35e96958fb353e3457d4 assets/dtaether/models/item/skyroot_branch.json
 fc3cc796e8656e8980112303412c0db35338762c assets/dtaether/models/item/skyroot_seed.json
 e9e5a2480d964ad4db38b562e4c3e418eb953c23 assets/dtaether/models/item/sunroot_branch.json
+3ed85daa2584ab5cdbb3355b3543cdc7b093aeaf assets/dtaether/models/item/sunroot_seed.json
 257ef69198d93df22f3ffedbd64051b2b9f98224 assets/dtaether/models/item/yagroot_branch.json
 6d35847206607f92e11f7db9bcbecbc1d78fdb58 assets/dtaether/models/item/yagroot_roots.json
 ce5be71f44efb5872e4687e1bf50d7f038a20c54 assets/dtaether/models/item/yagroot_seed.json

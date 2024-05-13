@@ -12,18 +12,27 @@ import com.mojang.serialization.Codec;
 import maxhyper.dtaether.DynamicTreesAether;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.ChunkPos;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class DynamicCrystalIslandFeature extends Feature<NoneFeatureConfiguration> {
+
+    protected static final String DEEP_AETHER = "deep_aether";
+    protected static BlockState goldenGrassState;
 
     public DynamicCrystalIslandFeature() {
         super(NoneFeatureConfiguration.CODEC);
@@ -44,12 +53,14 @@ public class DynamicCrystalIslandFeature extends Feature<NoneFeatureConfiguratio
         });
         BlockPos newOrigin = closestRing.get();
         Species crystalSpecies = Species.REGISTRY.get(DynamicTreesAether.location("crystal"));
-        setBlock(context.level(), newOrigin, AetherFeatureStates.AETHER_GRASS_BLOCK);
+        BlockState grassState = getGrassState(context.level(), newOrigin);
+
+        setBlock(context.level(), newOrigin, grassState);
         if (crystalSpecies.isValid() && crystalSpecies.generate(new GenerationContext(levelContext, crystalSpecies, newOrigin, newOrigin.mutable(), context.level().getBiome(newOrigin), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()), 8, SafeChunkBounds.ANY_WG))){
             for(int i = 0; i < 3; ++i) {
                 BlockState state;
                 if (i == 0) {
-                    state = AetherFeatureStates.AETHER_GRASS_BLOCK;
+                    state = grassState;
                 } else {
                     state = AetherFeatureStates.HOLYSTONE;
                 }
@@ -69,4 +80,24 @@ public class DynamicCrystalIslandFeature extends Feature<NoneFeatureConfiguratio
             return true;
         } else return false;
     }
+
+    protected BlockState getGrassState (LevelAccessor level, BlockPos pos){
+        BlockState grassState = AetherFeatureStates.AETHER_GRASS_BLOCK;
+        List<ResourceLocation> biomes = Arrays.stream(new ResourceLocation[]{
+                new ResourceLocation(DEEP_AETHER, "golden_heights"),
+                new ResourceLocation(DEEP_AETHER, "golden_grove")
+        }).toList();
+        if (ModList.get().isLoaded(DEEP_AETHER) &&
+                biomes.stream().anyMatch((rl)->level.getBiome(pos).is(rl))){
+            if (goldenGrassState == null){
+                Block grassBlock = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DEEP_AETHER, "golden_heights_grass_block"));
+                if (grassBlock != null && grassBlock != Blocks.AIR){
+                    goldenGrassState = grassBlock.defaultBlockState();
+                }
+            }
+            grassState = goldenGrassState;
+        }
+        return grassState;
+    }
+
 }

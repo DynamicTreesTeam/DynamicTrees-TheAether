@@ -1,5 +1,21 @@
 {
+  "type": "dtaether:mod_dependent",
   "family": "dtaether:skyroot",
+  "variant_properties": {
+    "only_if_loaded": "aether_redux",
+    "features" : [
+      {
+        "name": "vines",
+        "properties": {
+          "vine_type": "ceiling",
+          "block": "aether_redux:golden_vines_plant",
+          "tip_block": "aether_redux:golden_vines",
+          "max_length": 3,
+          "quantity": 12
+        }
+      }
+    ]
+  },
   "tapering": 0.6,
   "signal_energy": 20.0,
   "up_probability": 4,
