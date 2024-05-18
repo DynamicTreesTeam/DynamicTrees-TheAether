@@ -54,26 +54,26 @@
     "apply" : {
       "species" : {
         "random" : {
-          "dtaether:glacia" : 24,
-          "dtaether:blue_glacia" : 1
+          "dtaether:purple_glacia" : 24,
+          "dtaether:glacia" : 1
         }
       },
-      "density" : [ 0.8 ],
+      "density" : [ 0.9 ],
       "chance" : 1,
       "forestness": 1
     }
   },
   {
     "only_if_loaded": "aether_redux",
-    "select" : { "name": "aether_redux:yagroot_swamp" },
+    "select" : { "name": "aether_redux:frosted_forests" },
     "apply" : {
       "species" : {
         "random" : {
-          "dtaether:yagroot" : 12,
-          "dtaether:cruderoot" : 1
+          "dtaether:glacia" : 24,
+          "dtaether:purple_glacia" : 1
         }
       },
-      "density" : [ 0.6 ],
+      "density" : [ 0.8 ],
       "chance" : 1,
       "forestness": 1
     }
@@ -143,6 +143,40 @@
       "species" : "dtaether:skyroot_bush",
       "density" : [ 2 ],
       "chance" : 0.5
+    }
+  },
+  {
+    "only_if_loaded": [ "aether_redux", "dynamictreesplus" ],
+    "select" : { "name": "aether_redux:cloudcaps" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:cloudcap" : 6,
+          "dtaether:jellyshroom" : 1
+        }
+      },
+      "density" : [ 1.5 ],
+      "chance" : 1
+    }
+  },
+
+
+
+
+
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:yagroot_swamp" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:yagroot" : 8,
+          "dtaether:cruderoot" : 1
+        }
+      },
+      "density" : [ 0.6 ],
+      "chance" : 1,
+      "forestness": 1
     }
   }
 ]

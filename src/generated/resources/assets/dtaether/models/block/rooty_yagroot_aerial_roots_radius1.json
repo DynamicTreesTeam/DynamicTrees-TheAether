@@ -1,7 +1,9 @@
 {
   "parent": "dynamictrees:block/smartmodel/rooty/aerial_roots_radius1",
   "textures": {
-    "end": "deep_aether:block/yagroot_log_top",
+    "rings": "deep_aether:block/yagroot_log_top",
+    "overlay": "deep_aether:block/yagroot_roots_side",
+    "overlay_end": "deep_aether:block/yagroot_roots_top",
     "side": "deep_aether:block/yagroot_log"
   }
 }

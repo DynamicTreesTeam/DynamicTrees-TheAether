@@ -5,13 +5,13 @@
   "tapering": 0.25,
   "signal_energy": 20.0,
   "up_probability": 0,
-  "lowest_branch_height": 4,
+  "lowest_branch_height": 6,
   "growth_rate": 0.6,
   "soil_longevity": 10,
   "root_tapering": 0.1,
   "root_signal_energy": 20.0,
-  "min_world_gen_height_offset": 0,
-  "max_world_gen_height_offset": 2,
+  "min_world_gen_height_offset": 2,
+  "max_world_gen_height_offset": 4,
   "leaves_properties": "dtaether:yagroot",
   "growth_logic_kit": "dark_oak",
   "roots_growth_logic_kit": "dtaether:yagroot_roots",
@@ -31,8 +31,9 @@
     {
       "name": "vines",
       "properties": {
+        "block": "deep_aether:yagroot_vine",
         "max_length": 7,
-        "quantity": 24
+        "quantity": 48
       }
     }
   ]

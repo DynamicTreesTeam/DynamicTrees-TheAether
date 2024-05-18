@@ -31,10 +31,16 @@
   "features" : [
     "conifer_topper",
     {
-      "name": "fruit",
+      "name": "biome_predicate",
       "properties": {
-        "fruit": "dtaether:white_apple",
-        "fruiting_radius": 4
+        "biome_predicate" : "!aether_redux:skyfields",
+        "gen_feature": {
+          "name": "fruit",
+          "properties": {
+            "fruit": "dtaether:white_apple",
+            "fruiting_radius": 4
+          }
+        }
       }
     }
   ]
