@@ -13,6 +13,7 @@ import com.ferreusveritas.dynamictrees.tree.species.Species;
 import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.blocks.AltTintSoilProperties;
 import maxhyper.dtaether.blocks.ParticleLeavesProperties;
+import maxhyper.dtaether.blocks.SnowyScruffyLeavesProperties;
 import maxhyper.dtaether.cells.DTAetherCellKits;
 import maxhyper.dtaether.features.DynamicCrystalIslandFeature;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
@@ -82,7 +83,8 @@ public class DTAetherRegistries {
 
     @SubscribeEvent
     public static void registerLeavesPropertiesTypes (final TypeRegistryEvent<LeavesProperties> event) {
-        event.registerType(DynamicTreesAether.location("particle_leaves"), ParticleLeavesProperties.TYPE);
+        event.registerType(DynamicTreesAether.location("particle"), ParticleLeavesProperties.TYPE);
+        event.registerType(DynamicTreesAether.location("scruffy_snowy"), SnowyScruffyLeavesProperties.TYPE);
     }
 
     @SubscribeEvent

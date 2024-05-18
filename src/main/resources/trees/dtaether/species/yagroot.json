@@ -11,7 +11,7 @@
   "root_tapering": 0.1,
   "root_signal_energy": 20.0,
   "min_world_gen_height_offset": 2,
-  "max_world_gen_height_offset": 4,
+  "max_world_gen_height_offset": 3,
   "leaves_properties": "dtaether:yagroot",
   "growth_logic_kit": "dark_oak",
   "roots_growth_logic_kit": "dtaether:yagroot_roots",

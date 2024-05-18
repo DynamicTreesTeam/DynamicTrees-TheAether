@@ -16,6 +16,7 @@
   },
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "deep_aether:cruderoot_sapling",
+  "acceptable_soils": ["dirt_like", "mud_like"],
   "features" : [
     "conifer_topper"
   ]

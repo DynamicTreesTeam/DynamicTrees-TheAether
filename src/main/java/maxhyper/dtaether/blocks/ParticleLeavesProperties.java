@@ -20,7 +20,7 @@ public class ParticleLeavesProperties extends LeavesProperties {
 
     private ResourceLocation particleResLoc;
     private SimpleParticleType particleType;
-    private boolean valid = true;
+    protected boolean valid = true;
 
     public void setParticleResLoc(ResourceLocation particleResLoc) {
         this.particleResLoc = particleResLoc;
@@ -34,7 +34,7 @@ public class ParticleLeavesProperties extends LeavesProperties {
                 particleType = simpleType;
             else {
                 valid = false;
-                System.out.printf("Error loading particle type %s for leaves properties %s. Particle must be of SimpleParticleType.", type, this);
+                //System.out.printf("Error loading particle type %s for leaves properties %s. Particle must be of SimpleParticleType.", type, this);
             }
         }
         return particleType;

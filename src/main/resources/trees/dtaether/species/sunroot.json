@@ -21,7 +21,7 @@
       "name": "roots",
       "properties": {
         "min_trunk_radius": 8,
-        "scale_factor": 24
+        "scale_factor": 12
       }
     },
     {

@@ -5,7 +5,6 @@
   "up_probability": 4,
   "signal_energy": 10.0,
   "growth_rate": 1.1,
-  "soil_longevity": 12,
   "leaves_properties": "dtaether:purple_glacia",
   "growth_logic_kit": {
     "name": "conifer",

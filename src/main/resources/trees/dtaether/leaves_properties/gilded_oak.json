@@ -1,5 +1,7 @@
 {
   "only_if_loaded": "aether_redux",
+  "type": "dtaether:particle",
+  "particle_type": "aether:golden_oak_leaves",
   "primitive_leaves": "aether_redux:gilded_oak_leaves",
   "texture_overrides": {
     "leaves": "aether_redux:block/natural/gilded_oak_leaves"

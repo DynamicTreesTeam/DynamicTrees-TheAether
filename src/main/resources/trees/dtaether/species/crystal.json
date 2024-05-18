@@ -31,9 +31,9 @@
   "features" : [
     "conifer_topper",
     {
-      "name": "biome_predicate",
+      "name": "dtaether:negative_biome_predicate",
       "properties": {
-        "biome_predicate" : "!aether_redux:skyfields",
+        "biome_predicate" : "aether_redux:skyfields",
         "gen_feature": {
           "name": "fruit",
           "properties": {
