@@ -6,7 +6,8 @@
   "growth_rate": 0.8,
   "leaves_properties": "dtaether:fieldsproot",
   "perfect_biomes": { "tag": "#aether:is_aether" },
-  "primitive_sapling": "aether:skyroot_sapling",
+  "primitive_sapling": "aether_redux:fieldsproot_sapling",
+  "tint_sapling": false,
   "features" : [
   ]
 }

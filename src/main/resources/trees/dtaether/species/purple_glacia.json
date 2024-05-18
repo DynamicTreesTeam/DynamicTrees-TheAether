@@ -3,7 +3,7 @@
   "family": "dtaether:glacia",
   "tapering": 0.2,
   "up_probability": 4,
-  "signal_energy": 10.0,
+  "signal_energy": 16.0,
   "growth_rate": 1.1,
   "soil_longevity": 12,
   "leaves_properties": "dtaether:purple_glacia",
@@ -11,7 +11,7 @@
     "name": "conifer",
     "properties": {
       "energy_divisor": 6,
-      "height_variation": 10
+      "height_variation": 4
     }
   },
   "generate_seed": true,

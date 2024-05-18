@@ -1,3 +1,8 @@
-// 1.19.2	2024-05-13T19:21:59.1216845	dtaether DT Block Tags
-0026ae3e00100bb69b802793c0b7fcba3dc1bed6 data/dynamictrees/tags/items/branches_that_burn.json
-7e90b63739467bde37d23d66d1bf06a46b60feaa data/dynamictrees/tags/items/seeds.json
+// 1.19.2	2024-05-17T20:50:00.9351234	dtaether DT Block Tags
+2de2aaf69ee07b9ab7a52c0e30d93bb9fcdaf469 data/dynamictrees/tags/blocks/aerial_roots_rooty_soil.json
+0026ae3e00100bb69b802793c0b7fcba3dc1bed6 data/dynamictrees/tags/blocks/branches_that_burn.json
+261f663aa9a5cfe3b6bcf9ae7fb0817f1697763b data/dynamictrees/tags/blocks/leaves.json
+cf9deb169347e3e9a0ce7150cf84b20ab481e2b8 data/dynamictrees/tags/blocks/roots.json
+e71a25ffec2022bd160ad8ee3b83f5750c74e5d8 data/dynamictrees/tags/blocks/rooty_soil.json
+075ed849b3d3e91c785426b4e8a7ec23cf5b3b1d data/dynamictrees/tags/blocks/saplings.json
+d09ade0d52a9ce4910aeb0ce668103a148623ed7 data/dynamictrees/tags/blocks/stripped_branches_that_burn.json

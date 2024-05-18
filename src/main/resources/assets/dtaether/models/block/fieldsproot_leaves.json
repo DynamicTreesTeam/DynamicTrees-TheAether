@@ -1,0 +1,7 @@
+{
+  "parent": "dtaether:block/overlay_leaves",
+  "textures": {
+    "base": "aether_redux:block/natural/fieldsproot_leaves_0",
+    "overlay": "dtaether:block/fieldsproot_leaves"
+  }
+}

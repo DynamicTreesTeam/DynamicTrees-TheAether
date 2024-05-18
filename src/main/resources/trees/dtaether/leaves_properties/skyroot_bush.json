@@ -1,0 +1,10 @@
+{
+  "type": "scruffy",
+  "primitive_leaves": "aether:skyroot_leaves",
+  "cell_kit": "dynamictrees:acacia",
+  "light_requirement": 4,
+  "can_grow_on_ground": true,
+  "texture_overrides": {
+    "leaves": "aether:block/natural/skyroot_leaves"
+  }
+}

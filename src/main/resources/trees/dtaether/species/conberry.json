@@ -1,0 +1,21 @@
+{
+  "family": "dtaether:conberry",
+  "tapering": 0.4,
+  "signal_energy": 16.0,
+  "growth_rate": 0.6,
+  "up_probability": 4,
+  "lowest_branch_height": 3,
+  "soil_longevity": 6,
+  "max_branch_radius": 24,
+  "leaves_properties": "dtaether:conberry",
+  "growth_logic_kit": "dtaether:conberry",
+  "environment_factors" : {
+    "#forge:is_cold": 0.7
+  },
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "deep_aether:conberry_sapling",
+  "features" : [
+    "bottom_flare",
+    "mound"
+  ]
+}

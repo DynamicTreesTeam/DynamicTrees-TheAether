@@ -1,7 +1,9 @@
-// 1.19.2	2024-05-13T19:21:59.1102653	Item Models: dtaether
+// 1.19.2	2024-05-16T18:46:35.4765486	Item Models: dtaether
 5141125890b3310009897a2f132d54fded846d09 assets/dtaether/models/item/blighted_skyroot_seed.json
 7685e5bf29d7f0c98a938c3f86583d564c1ebc52 assets/dtaether/models/item/blightwillow_branch.json
 db26ebcfc5e045ae9fa975027ad468c3f39b88ab assets/dtaether/models/item/blightwillow_seed.json
+af373fed0e20a1ed77a453aa370b3cdbe7c914b8 assets/dtaether/models/item/conberry_branch.json
+dad0231132a7ffd7718d90d71e331447cc4a1470 assets/dtaether/models/item/conberry_seed.json
 9bf86c3656a7ed66d1f263a664e8ac852f4bd323 assets/dtaether/models/item/cruderoot_branch.json
 e88bace07e774c588e96cfa6f84bd0144815161a assets/dtaether/models/item/cruderoot_seed.json
 87502aa02e80e7317fc8b6d3c77d58477ddb32b0 assets/dtaether/models/item/crystal_branch.json

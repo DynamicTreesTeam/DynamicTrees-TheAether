@@ -39,7 +39,110 @@
     "select" : { "name": "aether:skyroot_grove" },
     "apply" : {
       "density" : [ 0.6 ],
-      "chance" : 0.2
+      "chance" : 0.4
+    }
+  },
+
+
+
+
+
+
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:glacial_tundra" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:glacia" : 24,
+          "dtaether:blue_glacia" : 1
+        }
+      },
+      "density" : [ 0.8 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:yagroot_swamp" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:yagroot" : 12,
+          "dtaether:cruderoot" : 1
+        }
+      },
+      "density" : [ 0.6 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:the_blight" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:blightwillow" : 8,
+          "dtaether:blighted_skyroot" : 1
+        }
+      },
+      "density" : [ 0.6 ],
+      "chance" : 0.8,
+      "forestness": 0.5
+    }
+  },
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:gilded_groves" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:golden_oak" : 4,
+          "dtaether:gilded_oak" : 1
+        }
+      },
+      "density" : [ 0.8 ],
+      "chance" : 0.8,
+      "forestness": 0.8
+    }
+  },
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:gilded_grasslands" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:golden_oak" : 1,
+          "dtaether:gilded_oak" : 1
+        }
+      },
+      "density" : [ 0.2 ],
+      "chance" : 0.3
+    }
+  },
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:skyfields" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:fieldsproot" : 3,
+          "dtaether:crystal" : 1
+        }
+      },
+      "density" : [ 0.6 ],
+      "chance" : 0.4
+    }
+  },
+  {
+    "only_if_loaded": "aether_redux",
+    "select" : { "name": "aether_redux:skyroot_shrublands" },
+    "apply" : {
+      "species" : "dtaether:skyroot_bush",
+      "density" : [ 2 ],
+      "chance" : 0.5
     }
   }
 ]

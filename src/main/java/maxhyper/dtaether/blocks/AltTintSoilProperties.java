@@ -18,6 +18,7 @@ public class AltTintSoilProperties extends SoilProperties {
 
     public AltTintSoilProperties (final ResourceLocation registryName){
         super(null, registryName);
+        modelOverrides.put(ROOTS,DynamicTrees.location("block/roots_tint_2"));
     }
 
     @Override
@@ -34,11 +35,5 @@ public class AltTintSoilProperties extends SoilProperties {
             }
         };
     }
-
-    @Override
-    public ResourceLocation getRootsOverlayLocation() {
-        return DynamicTrees.location("block/roots_tint_2");
-    }
-
 
 }

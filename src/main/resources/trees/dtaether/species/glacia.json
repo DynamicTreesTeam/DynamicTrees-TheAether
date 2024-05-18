@@ -11,7 +11,7 @@
     "name": "conifer",
     "properties": {
       "energy_divisor": 6,
-      "height_variation": 10
+      "height_variation": 4
     }
   },
   "perfect_biomes": { "tag": "#aether:is_aether" },

@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-13T19:21:59.1227773	dtaether
+// 1.19.2	2024-05-17T20:50:00.9260117	dtaether
 aed9909c058f0428231a25d9b87f086b826f3598 data/dtaether/loot_tables/blocks/blighted_skyroot_leaves.json
 b5b27b89ba179d932b12d55dc50e7aafd988cbdf data/dtaether/loot_tables/blocks/blightwillow_leaves.json
 79d4d04b45affeb39e277c379b134bfcc73c21f7 data/dtaether/loot_tables/blocks/blue_roseroot_leaves.json
@@ -16,11 +16,13 @@ a243566508de3b24c9b7f31f23ac75072d8dba0b data/dtaether/loot_tables/blocks/decora
 609e6c07566c4cc89af30b4db03186a1bf65e95d data/dtaether/loot_tables/blocks/holiday_leaves.json
 e4df8b8d7a32e5db1593274930687cafdb352e0c data/dtaether/loot_tables/blocks/purple_glacia_leaves.json
 570ca8c7cb8507db8832913b449ebdf1bac7ad08 data/dtaether/loot_tables/blocks/roseroot_leaves.json
+bd25e7e4eeaf91a9d92c921e9adf2da4647562a6 data/dtaether/loot_tables/blocks/skyroot_bush_leaves.json
 bd25e7e4eeaf91a9d92c921e9adf2da4647562a6 data/dtaether/loot_tables/blocks/skyroot_leaves.json
 7bd7d68e28e601e6e0deb3ed24f3859a09534c1f data/dtaether/loot_tables/blocks/sunroot_leaves.json
 adf8664a3a659b9cec3990ede57fc03e8714658b data/dtaether/loot_tables/blocks/white_apple.json
 10ab71fb620dc204ac22b69fc923baa665c8a485 data/dtaether/loot_tables/blocks/yagroot_leaves.json
 dfdc60d3677bc014e2e75d25bda5059648c32031 data/dtaether/loot_tables/trees/branches/blightwillow.json
+9d4db06bf2300ec17f8dd83cc7ebd60ed04ca0dd data/dtaether/loot_tables/trees/branches/conberry.json
 1f29edeef285acab8e9b7e8267357f2fb3fe3d6f data/dtaether/loot_tables/trees/branches/cruderoot.json
 b8732b60fa80954c306bda52780964cab7f139f3 data/dtaether/loot_tables/trees/branches/crystal.json
 5b5b665dede88e19351858f8d3d00cf7f519446d data/dtaether/loot_tables/trees/branches/fieldsproot.json
@@ -29,6 +31,7 @@ b8732b60fa80954c306bda52780964cab7f139f3 data/dtaether/loot_tables/trees/branche
 042c93a5c245b856717b3f635c7fcfb35fd3ce68 data/dtaether/loot_tables/trees/branches/roseroot.json
 2c34f15daf2ab486e5330f2d78f26ee6f25279b5 data/dtaether/loot_tables/trees/branches/skyroot.json
 8d36cfd6c0d61694cc417d8b6874708b1c22b32b data/dtaether/loot_tables/trees/branches/stripped_blightwillow.json
+409a65d5035330fbe5c957924c14fe3a4cd5c79e data/dtaether/loot_tables/trees/branches/stripped_conberry.json
 8d97cdd117a7415c104be0145e15ac85cba2cc00 data/dtaether/loot_tables/trees/branches/stripped_cruderoot.json
 fe98d3ccdc881ae03052a3f23b88dd6c59999cc9 data/dtaether/loot_tables/trees/branches/stripped_crystal.json
 e900d13cae506eff5ccee3d96b8694e9e4204b4a data/dtaether/loot_tables/trees/branches/stripped_fieldsproot.json
@@ -56,11 +59,13 @@ b001cfb1c248d419174facbba9a3abe98aab4d3e data/dtaether/loot_tables/trees/branche
 986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/purple_glacia.json
 986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/roseroot.json
 986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/skyroot.json
+986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/skyroot_bush.json
 986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/sunroot.json
 986afb00ce7ce1ff4ba0d792936eed67cb913515 data/dtaether/loot_tables/trees/leaves/yagroot.json
 20672ecaf582e1238875926131b024c7f7489ea7 data/dtaether/loot_tables/trees/roots/yagroot.json
 2f71f2252f87f43ccbb1d448eadb1c38a9aca679 data/dtaether/loot_tables/trees/voluntary/blighted_skyroot.json
 df1bd751df19d115a804726bef5e1133d1b1dd45 data/dtaether/loot_tables/trees/voluntary/blightwillow.json
+40b4618096d851cb4d3444a01ff40abc0294923f data/dtaether/loot_tables/trees/voluntary/conberry.json
 98bf46b8f56706a4e2d56198c4891a59e6e77fd8 data/dtaether/loot_tables/trees/voluntary/cruderoot.json
 87891bb5f9dfbd67178b196ac54858ad981d2920 data/dtaether/loot_tables/trees/voluntary/crystal.json
 563ea463a8ed6a0c7041d144710f90b8a8c3a139 data/dtaether/loot_tables/trees/voluntary/fieldsproot.json
