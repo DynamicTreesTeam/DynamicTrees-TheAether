@@ -103,9 +103,9 @@
           "dtaether:gilded_oak" : 1
         }
       },
-      "density" : [ 0.8 ],
-      "chance" : 0.8,
-      "forestness": 0.8
+      "density" : [ 1 ],
+      "chance" : 1,
+      "forestness": 1
     }
   },
   {
@@ -119,7 +119,7 @@
         }
       },
       "density" : [ 0.2 ],
-      "chance" : 0.3
+      "chance" : 0.4
     }
   },
   {
@@ -163,7 +163,75 @@
 
 
 
-
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:aerlavender_fields" },
+    "apply" : {
+      "species" : "dtaether:golden_oak",
+      "density": 0,
+      "chance": 0.06
+    }
+  },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:aerglow_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:roseroot" : 8,
+          "dtaether:blue_roseroot" : 1
+        }
+      },
+      "density" : [ 1.5 ],
+      "chance" : 0.6
+    }
+  },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:blue_aerglow_forest" },
+    "apply" : {
+      "species" : "dtaether:blue_roseroot",
+      "density" : [ 1.5 ],
+      "chance" : 0.6
+    }
+  },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:mystic_aerglow_forest" },
+    "apply" : {
+      "species" : "dtaether:roseroot",
+      "density" : [ 1.5 ],
+      "chance" : 0.6
+    }
+  },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:golden_heights" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:conberry" : 4,
+          "dtaether:sunroot" : 1
+        }
+      },
+      "density" : [ 0.4 ],
+      "chance" : 0.4
+    }
+  },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:golden_grove" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:conberry" : 4,
+          "dtaether:sunroot" : 1
+        }
+      },
+      "density" : [ 0.6 ],
+      "chance" : 1
+    }
+  },
   {
     "only_if_loaded": "deep_aether",
     "select" : { "name": "deep_aether:yagroot_swamp" },
@@ -174,7 +242,7 @@
           "dtaether:cruderoot" : 1
         }
       },
-      "density" : [ 0.6 ],
+      "density" : [ 0.8 ],
       "chance" : 1,
       "forestness": 1
     }

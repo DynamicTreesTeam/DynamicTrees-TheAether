@@ -25,11 +25,9 @@
       }
     },
     {
-      "name": "vines",
+      "name": "dtaether:hanger_vines",
       "properties": {
-        "vine_type": "ceiling",
         "block": "deep_aether:sunroot_hanger",
-        "tip_block": "deep_aether:sunroot_hanger",
         "max_length": 5,
         "quantity": 12
       }
