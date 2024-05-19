@@ -15,7 +15,6 @@
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "deep_aether:conberry_sapling",
   "features" : [
-    "bottom_flare",
-    "mound"
+    "bottom_flare"
   ]
 }

@@ -1,11 +1,12 @@
 {
   "only_if_loaded": "deep_aether",
   "family": "dtaether:roseroot",
-  "tapering": 0.2,
+  "tapering": 0.3,
   "up_probability": 4,
   "signal_energy": 10.0,
   "growth_rate": 1.1,
   "soil_longevity": 12,
+  "max_branch_radius": 16,
   "leaves_properties": "dtaether:blue_roseroot",
   "growth_logic_kit": {
     "name": "conifer",

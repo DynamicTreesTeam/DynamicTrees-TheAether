@@ -169,7 +169,7 @@
     "apply" : {
       "species" : "dtaether:golden_oak",
       "density": 0,
-      "chance": 0.06
+      "chance": 0.1
     }
   },
   {

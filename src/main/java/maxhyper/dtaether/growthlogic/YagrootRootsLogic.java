@@ -25,7 +25,7 @@ public class YagrootRootsLogic extends MangroveRootsLogic {
 
     protected GrowthLogicKitConfiguration createDefaultConfiguration() {
         return super.createDefaultConfiguration()
-                .with(HORIZONTAL_PROBABILITY, 4)
+                .with(HORIZONTAL_PROBABILITY, 8)
                 ;
     }
 
