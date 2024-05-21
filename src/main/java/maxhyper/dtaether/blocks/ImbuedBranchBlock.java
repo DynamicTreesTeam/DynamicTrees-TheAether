@@ -51,7 +51,7 @@ public class ImbuedBranchBlock extends ThickBranchBlock {
         this.damageAxe(player, heldItem, radius / 2, new NetVolumeNode.Volume(radius * radius * 64 / 2), false);
         if (heldItem.is(AetherTags.Items.GOLDEN_AMBER_HARVESTERS) && level.getServer() != null && level instanceof ServerLevel serverLevel){
             LootContext.Builder lootContext = (new LootContext.Builder(serverLevel)).withParameter(LootContextParams.TOOL, heldItem);
-            LootTable lootTable = level.getServer().getLootTables().get(AetherLoot.STRIP_GOLDEN_OAK);
+            LootTable lootTable = level.getServer().getLootTables().get(((ImbuedLogFamily)getFamily()).getStripLootLocation());
             List<ItemStack> list = lootTable.getRandomItems(lootContext.create(AetherLootContexts.STRIPPING));
 
             for (ItemStack itemStack : list) {

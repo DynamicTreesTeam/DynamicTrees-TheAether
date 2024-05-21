@@ -1,65 +1,33 @@
 package maxhyper.dtaether.trees;
 
-import com.aetherteam.aether.AetherTags;
-import com.aetherteam.aether.loot.AetherLoot;
-import com.aetherteam.aether.loot.AetherLootContexts;
 import com.ferreusveritas.dynamictrees.api.data.BranchStateGenerator;
 import com.ferreusveritas.dynamictrees.api.data.Generator;
 import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
 import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictrees.block.branch.BasicBranchBlock;
 import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-import com.ferreusveritas.dynamictrees.block.branch.ThickBranchBlock;
 import com.ferreusveritas.dynamictrees.compat.waila.WailaOther;
 import com.ferreusveritas.dynamictrees.data.provider.BranchLoaderBuilder;
 import com.ferreusveritas.dynamictrees.data.provider.DTBlockStateProvider;
-import com.ferreusveritas.dynamictrees.init.DTConfigs;
-import com.ferreusveritas.dynamictrees.loot.DTLootParameterSets;
-import com.ferreusveritas.dynamictrees.loot.function.MultiplyCount;
-import com.ferreusveritas.dynamictrees.loot.function.MultiplyLogsCount;
-import com.ferreusveritas.dynamictrees.loot.function.MultiplySticksCount;
-import com.ferreusveritas.dynamictrees.systems.nodemapper.NetVolumeNode;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.util.MutableLazyValue;
 import com.ferreusveritas.dynamictrees.util.Optionals;
 import com.ferreusveritas.dynamictrees.util.ResourceLocationUtils;
 import maxhyper.dtaether.blocks.ImbuedBranchBlock;
-import net.minecraft.advancements.critereon.EnchantmentPredicate;
-import net.minecraft.advancements.critereon.ItemPredicate;
-import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.LootPool;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
-import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
-import net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraft.world.level.storage.loot.predicates.MatchTool;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
-import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Iterator;
-import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.function.BiConsumer;
@@ -73,17 +41,26 @@ public class ImbuedLogFamily extends Family {
     protected Block primitiveImbuedLog;
     protected Item imbuedDropItem;
     protected ResourceLocation imbuedBranchName;
+    protected ResourceLocation stripLootLocation;
     protected final MutableLazyValue<Generator<DTBlockStateProvider, Family>> imbuedBranchStateGenerator;
 
     public ImbuedLogFamily(ResourceLocation name) {
         super(name);
-        imbuedBranchStateGenerator = MutableLazyValue.supplied(GoldenBranchStateGenerator::new);
+        imbuedBranchStateGenerator = MutableLazyValue.supplied(ImbuedBranchStateGenerator::new);
     }
 
     @Override
     public void setupBlocks() {
         super.setupBlocks();
         this.imbuedBranch = setupBranch(createImbuedBranch(getBranchName("imbued_")), true);
+    }
+
+    public void setStripLootLocation(ResourceLocation stripLootLocation) {
+        this.stripLootLocation = stripLootLocation;
+    }
+
+    public ResourceLocation getStripLootLocation() {
+        return stripLootLocation;
     }
 
     protected Supplier<BranchBlock> createImbuedBranch(ResourceLocation name) {
@@ -163,7 +140,7 @@ public class ImbuedLogFamily extends Family {
         textureConsumer.accept("rings", rings);
     }
 
-    public static class GoldenBranchStateGenerator extends BranchStateGenerator{
+    public static class ImbuedBranchStateGenerator extends BranchStateGenerator{
         @Override
         public @NotNull Dependencies gatherDependencies(@NotNull Family input) {
             if (input instanceof ImbuedLogFamily castedInput)

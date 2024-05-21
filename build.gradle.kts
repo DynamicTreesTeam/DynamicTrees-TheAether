@@ -102,7 +102,7 @@ dependencies {
     //Aether addons, cause why not
     runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:5178797"))
     runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:5076615"))
-    runtimeOnly(fg.deobf("curse.maven:aether-redux-867237:5314318"))
+    runtimeOnly(fg.deobf("curse.maven:aether-redux-867237:5353327"))
 
     runtimeOnly(fg.deobf("curse.maven:geckolib-388172:4407241"))
     runtimeOnly(fg.deobf("curse.maven:terrablender-563928:4618490"))

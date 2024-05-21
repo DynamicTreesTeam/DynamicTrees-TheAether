@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-17T20:50:00.9260117	dtaether
+// 1.19.2	2024-05-21T17:31:43.1576753	dtaether
 aed9909c058f0428231a25d9b87f086b826f3598 data/dtaether/loot_tables/blocks/blighted_skyroot_leaves.json
 b5b27b89ba179d932b12d55dc50e7aafd988cbdf data/dtaether/loot_tables/blocks/blightwillow_leaves.json
 79d4d04b45affeb39e277c379b134bfcc73c21f7 data/dtaether/loot_tables/blocks/blue_roseroot_leaves.json
@@ -27,6 +27,7 @@ dfdc60d3677bc014e2e75d25bda5059648c32031 data/dtaether/loot_tables/trees/branche
 b8732b60fa80954c306bda52780964cab7f139f3 data/dtaether/loot_tables/trees/branches/crystal.json
 5b5b665dede88e19351858f8d3d00cf7f519446d data/dtaether/loot_tables/trees/branches/fieldsproot.json
 83f4eba2e8cf9576c5ad3c436df2de5c25a7212f data/dtaether/loot_tables/trees/branches/glacia.json
+5dc94c2339a54ffede4ad25590315bfba99f15ce data/dtaether/loot_tables/trees/branches/imbued_blightwillow.json
 705f28789c04b10c96b3e88c4953abe8d2d9afe1 data/dtaether/loot_tables/trees/branches/imbued_skyroot.json
 042c93a5c245b856717b3f635c7fcfb35fd3ce68 data/dtaether/loot_tables/trees/branches/roseroot.json
 2c34f15daf2ab486e5330f2d78f26ee6f25279b5 data/dtaether/loot_tables/trees/branches/skyroot.json

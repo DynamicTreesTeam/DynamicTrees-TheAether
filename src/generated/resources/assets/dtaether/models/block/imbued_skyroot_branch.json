@@ -3,5 +3,6 @@
   "textures": {
     "bark": "aether:block/natural/golden_oak_log",
     "rings": "aether:block/natural/skyroot_log_top"
-  }
+  },
+  "family": "dtaether:skyroot"
 }

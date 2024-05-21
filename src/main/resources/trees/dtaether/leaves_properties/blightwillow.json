@@ -3,5 +3,7 @@
   "primitive_leaves": "aether_redux:blightwillow_leaves",
   "texture_overrides": {
     "leaves": "aether_redux:block/natural/blightwillow_leaves"
-  }
+  },
+  "smother": 6,
+  "cell_kit": "dtaether:blightwillow"
 }

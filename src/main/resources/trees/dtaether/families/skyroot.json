@@ -9,6 +9,7 @@
   "imbued_branch_name": "dtaether:golden_oak_branch",
   "stick": "aether:skyroot_stick",
   "max_branch_radius": 24,
+  "strip_loot_location": "aether:stripping/strip_golden_oak",
   "texture_overrides": {
     "branch": "aether:block/natural/skyroot_log",
     "branch_top": "aether:block/natural/skyroot_log_top",

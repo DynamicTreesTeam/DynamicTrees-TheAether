@@ -65,7 +65,9 @@ public final class RegisterJSONAppliers {
                 .register("imbued_drop", ImbuedLogFamily.class, Item.class,
                         ImbuedLogFamily::setImbuedDropItem)
                 .register("imbued_branch_name", ImbuedLogFamily.class, ResourceLocation.class,
-                        ImbuedLogFamily::setImbuedBranchName);
+                        ImbuedLogFamily::setImbuedBranchName)
+                .register("strip_loot_location", ImbuedLogFamily.class, ResourceLocation.class,
+                        ImbuedLogFamily::setStripLootLocation);
     }
 
     //LEAVES

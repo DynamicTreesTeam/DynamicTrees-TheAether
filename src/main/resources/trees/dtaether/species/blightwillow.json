@@ -1,12 +1,33 @@
 {
   "only_if_loaded": "aether_redux",
   "family": "dtaether:blightwillow",
-  "tapering": 0.3,
-  "signal_energy": 10.0,
+  "tapering": 0.8,
+  "signal_energy": 14.0,
+  "lowest_branch_height": 6,
   "growth_rate": 0.8,
+  "max_branch_radius": 24,
+  "growth_logic_kit": "dtaether:blightwillow",
   "leaves_properties": "dtaether:blightwillow",
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "aether:skyroot_sapling",
   "features" : [
+    "conifer_topper",
+    "bottom_flare",
+    "mound",
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 8,
+        "scale_factor": 16
+      }
+    },
+    {
+      "name": "dtaether:alt_branch",
+      "properties": {
+        "alternative_branch_block": "dtaether:imbued_blightwillow_branch",
+        "world_gen_place_chance": 0.1,
+        "place_chance": 0.02
+      }
+    }
   ]
 }

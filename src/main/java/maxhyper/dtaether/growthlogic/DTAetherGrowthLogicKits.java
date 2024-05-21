@@ -8,8 +8,9 @@ public class DTAetherGrowthLogicKits {
 
     public static final GrowthLogicKit CONBERRY = new ConberryLogic(DynamicTreesAether.location("conberry"));
     public static final GrowthLogicKit YAGROOT_ROOTS = new YagrootRootsLogic(DynamicTreesAether.location("yagroot_roots"));
+    public static final GrowthLogicKit BLIGHTWILLOW = new BlightwillowLogic(DynamicTreesAether.location("blightwillow"));
     public static void register(final Registry<GrowthLogicKit> registry) {
-        registry.registerAll(CONBERRY, YAGROOT_ROOTS);
+        registry.registerAll(CONBERRY, YAGROOT_ROOTS, BLIGHTWILLOW);
     }
 
 }

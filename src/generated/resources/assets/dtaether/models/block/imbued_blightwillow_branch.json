@@ -1,0 +1,8 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "aether_redux:block/natural/sporing_blightwillow_log",
+    "rings": "aether_redux:block/natural/blightwillow_log_top"
+  },
+  "family": "dtaether:blightwillow"
+}
