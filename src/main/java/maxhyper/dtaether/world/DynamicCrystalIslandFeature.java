@@ -1,4 +1,4 @@
-package maxhyper.dtaether.features;
+package maxhyper.dtaether.world;
 
 import com.aetherteam.aether.data.resources.AetherFeatureStates;
 import com.ferreusveritas.dynamictrees.api.TreeHelper;

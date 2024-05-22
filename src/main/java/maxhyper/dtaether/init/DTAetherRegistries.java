@@ -15,7 +15,7 @@ import maxhyper.dtaether.blocks.AltTintSoilProperties;
 import maxhyper.dtaether.blocks.ParticleLeavesProperties;
 import maxhyper.dtaether.blocks.SnowyScruffyLeavesProperties;
 import maxhyper.dtaether.cells.DTAetherCellKits;
-import maxhyper.dtaether.features.DynamicCrystalIslandFeature;
+import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
