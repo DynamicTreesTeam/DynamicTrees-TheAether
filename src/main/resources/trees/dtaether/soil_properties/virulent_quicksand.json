@@ -1,0 +1,5 @@
+{
+  "primitive_soil": "deep_aether:virulent_quicksand",
+  "acceptable_soils": [ "dirt_like", "aether_like" ],
+  "substitute_soil" : "dtaether:aether_mud"
+}

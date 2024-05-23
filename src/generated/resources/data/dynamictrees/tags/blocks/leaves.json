@@ -1,24 +1,70 @@
 {
   "values": [
-    "dtaether:blighted_skyroot_leaves",
-    "dtaether:blightwillow_leaves",
-    "dtaether:blue_roseroot_leaves",
-    "dtaether:conberry_leaves",
-    "dtaether:cruderoot_leaves",
-    "dtaether:crystal_leaves",
-    "dtaether:decorated_holiday_leaves",
-    "dtaether:fieldsproot_leaves",
-    "dtaether:flowering_blue_roseroot_leaves",
-    "dtaether:flowering_roseroot_leaves",
-    "dtaether:gilded_oak_leaves",
-    "dtaether:glacia_leaves",
-    "dtaether:golden_oak_leaves",
-    "dtaether:holiday_leaves",
-    "dtaether:purple_glacia_leaves",
-    "dtaether:roseroot_leaves",
     "dtaether:skyroot_leaves",
-    "dtaether:skyroot_bush_leaves",
-    "dtaether:sunroot_leaves",
-    "dtaether:yagroot_leaves"
+    "dtaether:golden_oak_leaves",
+    "dtaether:crystal_leaves",
+    "dtaether:holiday_leaves",
+    "dtaether:decorated_holiday_leaves",
+    {
+      "id": "dtaether:blighted_skyroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:blightwillow_leaves",
+      "required": false
+    },
+
+    {
+      "id": "dtaether:blue_roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:conberry_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:cruderoot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:fieldsproot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:flowering_blue_roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:flowering_roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:gilded_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:glacia_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:purple_glacia_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:skyroot_bush_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:sunroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:yagroot_leaves",
+      "required": false
+    }
   ]
 }

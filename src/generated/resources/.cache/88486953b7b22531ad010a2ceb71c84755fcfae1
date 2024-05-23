@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-21T17:31:43.1576753	dtaether
+// 1.19.2	2024-05-22T18:18:36.3392686	dtaether
 aed9909c058f0428231a25d9b87f086b826f3598 data/dtaether/loot_tables/blocks/blighted_skyroot_leaves.json
 b5b27b89ba179d932b12d55dc50e7aafd988cbdf data/dtaether/loot_tables/blocks/blightwillow_leaves.json
 79d4d04b45affeb39e277c379b134bfcc73c21f7 data/dtaether/loot_tables/blocks/blue_roseroot_leaves.json
@@ -66,6 +66,7 @@ b001cfb1c248d419174facbba9a3abe98aab4d3e data/dtaether/loot_tables/trees/branche
 20672ecaf582e1238875926131b024c7f7489ea7 data/dtaether/loot_tables/trees/roots/yagroot.json
 2f71f2252f87f43ccbb1d448eadb1c38a9aca679 data/dtaether/loot_tables/trees/voluntary/blighted_skyroot.json
 df1bd751df19d115a804726bef5e1133d1b1dd45 data/dtaether/loot_tables/trees/voluntary/blightwillow.json
+f8b1f9f34b3240e0b56eae10227ed861dc62707e data/dtaether/loot_tables/trees/voluntary/blue_roseroot.json
 40b4618096d851cb4d3444a01ff40abc0294923f data/dtaether/loot_tables/trees/voluntary/conberry.json
 98bf46b8f56706a4e2d56198c4891a59e6e77fd8 data/dtaether/loot_tables/trees/voluntary/cruderoot.json
 87891bb5f9dfbd67178b196ac54858ad981d2920 data/dtaether/loot_tables/trees/voluntary/crystal.json

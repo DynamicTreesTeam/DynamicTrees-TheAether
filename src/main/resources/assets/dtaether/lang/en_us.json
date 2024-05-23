@@ -10,5 +10,47 @@
   "item.dtaether.skyroot_seed":"Skyroot Seed",
   "item.dtaether.golden_oak_seed":"Golden Oak Acorn",
   "item.dtaether.crystal_seed":"White Apple Pip",
-  "item.dtaether.holiday_seed":"Holiday Tree Cone"
+  "item.dtaether.holiday_seed":"Holiday Tree Cone",
+
+  "block.dtaether.roseroot_branch":"Roseroot Tree",
+  "block.dtaether.yagroot_branch":"Yagroot Tree",
+  "block.dtaether.yagroot_roots":"Yagroot Tree",
+  "block.dtaether.cruderoot_branch":"Cruderoot Tree",
+  "block.dtaether.conberry_branch":"Conberry Tree",
+  "block.dtaether.sunroot_branch":"Sunroot Tree",
+
+  "species.dtaether.roseroot":"Roseroot",
+  "species.dtaether.blue_roseroot":"Blue Roseroot",
+  "species.dtaether.yagroot":"Yagroot",
+  "species.dtaether.cruderoot":"Cruderoot",
+  "species.dtaether.conberry":"Conberry",
+  "species.dtaether.sunroot":"Sunroot",
+
+  "item.dtaether.roseroot_seed":"Roseroot Seeds",
+  "item.dtaether.blue_roseroot_seed":"Blue Roseroot Seeds",
+  "item.dtaether.yagroot_seed":"Yagroot Propagule",
+  "item.dtaether.cruderoot_seed":"Cruderoot Cone",
+  "item.dtaether.conberry_seed":"Conberry Seed",
+  "item.dtaether.sunroot_seed":"Sunroot Seed",
+
+  "block.dtaether.fieldsproot_branch":"Fieldsproot Tree",
+  "block.dtaether.blightwillow_branch":"Blightwillow Tree",
+  "block.dtaether.imbued_blightwillow_branch":"Blightwillow Tree",
+  "block.dtaether.crystal_branch":"Crystal Tree",
+  "block.dtaether.glacia_branch":"Glacia Tree",
+
+  "species.dtaether.blighted_skyroot":"Blighted Skyroot",
+  "species.dtaether.gilded_oak":"Gilded Oak",
+  "species.dtaether.skyroot_bush":"Skyroot Bush",
+  "species.dtaether.fieldsproot":"Fieldsproot",
+  "species.dtaether.blightwillow":"Blightwillow",
+  "species.dtaether.glacia":"Glacia",
+  "species.dtaether.purple_glacia":"Purple Glacia",
+
+  "item.dtaether.blighted_skyroot_seed":"Blighted Skyroot Seed",
+  "item.dtaether.gilded_oak_seed":"Gilded Oak Acorn",
+  "item.dtaether.fieldsproot_seed":"Fieldsproot Pit",
+  "item.dtaether.blightwillow_seed":"Blightwillow Catkin",
+  "item.dtaether.glacia_seed":"Glacia Cone",
+  "item.dtaether.purple_glacia_seed":"Purple Glacia Cone"
 }

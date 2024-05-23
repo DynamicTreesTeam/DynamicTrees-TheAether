@@ -1,5 +1,8 @@
 {
   "values": [
-    "dtaether:yagroot_roots"
+    {
+      "id": "dtaether:yagroot_roots",
+      "required": false
+    }
   ]
 }

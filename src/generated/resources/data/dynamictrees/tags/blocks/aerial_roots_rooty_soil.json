@@ -1,5 +1,8 @@
 {
   "values": [
-    "dtaether:rooty_yagroot_aerial_roots"
+    {
+      "id": "dtaether:rooty_yagroot_aerial_roots",
+      "required": false
+    }
   ]
 }

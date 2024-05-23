@@ -1,14 +1,41 @@
 {
   "values": [
-    "dtaether:blightwillow_branch",
-    "dtaether:conberry_branch",
-    "dtaether:cruderoot_branch",
-    "dtaether:crystal_branch",
-    "dtaether:fieldsproot_branch",
-    "dtaether:glacia_branch",
-    "dtaether:roseroot_branch",
     "dtaether:skyroot_branch",
-    "dtaether:sunroot_branch",
-    "dtaether:yagroot_branch"
+    {
+      "id":"dtaether:blightwillow_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:conberry_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:cruderoot_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:crystal_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:fieldsproot_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:glacia_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:roseroot_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:sunroot_branch",
+      "required": false
+    },
+    {
+      "id":"dtaether:yagroot_branch",
+      "required": false
+    }
   ]
 }

@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-21T17:31:43.1642966	Block States: dtaether
+// 1.19.2	2024-05-22T18:18:36.3438018	Block States: dtaether
 389b83e3cb9855478c6014699a1f5feced048ea9 assets/dtaether/blockstates/blighted_skyroot_leaves.json
 ac169af5fc9e0190a5861ba5e0a17ef9d930a8d2 assets/dtaether/blockstates/blighted_skyroot_sapling.json
 dad0c51c7adae0f5245b0d4578304201441c3c20 assets/dtaether/blockstates/blightwillow_branch.json
@@ -6,6 +6,7 @@ dad0c51c7adae0f5245b0d4578304201441c3c20 assets/dtaether/blockstates/blightwillo
 8a2c317bd405868c292cdf39cdfa549a528ffff7 assets/dtaether/blockstates/blightwillow_root.json
 90446ba95c25bfa046eb568ee3f4d006e558872a assets/dtaether/blockstates/blightwillow_sapling.json
 57fc5d8924dca072156a66500f03b3109a9347e7 assets/dtaether/blockstates/blue_roseroot_leaves.json
+f36ba203e39c2cd7f08001e77d2d1be0c1a92994 assets/dtaether/blockstates/blue_roseroot_sapling.json
 e8ff2bb06da35bc4f1aa323b685eef08e2231617 assets/dtaether/blockstates/conberry_branch.json
 7fef2889b4e0f18d6acd1c8541c505daabc35015 assets/dtaether/blockstates/conberry_leaves.json
 d27e54c0989b5bb092c808591cb9e382d998d596 assets/dtaether/blockstates/conberry_sapling.json
@@ -88,6 +89,7 @@ bdc1fd2fa91969bedf8cc155bb3eba86029ade47 assets/dtaether/models/block/rooty_yagr
 abfba89b46e74bff33f6b740e83936c4a0c4af08 assets/dtaether/models/block/roseroot_branch.json
 3ccc03fcd6e686547942c428aba3377cc6c39c7a assets/dtaether/models/block/saplings/blighted_skyroot.json
 7201e06f5abbf57306f59b4f128573f177a92b44 assets/dtaether/models/block/saplings/blightwillow.json
+a296ce59fdec96c5a055adbb8dd11f062129dd2a assets/dtaether/models/block/saplings/blue_roseroot.json
 896ee133223dcf2241dad11074114cc9e6e40680 assets/dtaether/models/block/saplings/conberry.json
 69ebe6b074240164b5c5698920c010a891b6e87a assets/dtaether/models/block/saplings/cruderoot.json
 affb5dff81c1c6d8571b63088729b9306f5c055a assets/dtaether/models/block/saplings/crystal_sapling_aether_redux.json

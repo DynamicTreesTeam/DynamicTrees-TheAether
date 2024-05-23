@@ -1,7 +1,7 @@
 {
   "only_if_loaded": "aether_redux",
   "family": "dtaether:glacia",
-  "tapering": 0.2,
+  "tapering": 0.3,
   "up_probability": 4,
   "signal_energy": 18.0,
   "growth_rate": 1.1,

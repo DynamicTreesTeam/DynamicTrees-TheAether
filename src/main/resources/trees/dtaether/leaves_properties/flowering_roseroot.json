@@ -3,5 +3,6 @@
   "type": "scruffy",
   "primitive_leaves": "deep_aether:flowering_roseroot_leaves",
   "cell_kit": "dynamictrees:azalea",
-  "smother": 8
+  "smother": 8,
+  "light": 5
 }

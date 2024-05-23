@@ -1,7 +1,7 @@
 {
   "only_if_loaded": "deep_aether",
   "family": "dtaether:roseroot",
-  "tapering": 0.3,
+  "tapering": 0.4,
   "up_probability": 4,
   "signal_energy": 10.0,
   "growth_rate": 1.1,
@@ -15,6 +15,8 @@
       "height_variation": 16
     }
   },
+  "generate_seed": true,
+  "generate_sapling": true,
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "deep_aether:blue_roseroot_sapling",
   "features" : [

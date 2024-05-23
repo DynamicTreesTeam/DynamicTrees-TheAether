@@ -1,19 +1,56 @@
 {
   "values": [
-    "dtaether:blighted_skyroot_seed",
-    "dtaether:blightwillow_seed",
-    "dtaether:conberry_seed",
-    "dtaether:cruderoot_seed",
-    "dtaether:crystal_seed",
-    "dtaether:fieldsproot_seed",
-    "dtaether:gilded_oak_seed",
-    "dtaether:glacia_seed",
-    "dtaether:golden_oak_seed",
-    "dtaether:holiday_seed",
-    "dtaether:purple_glacia_seed",
-    "dtaether:roseroot_seed",
     "dtaether:skyroot_seed",
-    "dtaether:sunroot_seed",
-    "dtaether:yagroot_seed"
+    "dtaether:golden_oak_seed",
+    "dtaether:crystal_seed",
+    "dtaether:holiday_seed",
+    {
+      "id": "dtaether:blighted_skyroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:blightwillow_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:blue_roseroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:conberry_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:cruderoot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:fieldsproot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:gilded_oak_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:glacia_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:purple_glacia_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:roseroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:sunroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:yagroot_seed",
+      "required": false
+    }
   ]
 }
