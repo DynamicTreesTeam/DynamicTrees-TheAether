@@ -15,6 +15,7 @@ import maxhyper.dtaether.blocks.AltTintSoilProperties;
 import maxhyper.dtaether.blocks.ParticleLeavesProperties;
 import maxhyper.dtaether.blocks.SnowyScruffyLeavesProperties;
 import maxhyper.dtaether.cells.DTAetherCellKits;
+import maxhyper.dtaether.compat.CompatHandler;
 import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
@@ -36,6 +37,7 @@ public class DTAetherRegistries {
 
     public static void setup(IEventBus modBus) {
         FEATURES.register(modBus);
+        CompatHandler.setup();
     }
 
     public static void setupBlocks() {

@@ -28,6 +28,12 @@
         "world_gen_place_chance": 0.1,
         "place_chance": 0.02
       }
+    },
+    {
+      "name": "dtaether:leaf_pile",
+      "properties": {
+        "block":"aether_redux:blightwillow_leaf_pile"
+      }
     }
   ]
 }

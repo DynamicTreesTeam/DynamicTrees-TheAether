@@ -9,7 +9,13 @@
   "growth_logic_kit": "dtaether:fieldsproot",
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "aether_redux:fieldsproot_sapling",
-  "tint_sapling": false,
   "features" : [
-  ]
+    {
+      "name": "dtaether:petals",
+      "properties": {
+        "block":"aether_redux:fieldsproot_petals"
+      }
+    }
+  ],
+  "tint_sapling": false
 }

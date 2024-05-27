@@ -13,6 +13,12 @@
           "max_length": 3,
           "quantity": 12
         }
+      },
+      {
+        "name": "dtaether:leaf_pile",
+        "properties": {
+          "block":"aether_redux:golden_leaf_pile"
+        }
       }
     ]
   },

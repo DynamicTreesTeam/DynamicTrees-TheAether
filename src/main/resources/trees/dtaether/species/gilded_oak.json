@@ -44,6 +44,12 @@
         "max_length": 3,
         "quantity": 12
       }
+    },
+    {
+      "name": "dtaether:leaf_pile",
+      "properties": {
+        "block":"aether_redux:gilded_leaf_pile"
+      }
     }
   ]
 }
