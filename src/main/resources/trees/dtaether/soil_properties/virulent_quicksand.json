@@ -1,5 +1,6 @@
 {
+  "only_if_loaded": "deep_aether",
   "primitive_soil": "deep_aether:virulent_quicksand",
-  "acceptable_soils": [ "dirt_like", "aether_like" ],
+  "acceptable_soils": [ "mud_like", "aether_like" ],
   "substitute_soil" : "dtaether:aether_mud"
 }

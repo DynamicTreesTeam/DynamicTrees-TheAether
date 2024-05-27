@@ -38,7 +38,7 @@ Compatibility Mod between Dynamic trees and The Aether
 
 [[dependencies.dtaether]]
     modId="dynamictreesplus"
-    mandatory=true
+    mandatory=false
     versionRange="[1.1.0,)"
     ordering="AFTER"
     side="BOTH"

@@ -72,7 +72,8 @@ public class PetalsGenFeature extends GenFeature {
 
     @Override
     protected boolean postGrow(GenFeatureConfiguration configuration, PostGrowContext context) {
-        if (!context.natural()) return false;
+        //Only spread petals when fertility is not 0, to prevent lag.
+        if (!context.natural() || context.fertility() == 0) return false;
         final LevelAccessor level = context.level();
         if (level.getRandom().nextFloat() >= configuration.get(PLACE_CHANCE)) return false;
 

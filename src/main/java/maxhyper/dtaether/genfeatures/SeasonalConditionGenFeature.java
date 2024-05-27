@@ -57,8 +57,12 @@ public class SeasonalConditionGenFeature extends GenFeature {
 
     @Override
     protected boolean generate(GenFeatureConfiguration configuration, FullGenerationContext context) {
-        if (generateSeasonalTrees())
-            return false;
-        return configuration.get(ALTERNATIVE_SPECIES).generate(new GenerationContext(context.levelContext(), context.species(), context.pos(), context.pos().mutable(),context.biome(), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()),context.radius(), context.bounds()));
+        //If seasonal trees should generate then the replacement is NOT activated;
+        if (generateSeasonalTrees()) return false;
+        //If it's not time for seasonal trees, then the alternative tree is placed instead.
+        //We return true because we are custom handing the generation.
+        Species alternate = configuration.get(ALTERNATIVE_SPECIES);
+        alternate.generate(new GenerationContext(context.levelContext(), alternate, context.pos(), context.pos().mutable(),context.biome(), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()),context.radius(), context.bounds()));
+        return true;
     }
 }
