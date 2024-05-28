@@ -5,6 +5,7 @@ import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
 import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
+import com.ferreusveritas.dynamictrees.client.BlockColorMultipliers;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.systems.fruit.Fruit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
@@ -21,13 +22,18 @@ import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import maxhyper.dtaether.trees.ModDependentSpecies;
+import net.minecraft.util.Mth;
+import net.minecraft.world.level.levelgen.XoroshiroRandomSource;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.synth.PerlinNoise;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.stream.IntStream;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class DTAetherRegistries {
@@ -38,6 +44,7 @@ public class DTAetherRegistries {
     public static void setup(IEventBus modBus) {
         FEATURES.register(modBus);
         CompatHandler.setup();
+        registerJsonColorMultipliers();
     }
 
     public static void setupBlocks() {
@@ -103,6 +110,30 @@ public class DTAetherRegistries {
 //        event.getRegistry().registerAll(BYG_TREE_CANCELLER);
 //        event.getRegistry().registerAll(BYG_FUNGUS_CANCELLER);
 //        event.getRegistry().registerAll(GIANT_FLOWER_CANCELLER);
+    }
+
+    public static final PerlinNoise PERLIN = PerlinNoise.create(new XoroshiroRandomSource(2743L), IntStream.of(0));
+
+    private static final int[] FIELDSPROOT_COLORS = new int[]{0x96e9e2,0xa7e3e6,0xb9ddea,0xcad8ee,0xdcd2f3,0xedccf7,0xedccf7};
+    private static void registerJsonColorMultipliers() {
+        BlockColorMultipliers.register(DynamicTreesAether.location("fieldsproot"), (state, level, pos, tintIndex) -> {
+            double scale = 0.1;
+            int prism = 0;
+            if (pos != null){
+                double x = pos.getX() * scale;
+                double y = pos.getY() * scale;
+                double z = pos.getZ() * scale;
+                double noiseVal = PERLIN.getValue(x, y, z);
+                double clamped = Mth.clamp(noiseVal, -0.5, 0.5);
+                prism = lerpInt((float)clamped + 0.5F, 0, 6);
+            }
+
+            return FIELDSPROOT_COLORS[prism];
+        });
+    }
+
+    public static int lerpInt(float delta, int start, int end) {
+        return start + Mth.floor(delta * (float)(end - start));
     }
 
 }

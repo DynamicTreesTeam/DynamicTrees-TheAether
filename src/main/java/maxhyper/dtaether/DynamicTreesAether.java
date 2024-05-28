@@ -42,9 +42,7 @@ public class DynamicTreesAether
         DTAetherRegistries.setupBlocks();
     }
 
-    private void clientSetup(final FMLClientSetupEvent event) {
-        DTAetherClient.setup();
-    }
+    private void clientSetup(final FMLClientSetupEvent event) {}
 
     private void gatherData(final GatherDataEvent event) {
         Resources.MANAGER.gatherData();
