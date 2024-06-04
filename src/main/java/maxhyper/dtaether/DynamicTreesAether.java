@@ -4,6 +4,7 @@ import com.ferreusveritas.dynamictrees.api.GatherDataHelper;
 import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
+import com.ferreusveritas.dynamictrees.init.DTClient;
 import com.ferreusveritas.dynamictrees.resources.Resources;
 import com.ferreusveritas.dynamictrees.systems.fruit.Fruit;
 import com.ferreusveritas.dynamictrees.systems.pod.Pod;
@@ -13,9 +14,11 @@ import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import maxhyper.dtaether.init.DTAetherClient;
 import maxhyper.dtaether.init.DTAetherRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -34,6 +37,8 @@ public class DynamicTreesAether
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> DTAetherClient::clientStart);
+
         RegistryHandler.setup(MOD_ID);
         DTAetherRegistries.setup(eventBus);
     }
@@ -42,7 +47,9 @@ public class DynamicTreesAether
         DTAetherRegistries.setupBlocks();
     }
 
-    private void clientSetup(final FMLClientSetupEvent event) {}
+    private void clientSetup(final FMLClientSetupEvent event) {
+        DTAetherClient.clientStart();
+    }
 
     private void gatherData(final GatherDataEvent event) {
         Resources.MANAGER.gatherData();

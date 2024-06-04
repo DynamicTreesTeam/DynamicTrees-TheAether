@@ -57,7 +57,9 @@ public class ParticleLeavesProperties extends LeavesProperties {
                         double dx = ((double)random.nextFloat() - 0.5) * 0.5;
                         double dy = ((double)random.nextFloat() - 0.5) * 0.5;
                         double dz = ((double)random.nextFloat() - 0.5) * 0.5;
-                        level.addParticle(getParticleOptions(), x, y, z, dx, dy, dz);
+                        ParticleOptions particle = getParticleOptions();
+                        if (particle != null)
+                            level.addParticle(particle, x, y, z, dx, dy, dz);
                     }
                 }
 
