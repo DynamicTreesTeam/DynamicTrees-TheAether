@@ -72,7 +72,7 @@ public final class RegisterJSONAppliers {
 
     //LEAVES
     @SubscribeEvent
-    public static void registerReloadAppliersLeavesProperties(final ApplierRegistryEvent.Reload<LeavesProperties, JsonElement> event) {
+    public static void registerLoadAppliersLeavesProperties(final ApplierRegistryEvent.Load<LeavesProperties, JsonElement> event) {
         registerLeavesPropertiesAppliers(event.getAppliers());
     }
 

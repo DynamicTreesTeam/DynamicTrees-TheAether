@@ -37,8 +37,6 @@ public class DynamicTreesAether
 
         MinecraftForge.EVENT_BUS.register(this);
 
-        DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> DTAetherClient::clientStart);
-
         RegistryHandler.setup(MOD_ID);
         DTAetherRegistries.setup(eventBus);
     }
@@ -48,7 +46,7 @@ public class DynamicTreesAether
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        DTAetherClient.clientStart();
+
     }
 
     private void gatherData(final GatherDataEvent event) {
