@@ -5,7 +5,6 @@ import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
 import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKitConfiguration;
-import com.ferreusveritas.dynamictrees.growthlogic.MangroveRootsLogic;
 import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionManipulationContext;
 import com.ferreusveritas.dynamictrees.growthlogic.context.PositionalSpeciesContext;
 import com.ferreusveritas.dynamictrees.util.CoordUtils;
@@ -69,7 +68,7 @@ public class FieldsprootLogic extends GrowthLogicKit {
                     if (probMap[dir.ordinal()] != 0){
                         BlockPos pos = context.pos().offset(dir.getNormal());
                         BlockState offState = level.getBlockState(pos);
-                        if ((TreeHelper.isLeaves(offState) || level.isEmptyBlock(pos) || offState.getMaterial().isReplaceable())
+                        if ((TreeHelper.isLeaves(offState) || level.isEmptyBlock(pos) || offState.canBeReplaced())
                                 && !BranchBlock.isNextToBranch(level, pos, dir.getOpposite())){
                             blocked = false;
                             break;

@@ -1,35 +1,15 @@
 {
   "values": [
-    "dtaether:rooty_aether_dirt",
-    "dtaether:rooty_aether_grass_block",
+    "dtaether:rooty_aether_coarse_dirt",
+    "dtaether:rooty_golden_heights_grass_block",
+    "dtaether:rooty_yagroot_aerial_roots",
+    "dtaether:rooty_aether_mud",
     "dtaether:rooty_enchanted_aether_grass_block",
-    {
-      "id": "dtaether:rooty_aether_coarse_dirt",
-      "required": false
-    },
-    {
-      "id": "dtaether:rooty_aether_moss_block",
-      "required": false
-    },
-    {
-      "id": "dtaether:rooty_aether_mud",
-      "required": false
-    },
-    {
-      "id": "dtaether:rooty_blightmoss_block",
-      "required": false
-    },
-    {
-      "id": "dtaether:rooty_golden_heights_grass_block",
-      "required": false
-    },
-    {
-      "id": "dtaether:rooty_aether_mud",
-      "required": false
-    },
-    {
-      "id": "dtaether:rooty_yagroot_aerial_roots",
-      "required": false
-    }
+    "dtaether:rooty_aether_dirt",
+    "dtaether:rooty_aether_dirt",
+    "dtaether:rooty_aether_mud",
+    "dtaether:rooty_aether_moss_block",
+    "dtaether:rooty_aether_grass_block",
+    "dtaether:rooty_blightmoss_block"
   ]
 }
