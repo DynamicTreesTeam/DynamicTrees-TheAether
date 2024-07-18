@@ -1,0 +1,5 @@
+{
+  "only_if_loaded": "aether_redux",
+  "primitive_soil": "aether_redux:avelium",
+  "acceptable_soils": [ "fungus_like", "dirt_like", "aether_like" ]
+}

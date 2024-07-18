@@ -29,7 +29,7 @@ repositories {
             includeGroup("curse.maven")
         }
     }
-    maven("https://harleyoconnor.com/maven")
+    //maven("https://harleyoconnor.com/maven")
     maven("https://squiddev.cc/maven/")
     flatDir {
         dir("libs")
@@ -93,19 +93,31 @@ sourceSets.main.get().resources {
 dependencies {
     minecraft("net.minecraftforge:forge:${mcVersion}-${property("forgeVersion")}")
 
-    //implementation(fg.deobf("libs:DynamicTrees:1.19.2-1.2.0-BETA2.006"))
-    implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
-    //implementation(fg.deobf("libs:DynamicTreesPlus:1.19.2-1.1.4.001"))
-    implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
+    //Dynamic Trees
+    implementation(fg.deobf("curse.maven:dynamictrees-252818:5527670"))
+    implementation(fg.deobf("curse.maven:dynamictreesplus-478155:5536181"))
+    //implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
+    //implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
+
+    //The Aether itself
     implementation(fg.deobf("curse.maven:aether-255308:5302178"))
 
-    //Aether addons, cause why not
-    runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:4789008"))
-    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:5441091"))
-    implementation(fg.deobf("curse.maven:aether-redux-867237:5415985"))
-
+    //Addon dependencies
     runtimeOnly(fg.deobf("curse.maven:geckolib-388172:5414523"))
     runtimeOnly(fg.deobf("curse.maven:terrablender-563928:5378180"))
+    runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:4789008"))
+    runtimeOnly(fg.deobf("curse.maven:the-twilight-forest-227639:5468648"))
+    runtimeOnly(fg.deobf("curse.maven:dynamic-trees-the-twilight-forest-391986:5536317"))
+    runtimeOnly(fg.deobf("curse.maven:structure-gel-api-378802:5278429"))
+    //Aether addons
+    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:5441091"))
+    implementation(fg.deobf("curse.maven:aether-redux-867237:5415985"))
+    runtimeOnly(fg.deobf("curse.maven:aether-lost-content-318602:4927038"))
+    runtimeOnly(fg.deobf("curse.maven:aether-gravitation-855631:5086492"))
+    runtimeOnly(fg.deobf("curse.maven:ancient-aether-886751:5364191"))
+    runtimeOnly(fg.deobf("curse.maven:umbral-skies-855821:4768252"))
+
+    //Other useful mods
     runtimeOnly(fg.deobf("curse.maven:jade-324717:5072729"))
     runtimeOnly(fg.deobf("curse.maven:jei-238222:5101366"))
     runtimeOnly(fg.deobf("curse.maven:cc-tweaked-282001:5118388"))
