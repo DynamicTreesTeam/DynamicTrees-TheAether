@@ -3,11 +3,11 @@
   "tapering": 0.3,
   "signal_energy": 10.0,
   "growth_rate": 0.8,
-  "leaves_properties": "dtaether:skyroot",
+  "leaves_properties": "dtaether:crystal_skyroot",
   "environment_factors" : {
     "#forge:is_hot": 0.5,
     "#forge:is_dry": 0.5
   },
   "perfect_biomes": { "tag": "#aether:is_aether" },
-  "primitive_sapling": "aether:skyroot_sapling"
+  "primitive_sapling": "ancient_aether:crystal_skyroot_sapling"
 }

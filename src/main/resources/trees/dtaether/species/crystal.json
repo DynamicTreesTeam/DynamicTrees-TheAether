@@ -1,10 +1,31 @@
 {
   "type": "dtaether:mod_dependent",
   "family": "dtaether:skyroot",
-  "variant_properties": {
-    "only_if_loaded": "aether_redux",
-    "family": "dtaether:crystal"
-  },
+  "variant_properties": [
+    {
+      "only_if_loaded": "aether_redux",
+      "family": "dtaether:crystal",
+      "primitive_saplings": [
+        {"sapling_block": "aether_redux:crystal_sapling"},
+        {"sapling_block": "aether_redux:crystal_fruit_sapling"},
+        {
+          "sapling_item": "aether:white_apple",
+          "can_craft_seed_to_sapling": false
+        }
+      ]
+    },
+    {
+      "only_if_loaded": "lost_aether_content",
+      "only_if_not_loaded": "aether_redux",
+      "primitive_saplings": [
+        {"sapling_block": "lost_aether_content:crystal_sapling"},
+        {
+          "sapling_item": "aether:white_apple",
+          "can_craft_seed_to_sapling": false
+        }
+      ]
+    }
+  ],
   "tapering": 0.6,
   "signal_energy": 8.0,
   "lowest_branch_height": 1,
@@ -26,7 +47,6 @@
   "generate_seed": true,
   "generate_sapling": true,
   "perfect_biomes": { "tag": "#aether:is_aether" },
-  "primitive_sapling": "aether_redux:cystal_sapling",
   "fruits": [
     "dtaether:white_apple"
   ],

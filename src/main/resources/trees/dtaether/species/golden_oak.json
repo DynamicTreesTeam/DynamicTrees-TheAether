@@ -1,27 +1,29 @@
 {
   "type": "dtaether:mod_dependent",
   "family": "dtaether:skyroot",
-  "variant_properties": {
-    "only_if_loaded": "aether_redux",
-    "features" : [
-      {
-        "name": "vines",
-        "properties": {
-          "vine_type": "ceiling",
-          "block": "aether_redux:golden_vines_plant",
-          "tip_block": "aether_redux:golden_vines",
-          "max_length": 3,
-          "quantity": 12
+  "variant_properties": [
+    {
+      "only_if_loaded": "aether_redux",
+      "features" : [
+        {
+          "name": "vines",
+          "properties": {
+            "vine_type": "ceiling",
+            "block": "aether_redux:golden_vines_plant",
+            "tip_block": "aether_redux:golden_vines",
+            "max_length": 3,
+            "quantity": 12
+          }
+        },
+        {
+          "name": "dtaether:leaf_pile",
+          "properties": {
+            "block":"aether_redux:golden_leaf_pile"
+          }
         }
-      },
-      {
-        "name": "dtaether:leaf_pile",
-        "properties": {
-          "block":"aether_redux:golden_leaf_pile"
-        }
-      }
-    ]
-  },
+      ]
+    }
+  ],
   "tapering": 0.6,
   "signal_energy": 20.0,
   "up_probability": 4,

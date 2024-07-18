@@ -23,11 +23,17 @@
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "features" : [
     "conifer_topper",
-    "dtaether:holiday_decoration",
     {
-      "name": "dtaether:seasonal_condition",
+      "name": "dtaether:negative_biome_predicate",
       "properties": {
-        "alternative_species": "dtaether:skyroot"
+        "biome_predicate" : "ancient_aether:festive_wyndcap_taiga",
+        "gen_feature": {
+          "name": "dtaether:seasonal_condition",
+          "properties": {
+            "alternative_species": "dtaether:skyroot"
+          }
+        },
+        "gen_feature_2": "dtaether:holiday_decoration"
       }
     },
     {
