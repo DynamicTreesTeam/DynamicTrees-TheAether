@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "dtaether:block/saplings/holiday"
+      "model": "dtaether:block/saplings/holiday_sapling_aether_redux"
     }
   }
 }

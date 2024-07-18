@@ -24,9 +24,7 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.LootPool;
-import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.*;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
@@ -35,6 +33,7 @@ import net.minecraft.world.level.storage.loot.predicates.InvertedLootItemConditi
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 import java.util.Optional;
@@ -49,10 +48,15 @@ public class ImbuedBranchBlock extends ThickBranchBlock {
     public void stripBranch(BlockState state, Level level, BlockPos pos, Player player, ItemStack heldItem) {
         int radius = this.getRadius(state);
         this.damageAxe(player, heldItem, radius / 2, new NetVolumeNode.Volume(radius * radius * 64 / 2), false);
-        if (heldItem.is(AetherTags.Items.GOLDEN_AMBER_HARVESTERS) && level.getServer() != null && level instanceof ServerLevel serverLevel){
-            LootContext.Builder lootContext = (new LootContext.Builder(serverLevel)).withParameter(LootContextParams.TOOL, heldItem);
-            LootTable lootTable = level.getServer().getLootTables().get(((ImbuedLogFamily)getFamily()).getStripLootLocation());
-            List<ItemStack> list = lootTable.getRandomItems(lootContext.create(AetherLootContexts.STRIPPING));
+        if (heldItem.is(AetherTags.Items.GOLDEN_AMBER_HARVESTERS) && level.getServer() != null && level instanceof ServerLevel serverLevel) {
+            LootParams.Builder lootParamsBuilder = new LootParams.Builder(serverLevel)
+                    .withParameter(LootContextParams.TOOL, heldItem)
+                    .withParameter(LootContextParams.ORIGIN, new Vec3(pos.getX(), pos.getY(), pos.getZ()));
+
+            LootParams lootParams = lootParamsBuilder.create(AetherLootContexts.STRIPPING);
+
+            LootTable lootTable = serverLevel.getServer().getLootData().getElement(LootDataType.TABLE, ((ImbuedLogFamily) getFamily()).getStripLootLocation());
+            List<ItemStack> list = lootTable.getRandomItems(lootParams);
 
             for (ItemStack itemStack : list) {
                 ItemEntity itemEntity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), itemStack);

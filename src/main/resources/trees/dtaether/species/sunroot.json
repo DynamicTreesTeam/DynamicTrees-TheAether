@@ -13,7 +13,7 @@
     "#forge:is_wet": 0.6
   },
   "perfect_biomes": { "tag": "#aether:is_aether" },
-  "primitive_sapling": "aether:sunroot_sapling",
+  "primitive_sapling": "deep_aether:sunroot_sapling",
   "features" : [
     "bottom_flare",
     "mound",

@@ -2,7 +2,7 @@
   "parent": "dynamictrees:block/smartmodel/sapling",
   "render_type": "minecraft:cutout_mipped",
   "textures": {
-    "leaves": "aether:block/natural/holiday_leaves",
-    "log": "aether:block/natural/skyroot_log"
+    "leaves": "aether:block/natural/crystal_leaves",
+    "log": "aether_redux:block/natural/crystal_log"
   }
 }

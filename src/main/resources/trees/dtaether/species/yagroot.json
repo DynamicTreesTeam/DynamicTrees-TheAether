@@ -20,7 +20,7 @@
     "#forge:is_dry": 0.2
   },
   "perfect_biomes": { "tag": "#aether:is_aether" },
-  "primitive_sapling": "dtaether:yagroot_sapling",
+  "primitive_sapling": "deep_aether:yagroot_sapling",
   "sapling_shape": "slim_sapling",
   "model_overrides": {
     "sapling": "dynamictrees:block/smartmodel/water_sapling_thin"
