@@ -1,0 +1,10 @@
+{
+  "only_if_loaded": "gravitation",
+  "type": "dtaether:particle",
+  "primitive_leaves": "gravitation:enchanted_leaves",
+  "cell_kit": "dynamictrees:acacia",
+  "smother": 2,
+  "texture_overrides": {
+    "leaves": "gravitation:block/natural/enchanted_leaves"
+  }
+}

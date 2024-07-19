@@ -17,5 +17,8 @@
       }
     }
   ],
-  "tint_sapling": false
+  "tint_sapling": false,
+  "lang_overrides": {
+    "seed": "Fieldsproot Pit"
+  }
 }

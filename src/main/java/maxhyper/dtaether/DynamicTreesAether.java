@@ -11,6 +11,7 @@ import com.ferreusveritas.dynamictrees.systems.pod.Pod;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
+import maxhyper.dtaether.data.DTAetherExtraLang;
 import maxhyper.dtaether.init.DTAetherClient;
 import maxhyper.dtaether.init.DTAetherRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -51,6 +52,7 @@ public class DynamicTreesAether
 
     private void gatherData(final GatherDataEvent event) {
         Resources.MANAGER.gatherData();
+        GatherDataHelper.addLangGenerator(MOD_ID, new DTAetherExtraLang());
         GatherDataHelper.gatherAllData(
                 MOD_ID,
                 event,

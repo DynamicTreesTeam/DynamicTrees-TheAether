@@ -59,5 +59,8 @@
         "place_chance": 0.01
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Golden Oak Acorn"
+  }
 }

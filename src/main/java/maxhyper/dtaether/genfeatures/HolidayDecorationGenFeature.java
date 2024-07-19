@@ -43,7 +43,7 @@ public class HolidayDecorationGenFeature extends GenFeature {
         return super.createDefaultConfiguration()
                 .with(GIFT_CHANCE, 0.1f)
                 .with(MAX_DEPTH, 4)
-                .with(SNOW_RADIUS, 10);
+                .with(SNOW_RADIUS, 2);
     }
 
     @Override
@@ -64,7 +64,7 @@ public class HolidayDecorationGenFeature extends GenFeature {
             }
         }
         if (tipHeight <= 1) return false; //If its 1 or 0 then something failed
-        placeCircle(configuration, context.level(), context.random(), tipPos, tipHeight);
+        placeCircle(configuration, context.level(), context.random(), tipPos, tipHeight, context.radius());
         return true;
     }
 
@@ -72,9 +72,9 @@ public class HolidayDecorationGenFeature extends GenFeature {
      * Code shamelessly stolen from {@link HolidayTreeDecorator}.
      * Slightly modified.
      */
-    private void placeCircle(GenFeatureConfiguration configuration, LevelAccessor level, RandomSource random, BlockPos pos, int tipHeight) {
+    private void placeCircle(GenFeatureConfiguration configuration, LevelAccessor level, RandomSource random, BlockPos pos, int tipHeight, int treeRadius) {
         this.placeBlockAt(configuration, level, random, pos, 0.0F, tipHeight);
-        int radius = configuration.get(SNOW_RADIUS);
+        int radius = treeRadius + configuration.get(SNOW_RADIUS);
 
         for(int z = 1; z < radius; ++z) {
             for(int x = 0; x < radius; ++x) {

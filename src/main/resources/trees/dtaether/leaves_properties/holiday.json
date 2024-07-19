@@ -1,6 +1,5 @@
 {
   "type": "dtaether:particle",
-  "particle_type": "aether:holiday_leaves",
   "primitive_leaves": "aether:holiday_leaves",
   "texture_overrides": {
     "leaves": "aether:block/natural/holiday_leaves"

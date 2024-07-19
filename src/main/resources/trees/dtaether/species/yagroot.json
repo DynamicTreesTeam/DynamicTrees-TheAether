@@ -36,5 +36,8 @@
         "quantity": 48
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Yagroot Propagule"
+  }
 }

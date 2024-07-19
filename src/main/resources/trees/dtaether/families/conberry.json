@@ -10,7 +10,6 @@
     "branch": "deep_aether:block/conberry_log",
     "branch_top": "deep_aether:block/conberry_log_top",
     "stripped_branch": "deep_aether:block/stripped_conberry_log",
-    "stripped_branch_top": "deep_aether:block/stripped_conberry_log_top",
-    "imbued_branch": "deep_aether:block/golden_oak_log"
+    "stripped_branch_top": "deep_aether:block/stripped_conberry_log_top"
   }
 }

@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "aether_redux",
-  "type": "scruffy",
+  "type": "dtaether:scruffy_particle",
   "primitive_leaves": "aether_redux:blighted_skyroot_leaves",
   "texture_overrides": {
     "leaves": "aether_redux:block/natural/blighted_skyroot_leaves"

@@ -18,5 +18,8 @@
   "primitive_sapling": "aether_redux:glacia_sapling",
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Glacia Cone"
+  }
 }

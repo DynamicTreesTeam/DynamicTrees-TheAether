@@ -19,5 +19,8 @@
   "primitive_sapling": "aether_redux:purple_glacia_sapling",
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Purple Glacia Cone"
+  }
 }

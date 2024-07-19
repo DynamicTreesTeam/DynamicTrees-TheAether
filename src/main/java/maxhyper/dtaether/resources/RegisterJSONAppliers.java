@@ -80,7 +80,7 @@ public final class RegisterJSONAppliers {
     }
 
     public static void registerLeavesPropertiesAppliers(PropertyAppliers<LeavesProperties, JsonElement> appliers) {
-        appliers.register("particle_type", ParticleLeavesProperties.class, ResourceLocation.class, ParticleLeavesProperties::setParticleResLoc);
+        //appliers.register("particle_type", ParticleLeavesProperties.class, ResourceLocation.class, ParticleLeavesProperties::setParticleResLoc);
     }
 
 }

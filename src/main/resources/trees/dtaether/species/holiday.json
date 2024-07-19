@@ -1,10 +1,19 @@
 {
   "type": "dtaether:mod_dependent",
   "family": "dtaether:skyroot",
-  "variant_properties": {
-    "only_if_loaded": "aether_redux",
-    "family": "dtaether:glacia"
-  },
+  "variant_properties": [
+    {
+      "only_if_loaded": "aether_redux",
+      "family": "dtaether:glacia"
+    },
+    {
+      "only_if_loaded": "lost_aether_content",
+      "drop_seeds": true,
+      "primitive_saplings": [
+        {"sapling_block": "lost_aether_content:holiday_sapling"}
+      ]
+    }
+  ],
   "tapering": 0.25,
   "signal_energy": 16.0,
   "up_probability": 3,
@@ -43,5 +52,8 @@
         "place_chance": 0.35
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Holiday Tree Cone"
+  }
 }

@@ -35,5 +35,8 @@
         "block":"aether_redux:blightwillow_leaf_pile"
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Blightwillow Catkin"
+  }
 }

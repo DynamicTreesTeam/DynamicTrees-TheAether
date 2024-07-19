@@ -79,7 +79,10 @@ minecraft {
                 "--existing-mod", "dynamictreesplus",
                 "--existing-mod", "aether",
                 "--existing-mod", "deep_aether",
-                "--existing-mod", "aether_redux"
+                "--existing-mod", "aether_redux",
+                "--existing-mod", "ancient_aether",
+                "--existing-mod", "lost_aether_content",
+                "--existing-mod", "gravitation"
             )
         }
     }

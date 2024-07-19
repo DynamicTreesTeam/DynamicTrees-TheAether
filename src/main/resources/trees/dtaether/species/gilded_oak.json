@@ -52,5 +52,8 @@
         "block":"aether_redux:gilded_leaf_pile"
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Gilded Oak Acorn"
+  }
 }

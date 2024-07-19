@@ -27,5 +27,8 @@
         "place_chance": 0.35
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Blue Roseroot Seeds"
+  }
 }

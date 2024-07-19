@@ -1,0 +1,21 @@
+{
+  "only_if_loaded": "gravitation",
+  "family": "dtaether:enchanted",
+  "tapering": 0.15,
+  "signal_energy": 12.0,
+  "up_probability": 0,
+  "lowest_branch_height": 3,
+  "growth_rate": 0.7,
+  "leaves_properties": "dtaether:enchanted",
+  "environment_factors" : {
+    "#forge:is_cold": 0.25,
+    "#is_nether": 0.75,
+    "#forge:is_wet": 0.75
+  },
+  "perfect_biomes": { "tags": ["#minecraft:is_aether", "#forge:is_magical"] },
+  "primitive_sapling": "gravitation:enchanted_sapling",
+  "lang_overrides": {
+    "species": "Enchanted Tree",
+    "seed": "Enchanted Tree Seed"
+  }
+}

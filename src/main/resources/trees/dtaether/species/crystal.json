@@ -6,12 +6,11 @@
       "only_if_loaded": "aether_redux",
       "family": "dtaether:crystal",
       "primitive_saplings": [
-        {"sapling_block": "aether_redux:crystal_sapling"},
+        {"sapling_block": "aether_redux:crystal_sapling",
+          "can_craft_seed_to_sapling": false},
         {"sapling_block": "aether_redux:crystal_fruit_sapling"},
-        {
-          "sapling_item": "aether:white_apple",
-          "can_craft_seed_to_sapling": false
-        }
+        {"sapling_item": "aether:white_apple",
+          "can_craft_seed_to_sapling": false}
       ]
     },
     {
@@ -19,10 +18,8 @@
       "only_if_not_loaded": "aether_redux",
       "primitive_saplings": [
         {"sapling_block": "lost_aether_content:crystal_sapling"},
-        {
-          "sapling_item": "aether:white_apple",
-          "can_craft_seed_to_sapling": false
-        }
+        {"sapling_item": "aether:white_apple",
+          "can_craft_seed_to_sapling": false}
       ]
     }
   ],
@@ -65,5 +62,8 @@
         }
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "White Apple Pip"
+  }
 }

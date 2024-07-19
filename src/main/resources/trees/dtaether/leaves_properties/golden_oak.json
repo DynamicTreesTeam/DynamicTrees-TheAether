@@ -1,6 +1,5 @@
 {
   "type": "dtaether:particle",
-  "particle_type": "aether:golden_oak_leaves",
   "primitive_leaves": "aether:golden_oak_leaves",
   "texture_overrides": {
     "leaves": "aether:block/natural/golden_oak_leaves"

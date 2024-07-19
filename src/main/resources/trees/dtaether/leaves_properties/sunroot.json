@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "deep_aether",
-  "type": "scruffy",
+  "type": "dtaether:scruffy_particle",
   "primitive_leaves": "deep_aether:sunroot_leaves",
   "cell_kit": "dynamictrees:azalea",
   "smother": 8

@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-09T00:41:47.840463855	Item Models: dtaether
+// 1.20.1	2024-07-19T13:49:31.6787362	Item Models: dtaether
 5141125890b3310009897a2f132d54fded846d09 assets/dtaether/models/item/blighted_skyroot_seed.json
 7685e5bf29d7f0c98a938c3f86583d564c1ebc52 assets/dtaether/models/item/blightwillow_branch.json
 db26ebcfc5e045ae9fa975027ad468c3f39b88ab assets/dtaether/models/item/blightwillow_seed.json
@@ -9,6 +9,10 @@ dad0231132a7ffd7718d90d71e331447cc4a1470 assets/dtaether/models/item/conberry_se
 e88bace07e774c588e96cfa6f84bd0144815161a assets/dtaether/models/item/cruderoot_seed.json
 87502aa02e80e7317fc8b6d3c77d58477ddb32b0 assets/dtaether/models/item/crystal_branch.json
 befc95a864dadc1c1cd34d169fee2d0cd87b4071 assets/dtaether/models/item/crystal_seed.json
+ccb1788fa327513acd58f028c40b90a04cd35531 assets/dtaether/models/item/crystal_skyroot_seed.json
+a789bffd5c6e22b8587c61978d53ba58d8422ba7 assets/dtaether/models/item/enchanted_branch.json
+1d68989550267c4c6138295ed477d6abaa043f10 assets/dtaether/models/item/enchanted_seed.json
+464a04e78c2d901263fb8df6dd3f6334dfec0ba8 assets/dtaether/models/item/enchanted_skyroot_seed.json
 4c8c7eaa38fa7e1ea2e193daaff80b5eabed14e9 assets/dtaether/models/item/fieldsproot_branch.json
 f193c7186475ab8f2f78b340093c1e217a6a0542 assets/dtaether/models/item/fieldsproot_seed.json
 6bde0b4a04e151f01b70eadf98f2903c4681403a assets/dtaether/models/item/gilded_oak_seed.json

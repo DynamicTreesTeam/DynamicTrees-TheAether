@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "aether_redux",
-  "type": "scruffy",
+  "type": "dtaether:fieldsproot",
   "scruffy_max_hydro": 3,
   "primitive_leaves": "aether_redux:fieldsproot_leaves",
   "cell_kit": "dynamictrees:acacia",

@@ -19,5 +19,8 @@
   "acceptable_soils": ["dirt_like", "mud_like"],
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Cruderoot Cone"
+  }
 }

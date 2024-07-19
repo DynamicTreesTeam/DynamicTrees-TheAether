@@ -9,7 +9,6 @@
     "branch": "aether_redux:block/natural/crystal_log",
     "branch_top": "aether_redux:block/natural/crystal_log_top",
     "stripped_branch": "aether_redux:block/natural/stripped_crystal_log",
-    "stripped_branch_top": "aether_redux:block/natural/stripped_crystal_log_top",
-    "imbued_branch": "aether_redux:block/natural/golden_oak_log"
+    "stripped_branch_top": "aether_redux:block/natural/stripped_crystal_log_top"
   }
 }

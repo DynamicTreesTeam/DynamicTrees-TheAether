@@ -9,6 +9,7 @@ import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
 import com.ferreusveritas.dynamictrees.compat.waila.WailaOther;
 import com.ferreusveritas.dynamictrees.data.provider.BranchLoaderBuilder;
 import com.ferreusveritas.dynamictrees.data.provider.DTBlockStateProvider;
+import com.ferreusveritas.dynamictrees.data.provider.DTLangProvider;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.util.MutableLazyValue;
 import com.ferreusveritas.dynamictrees.util.Optionals;
@@ -53,6 +54,11 @@ public class ImbuedLogFamily extends Family {
     public void setupBlocks() {
         super.setupBlocks();
         this.imbuedBranch = setupBranch(createImbuedBranch(getBranchName("imbued_")), true);
+    }
+
+    @Override
+    public void generateLangData(DTLangProvider provider) {
+        super.generateLangData(provider);
     }
 
     public void setStripLootLocation(ResourceLocation stripLootLocation) {

@@ -34,6 +34,7 @@ public class ModDependentSpecies extends Species {
     protected static String FAMILY = "family";
     protected static String FEATURES = "features";
     protected static String PRIMITIVE_SAPLINGS = "primitive_saplings";
+    protected static String DROP_SEEDS = "drop_seeds";
     public void setLoadVariantProperties (JsonObject object){
         String modId = object.get(ONLY_IF_LOADED).getAsString();
         if (ModList.get().isLoaded(modId) && (!object.has(ONLY_IF_NOT_LOADED) || !ModList.get().isLoaded(object.get(ONLY_IF_NOT_LOADED).getAsString()))){
@@ -63,6 +64,9 @@ public class ModDependentSpecies extends Species {
                 array.forEach((elem)->
                         JsonDeserialisers.SEED_SAPLING_RECIPE.deserialiseIfValid(elem, (res)-> addPrimitiveSaplingRecipe(res.get()))
                 );
+            }
+            if (object.has(DROP_SEEDS)){
+                setDropSeeds(object.get(DROP_SEEDS).getAsBoolean());
             }
         }
     }
