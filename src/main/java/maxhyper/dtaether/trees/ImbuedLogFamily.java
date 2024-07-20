@@ -16,9 +16,12 @@ import com.ferreusveritas.dynamictrees.util.Optionals;
 import com.ferreusveritas.dynamictrees.util.ResourceLocationUtils;
 import maxhyper.dtaether.blocks.ImbuedBranchBlock;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -32,6 +35,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.function.BiConsumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ImbuedLogFamily extends Family {
@@ -167,4 +171,21 @@ public class ImbuedLogFamily extends Family {
         }
     }
 
+    @Override
+    public void addGeneratedBlockTags(Function<TagKey<Block>, IntrinsicHolderTagsProvider.IntrinsicTagAppender<Block>> tagAppender) {
+        super.addGeneratedBlockTags(tagAppender);
+        this.getImbuedBranch().ifPresent((branch) -> {
+            this.tierTag(this.getDefaultBranchHarvestTier(), tagAppender).ifPresent((tagBuilder) -> {
+                tagBuilder.add(branch);
+            });
+            this.defaultBranchTags().forEach((tag) -> {
+                if (!this.isOnlyIfLoaded()) {
+                    tagAppender.apply(tag).add(branch);
+                } else {
+                    tagAppender.apply(tag).addOptional(BuiltInRegistries.BLOCK.getKey(branch));
+                }
+
+            });
+        });
+    }
 }

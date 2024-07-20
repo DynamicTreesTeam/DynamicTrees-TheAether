@@ -97,7 +97,8 @@ dependencies {
     minecraft("net.minecraftforge:forge:${mcVersion}-${property("forgeVersion")}")
 
     //Dynamic Trees
-    implementation(fg.deobf("curse.maven:dynamictrees-252818:5527670"))
+    implementation(fg.deobf("lib:DynamicTrees:1.20.1-1.3.0-BETA12.002"))
+    //implementation(fg.deobf("curse.maven:dynamictrees-252818:5527670"))
     implementation(fg.deobf("curse.maven:dynamictreesplus-478155:5536181"))
     //implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
     //implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))

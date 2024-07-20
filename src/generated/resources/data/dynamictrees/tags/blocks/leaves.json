@@ -1,10 +1,5 @@
 {
   "values": [
-    "dtaether:skyroot_leaves",
-    "dtaether:golden_oak_leaves",
-    "dtaether:crystal_leaves",
-    "dtaether:holiday_leaves",
-    "dtaether:decorated_holiday_leaves",
     {
       "id": "dtaether:blighted_skyroot_leaves",
       "required": false
@@ -13,7 +8,6 @@
       "id": "dtaether:blightwillow_leaves",
       "required": false
     },
-
     {
       "id": "dtaether:blue_roseroot_leaves",
       "required": false
@@ -24,6 +18,20 @@
     },
     {
       "id": "dtaether:cruderoot_leaves",
+      "required": false
+    },
+    "dtaether:crystal_leaves",
+    {
+      "id": "dtaether:crystal_skyroot_leaves",
+      "required": false
+    },
+    "dtaether:decorated_holiday_leaves",
+    {
+      "id": "dtaether:enchanted_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:enchanted_skyroot_leaves",
       "required": false
     },
     {
@@ -46,6 +54,8 @@
       "id": "dtaether:glacia_leaves",
       "required": false
     },
+    "dtaether:golden_oak_leaves",
+    "dtaether:holiday_leaves",
     {
       "id": "dtaether:purple_glacia_leaves",
       "required": false
@@ -54,10 +64,8 @@
       "id": "dtaether:roseroot_leaves",
       "required": false
     },
-    {
-      "id": "dtaether:skyroot_bush_leaves",
-      "required": false
-    },
+    "dtaether:skyroot_leaves",
+    "dtaether:skyroot_bush_leaves",
     {
       "id": "dtaether:sunroot_leaves",
       "required": false

@@ -1,6 +1,5 @@
 {
   "values": [
-    "dtaether:stripped_skyroot_branch",
     {
       "id": "dtaether:stripped_blightwillow_branch",
       "required": false
@@ -18,6 +17,10 @@
       "required": false
     },
     {
+      "id": "dtaether:stripped_enchanted_branch",
+      "required": false
+    },
+    {
       "id": "dtaether:stripped_fieldsproot_branch",
       "required": false
     },
@@ -29,6 +32,7 @@
       "id": "dtaether:stripped_roseroot_branch",
       "required": false
     },
+    "dtaether:stripped_skyroot_branch",
     {
       "id": "dtaether:stripped_sunroot_branch",
       "required": false

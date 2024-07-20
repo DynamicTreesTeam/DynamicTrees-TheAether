@@ -1,6 +1,5 @@
 {
   "values": [
-    "dtaether:skyroot_branch",
     {
       "id": "dtaether:blightwillow_branch",
       "required": false
@@ -18,6 +17,10 @@
       "required": false
     },
     {
+      "id": "dtaether:enchanted_branch",
+      "required": false
+    },
+    {
       "id": "dtaether:fieldsproot_branch",
       "required": false
     },
@@ -29,6 +32,7 @@
       "id": "dtaether:roseroot_branch",
       "required": false
     },
+    "dtaether:skyroot_branch",
     {
       "id": "dtaether:sunroot_branch",
       "required": false
