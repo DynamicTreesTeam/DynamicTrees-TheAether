@@ -14,11 +14,8 @@
     "#forge:is_dry": 0.5,
     "#is_forest": 1.05
   },
-  "perfect_biomes": { "tag": "#is_jungle" },
+  "perfect_biomes": { "tags": [ "#aether:is_aether", "#is_jungle" ] },
   "primitive_sapling": "ancient_aether:sakura_sapling",
-  "features" : [
-    "bee_nest"
-  ],
   "lang_overrides": {
     "seed": "Aether Blossom Pit"
   }

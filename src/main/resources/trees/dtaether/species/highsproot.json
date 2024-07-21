@@ -1,7 +1,7 @@
 {
   "only_if_loaded": "ancient_aether",
   "family": "dtaether:highsproot",
-  "tapering": 0.6,
+  "tapering": 0.5,
   "signal_energy": 8.0,
   "lowest_branch_height": 1,
   "growth_rate": 0.6,

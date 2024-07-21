@@ -42,7 +42,7 @@
             "alternative_species": "dtaether:skyroot"
           }
         },
-        "gen_feature_2": "dtaether:holiday_decoration"
+        "post_gen_feature": "dtaether:holiday_decoration"
       }
     },
     {

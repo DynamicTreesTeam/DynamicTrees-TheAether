@@ -246,5 +246,205 @@
       "chance" : 1,
       "forestness": 1
     }
+  },
+
+
+
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:elevated_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:enchanted_skyroot" : 12,
+          "dtaether:crystal_skyroot" : 12,
+          "dtaether:golden_oak" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:elevated_clearing" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:enchanted_skyroot" : 12,
+          "dtaether:crystal_skyroot" : 12,
+          "dtaether:golden_oak" : 1
+        }
+      },
+      "density": [ 0.5 ],
+      "chance": 0.05
+    }
+  },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:sun_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:skyroot" : 4,
+          "dtaether:golden_oak" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:.*jungle" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:skyroot" : 2,
+          "dtaether:grape_vine_skyroot" : 1,
+          "dtaether:skyroot_pine" : 2,
+          "dtaether:tall_skyroot" : 4,
+          "dtaether:crystal_skyroot" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:sakura_jungle" },
+    "apply" : {
+      "species" : {
+        "method": "splice_before",
+        "random" : {
+          "dtaether:sakura" : 2,
+          "..." : 1
+        }
+      }
+    }
+  },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:.*wyndcap.*" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:highsproot" : 24,
+          "dtaether:crystal_skyroot" : 1
+        }
+      },
+      "density" : [ 1.2 ],
+      "chance" : 0.8,
+      "forestness": 1
+    }
+  },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:festive_wyndcap_taiga" },
+    "apply" : {
+      "species" : {
+        "method": "splice_before",
+        "random" : {
+          "dtaether:holiday" : 1,
+          "..." : 8
+        }
+      }
+    }
+  },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:wyndcap_highland" },
+    "apply" : {
+      "density" : [ 0.8 ],
+      "chance" : 0.2
+    }
+  },
+
+
+
+  {
+    "only_if_loaded": "gravitation",
+    "select" : { "name": "gravitation:aerfin_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:aerfin" : 1,
+          "dtaether:blue_aerfin" : 1,
+          "dtaether:golden_aerfin" : 1
+        }
+      },
+      "density" : [ 1.5 ],
+      "chance" : 0.5,
+      "forestness": 0.5
+    }
+  },
+  {
+    "only_if_loaded": "gravitation",
+    "select" : { "name": "gravitation:golden_mountain" },
+    "apply" : {
+      "species" : "dtaether:golden_aerfin",
+      "density" : [ 0.5 ],
+      "chance" : 0.3
+    }
+  },
+  {
+    "only_if_loaded": "gravitation",
+    "select" : { "name": "gravitation:beladon_forest" },
+    "apply" : {
+      "species" : "dtaether:beladon",
+      "density" : [ 0.5 ],
+      "chance" : 0.3
+    }
+  },
+  {
+    "only_if_loaded": "gravitation",
+    "select" : { "name": "gravitation:beladon_plains" },
+    "apply" : {
+      "species" : "dtaether:beladon",
+      "density" : [ 0.2 ],
+      "chance" : 0.1
+    }
+  },
+  {
+    "only_if_loaded": "gravitation",
+    "select" : { "name": "gravitation:enchanted_forest" },
+    "apply" : {
+      "species" : "dtaether:enchanted",
+      "density" : [ 0.5 ],
+      "chance" : 0.3
+    }
+  },
+
+
+
+  {
+    "only_if_loaded": ["ancient_aether", "deep_aether"],
+    "select" : { "name": "ancient_aether:sun_forest" },
+    "apply" : {
+      "species" : {
+        "method": "splice_before",
+        "random" : {
+          "dtaether:sunroot" : 1,
+          "..." : 12
+        }
+      }
+    }
+  },
+  {
+    "only_if_loaded": ["ancient_aether", "deep_aether"],
+    "select" : { "name": "ancient_aether:sun_forest" },
+    "apply" : {
+      "species" : {
+        "method": "splice_before",
+        "random" : {
+          "dtaether:sunroot" : 1,
+          "..." : 12
+        }
+      }
+    }
   }
 ]

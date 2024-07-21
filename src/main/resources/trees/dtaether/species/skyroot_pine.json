@@ -22,6 +22,9 @@
   "generate_sapling": true,
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "ancient_aether:skyroot_pine_sapling",
+  "features" : [
+    "conifer_topper"
+  ],
   "lang_overrides": {
     "seed": "Skyroot Pine Cone"
   }

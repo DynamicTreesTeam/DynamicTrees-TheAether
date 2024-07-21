@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "dtaether:rooty_aer_grass",
+      "required": false
+    },
+    {
       "id": "dtaether:rooty_aether_coarse_dirt",
       "required": false
     },
@@ -24,6 +28,10 @@
       "required": false
     },
     "dtaether:rooty_enchanted_aether_grass_block",
+    {
+      "id": "dtaether:rooty_enchanted_moss",
+      "required": false
+    },
     {
       "id": "dtaether:rooty_golden_heights_grass_block",
       "required": false

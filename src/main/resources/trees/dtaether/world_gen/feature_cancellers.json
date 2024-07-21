@@ -15,6 +15,22 @@
     }
   },
   {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "ancient_aether:.*" },
+    "cancellers": {
+      "types": [ "tree" ],
+      "namespaces": ["aether", "ancient_aether", "minecraft"]
+    }
+  },
+  {
+    "only_if_loaded": "gravitation",
+    "select" : { "name": "gravitation:.*" },
+    "cancellers": {
+      "types": [ "tree" ],
+      "namespaces": ["aether", "gravitation", "minecraft"]
+    }
+  },
+  {
     "only_if_loaded": "aether_redux",
     "select" : { "names": [ "aether_redux:.*", "!aether_redux:cloudcaps" ] },
     "cancellers": {

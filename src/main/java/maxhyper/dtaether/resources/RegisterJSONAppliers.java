@@ -42,11 +42,11 @@ public final class RegisterJSONAppliers {
     }
     public static void registerLoadSpeciesAppliers(PropertyAppliers<Species, JsonElement> appliers) {
         appliers.registerArrayApplier("variant_properties", ModDependentSpecies.class, JsonObject.class,
-                ModDependentSpecies::setLoadVariantProperties);
+                (species,jsonObject)->Species.REGISTRY.runOnNextLock(()->species.setLoadVariantProperties(jsonObject)));
     }
     public static void registerReloadSpeciesAppliers(PropertyAppliers<Species, JsonElement> appliers) {
        appliers.registerArrayApplier("variant_properties", ModDependentSpecies.class, JsonObject.class,
-                ModDependentSpecies::setReloadVariantProperties);
+               (species,jsonObject)->Species.REGISTRY.runOnNextLock(()->species.setReloadVariantProperties(jsonObject)));
     }
 
     //FAMILY
