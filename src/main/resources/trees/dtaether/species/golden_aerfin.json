@@ -1,0 +1,26 @@
+{
+  "only_if_loaded": "gravitation",
+  "family": "dtaether:aerfin",
+  "tapering": 0.8,
+  "signal_energy": 9.0,
+  "lowest_branch_height": 3,
+  "up_probability": 1,
+  "growth_rate": 0.8,
+  "soil_longevity": 4,
+  "leaves_properties": "dtaether:golden_aerfin",
+  "growth_logic_kit": {
+    "name": "conifer",
+    "properties": {
+      "horizontal_limiter": 1.5,
+      "height_variation": 3,
+      "variate_lowest_branch": true
+    }
+  },
+  "environment_factors" : {
+    "#forge:is_wet": 0.7
+  },
+  "generate_seed": true,
+  "generate_sapling": true,
+  "perfect_biomes": { "name": "gravitation:aerfin_forest" },
+  "primitive_sapling": "gravitation:golden_aerfin_sapling"
+}

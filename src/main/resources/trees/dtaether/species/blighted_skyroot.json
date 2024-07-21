@@ -12,7 +12,5 @@
   "generate_seed": true,
   "generate_sapling": true,
   "perfect_biomes": { "tag": "#aether:is_aether" },
-  "primitive_sapling": "aether_redux:blighted_skyroot_sapling",
-  "features" : [
-  ]
+  "primitive_sapling": "aether_redux:blighted_skyroot_sapling"
 }

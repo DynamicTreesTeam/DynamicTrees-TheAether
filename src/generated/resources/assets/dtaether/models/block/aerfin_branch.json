@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "gravitation:block/natural/aerfin_log",
+    "rings": "gravitation:block/natural/aerfin_log_top"
+  }
+}

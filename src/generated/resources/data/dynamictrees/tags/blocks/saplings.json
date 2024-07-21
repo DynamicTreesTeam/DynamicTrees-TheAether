@@ -1,11 +1,23 @@
 {
   "values": [
     {
+      "id": "dtaether:aerfin_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:beladon_sapling",
+      "required": false
+    },
+    {
       "id": "dtaether:blighted_skyroot_sapling",
       "required": false
     },
     {
       "id": "dtaether:blightwillow_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:blue_aerfin_sapling",
       "required": false
     },
     {
@@ -36,7 +48,15 @@
       "id": "dtaether:glacia_sapling",
       "required": false
     },
+    {
+      "id": "dtaether:golden_aerfin_sapling",
+      "required": false
+    },
     "dtaether:golden_oak_sapling",
+    {
+      "id": "dtaether:highsproot_sapling",
+      "required": false
+    },
     "dtaether:holiday_sapling_aether_redux",
     {
       "id": "dtaether:purple_glacia_sapling",
@@ -46,7 +66,15 @@
       "id": "dtaether:roseroot_sapling",
       "required": false
     },
+    {
+      "id": "dtaether:sakura_sapling",
+      "required": false
+    },
     "dtaether:skyroot_sapling",
+    {
+      "id": "dtaether:skyroot_pine_sapling",
+      "required": false
+    },
     {
       "id": "dtaether:sunroot_sapling",
       "required": false

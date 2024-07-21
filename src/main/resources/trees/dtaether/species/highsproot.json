@@ -1,0 +1,30 @@
+{
+  "only_if_loaded": "ancient_aether",
+  "family": "dtaether:highsproot",
+  "tapering": 0.6,
+  "signal_energy": 8.0,
+  "lowest_branch_height": 1,
+  "growth_rate": 0.6,
+  "soil_longevity": 4,
+  "leaves_properties": "dtaether:highsproot",
+  "growth_logic_kit": {
+    "name": "conifer",
+    "properties": {
+      "energy_divisor": 4,
+      "height_variation": 7,
+      "variate_lowest_branch": true
+    }
+  },
+  "environment_factors" : {
+    "#forge:is_hot": 0.7,
+    "#forge:is_dry": 0.8
+  },
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "ancient_aether:highsproot_sapling",
+  "features" : [
+    "conifer_topper"
+  ],
+  "lang_overrides": {
+    "seed": "Highsproot Cone"
+  }
+}

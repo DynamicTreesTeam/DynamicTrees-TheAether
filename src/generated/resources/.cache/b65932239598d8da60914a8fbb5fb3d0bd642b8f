@@ -1,7 +1,12 @@
-// 1.20.1	2024-07-19T13:49:31.6787362	Item Models: dtaether
+// 1.20.1	2024-07-20T19:07:36.120955	Item Models: dtaether
+7b907a4c904e8516a89636b4bce0ebb79b1cb4ba assets/dtaether/models/item/aerfin_branch.json
+a06a0d25b120d648fbd7a61648b1d5c4366eb2be assets/dtaether/models/item/aerfin_seed.json
+87c98c883f427d7fb36da7a16655b323622b4964 assets/dtaether/models/item/beladon_branch.json
+117c303af75470c24461a40fb2eb8fedf2e7d9d5 assets/dtaether/models/item/beladon_seed.json
 5141125890b3310009897a2f132d54fded846d09 assets/dtaether/models/item/blighted_skyroot_seed.json
 7685e5bf29d7f0c98a938c3f86583d564c1ebc52 assets/dtaether/models/item/blightwillow_branch.json
 db26ebcfc5e045ae9fa975027ad468c3f39b88ab assets/dtaether/models/item/blightwillow_seed.json
+37d6d8a592cac18001181402efb08d4d1d272399 assets/dtaether/models/item/blue_aerfin_seed.json
 8db64f3cdcec85fcc893ab6b2d80daf79b72b575 assets/dtaether/models/item/blue_roseroot_seed.json
 af373fed0e20a1ed77a453aa370b3cdbe7c914b8 assets/dtaether/models/item/conberry_branch.json
 dad0231132a7ffd7718d90d71e331447cc4a1470 assets/dtaether/models/item/conberry_seed.json
@@ -18,12 +23,18 @@ f193c7186475ab8f2f78b340093c1e217a6a0542 assets/dtaether/models/item/fieldsproot
 6bde0b4a04e151f01b70eadf98f2903c4681403a assets/dtaether/models/item/gilded_oak_seed.json
 2f1843ae85129f29010f677cac7657500b3b788c assets/dtaether/models/item/glacia_branch.json
 4c19c6be75db9895acbf50e373b0d1afb51e9989 assets/dtaether/models/item/glacia_seed.json
+ebcdedca3ba84dcc49c51071f1eda63edd24f0ef assets/dtaether/models/item/golden_aerfin_seed.json
 85b958343bb7261898a8bdba59ed7ab03b6bc405 assets/dtaether/models/item/golden_oak_seed.json
+a41645edd2f7f62dbe37694d8470d92af73f6332 assets/dtaether/models/item/highsproot_branch.json
+9c9f75bb0155cecd1091b52e9a2fce03e6ab698b assets/dtaether/models/item/highsproot_seed.json
 631fef48d478d0f28068dec72b87a7d1e4cb191c assets/dtaether/models/item/holiday_seed.json
 90e8f028695f1c2541fdb93b59f94645ee333c64 assets/dtaether/models/item/purple_glacia_seed.json
 2a5cc4535a5d62b33f0b80cc9f4d622674a1dc4d assets/dtaether/models/item/roseroot_branch.json
 9096ffacc9580df762ac0d7aed966a1043911d2c assets/dtaether/models/item/roseroot_seed.json
+9004bf5b1d65e1dd040793afc37fd4422401bcde assets/dtaether/models/item/sakura_branch.json
+ec5c0614cff55ffb1fd9157fef88883f62834018 assets/dtaether/models/item/sakura_seed.json
 317cf13b675d61dd423f35e96958fb353e3457d4 assets/dtaether/models/item/skyroot_branch.json
+d963ea2bf25441b00272ca486410ecf15ab35980 assets/dtaether/models/item/skyroot_pine_seed.json
 fc3cc796e8656e8980112303412c0db35338762c assets/dtaether/models/item/skyroot_seed.json
 e9e5a2480d964ad4db38b562e4c3e418eb953c23 assets/dtaether/models/item/sunroot_branch.json
 3ed85daa2584ab5cdbb3355b3543cdc7b093aeaf assets/dtaether/models/item/sunroot_seed.json

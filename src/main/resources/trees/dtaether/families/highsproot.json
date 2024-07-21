@@ -1,0 +1,8 @@
+{
+  "only_if_loaded": "ancient_aether",
+  "common_leaves": "dtaether:highsproot",
+  "common_species": "dtaether:highsproot",
+  "primitive_log": "ancient_aether:highsproot_log",
+  "primitive_stripped_log": "ancient_aether:stripped_highsproot_log",
+  "max_branch_radius": 8
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "dynamictrees:block/smartmodel/sapling",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "leaves": "ancient_aether:block/highsproot_leaves",
+    "log": "ancient_aether:block/highsproot_log"
+  }
+}

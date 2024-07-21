@@ -1,11 +1,23 @@
 {
   "values": [
     {
+      "id": "dtaether:aerfin_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:beladon_leaves",
+      "required": false
+    },
+    {
       "id": "dtaether:blighted_skyroot_leaves",
       "required": false
     },
     {
       "id": "dtaether:blightwillow_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:blue_aerfin_leaves",
       "required": false
     },
     {
@@ -54,7 +66,15 @@
       "id": "dtaether:glacia_leaves",
       "required": false
     },
+    {
+      "id": "dtaether:golden_aerfin_leaves",
+      "required": false
+    },
     "dtaether:golden_oak_leaves",
+    {
+      "id": "dtaether:highsproot_leaves",
+      "required": false
+    },
     "dtaether:holiday_leaves",
     {
       "id": "dtaether:purple_glacia_leaves",
@@ -64,8 +84,16 @@
       "id": "dtaether:roseroot_leaves",
       "required": false
     },
+    {
+      "id": "dtaether:sakura_leaves",
+      "required": false
+    },
     "dtaether:skyroot_leaves",
     "dtaether:skyroot_bush_leaves",
+    {
+      "id": "dtaether:skyroot_pine_leaves",
+      "required": false
+    },
     {
       "id": "dtaether:sunroot_leaves",
       "required": false

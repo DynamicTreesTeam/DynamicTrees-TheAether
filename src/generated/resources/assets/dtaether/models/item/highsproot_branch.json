@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "ancient_aether:block/highsproot_log",
+    "rings": "ancient_aether:block/highsproot_log_top"
+  }
+}

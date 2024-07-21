@@ -1,0 +1,7 @@
+{
+  "only_if_loaded": "ancient_aether",
+  "type": "dtaether:particle",
+  "primitive_leaves": "ancient_aether:sakura_leaves",
+  "smother": 5,
+  "light_requirement": 14
+}

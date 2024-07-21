@@ -1,0 +1,11 @@
+{
+  "only_if_loaded": "gravitation",
+  "type": "dtaether:particle",
+  "primitive_leaves": "gravitation:aerfin_leaves",
+  "cell_kit": "dynamictrees:acacia",
+  "smother": 6,
+  "lightRequirement": 10,
+  "texture_overrides": {
+    "leaves": "gravitation:block/natural/aerfin_leaves"
+  }
+}

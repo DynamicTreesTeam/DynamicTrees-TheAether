@@ -1,11 +1,23 @@
 {
   "values": [
     {
+      "id": "dtaether:aerfin_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:beladon_seed",
+      "required": false
+    },
+    {
       "id": "dtaether:blighted_skyroot_seed",
       "required": false
     },
     {
       "id": "dtaether:blightwillow_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:blue_aerfin_seed",
       "required": false
     },
     {
@@ -36,7 +48,15 @@
       "id": "dtaether:glacia_seed",
       "required": false
     },
+    {
+      "id": "dtaether:golden_aerfin_seed",
+      "required": false
+    },
     "dtaether:golden_oak_seed",
+    {
+      "id": "dtaether:highsproot_seed",
+      "required": false
+    },
     "dtaether:holiday_seed",
     {
       "id": "dtaether:purple_glacia_seed",
@@ -46,7 +66,15 @@
       "id": "dtaether:roseroot_seed",
       "required": false
     },
+    {
+      "id": "dtaether:sakura_seed",
+      "required": false
+    },
     "dtaether:skyroot_seed",
+    {
+      "id": "dtaether:skyroot_pine_seed",
+      "required": false
+    },
     {
       "id": "dtaether:sunroot_seed",
       "required": false

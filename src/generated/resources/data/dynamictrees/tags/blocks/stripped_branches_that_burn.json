@@ -1,6 +1,14 @@
 {
   "values": [
     {
+      "id": "dtaether:stripped_aerfin_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_beladon_branch",
+      "required": false
+    },
+    {
       "id": "dtaether:stripped_blightwillow_branch",
       "required": false
     },
@@ -29,7 +37,15 @@
       "required": false
     },
     {
+      "id": "dtaether:stripped_highsproot_branch",
+      "required": false
+    },
+    {
       "id": "dtaether:stripped_roseroot_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_sakura_branch",
       "required": false
     },
     "dtaether:stripped_skyroot_branch",

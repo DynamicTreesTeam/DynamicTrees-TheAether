@@ -1,0 +1,8 @@
+{
+  "only_if_loaded": "gravitation",
+  "type": "dtaether:particle",
+  "primitive_leaves": "gravitation:beladon_leaves",
+  "texture_overrides": {
+    "leaves": "gravitation:block/natural/beladon_leaves"
+  }
+}

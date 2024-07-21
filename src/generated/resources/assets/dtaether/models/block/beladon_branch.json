@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "gravitation:block/natural/beladon_log",
+    "rings": "gravitation:block/natural/beladon_log_top"
+  }
+}

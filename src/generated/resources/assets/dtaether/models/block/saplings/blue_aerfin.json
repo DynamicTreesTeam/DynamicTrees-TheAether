@@ -1,0 +1,8 @@
+{
+  "parent": "dynamictrees:block/smartmodel/sapling",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "leaves": "gravitation:block/natural/blue_aerfin_leaves",
+    "log": "gravitation:block/natural/aerfin_log"
+  }
+}

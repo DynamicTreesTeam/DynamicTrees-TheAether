@@ -1,0 +1,8 @@
+{
+  "only_if_loaded": "ancient_aether",
+  "common_leaves": "dtaether:sakura",
+  "common_species": "dtaether:sakura",
+  "primitive_log": "ancient_aether:sakura_log",
+  "primitive_stripped_log": "ancient_aether:stripped_sakura_log",
+  "max_branch_radius": 8
+}

@@ -1,0 +1,14 @@
+{
+  "only_if_loaded": "gravitation",
+  "common_leaves": "dtaether:aerfin",
+  "common_species": "dtaether:aerfin",
+  "primitive_log": "gravitation:aerfin_log",
+  "primitive_stripped_log": "gravitation:stripped_aerfin_log",
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "gravitation:block/natural/aerfin_log",
+    "branch_top": "gravitation:block/natural/aerfin_log_top",
+    "stripped_branch": "gravitation:block/natural/stripped_aerfin_log",
+    "stripped_branch_top": "gravitation:block/natural/stripped_aerfin_log_top"
+  }
+}
