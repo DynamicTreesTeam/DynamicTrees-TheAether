@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-20T19:07:36.120955	Item Models: dtaether
+// 1.20.1	2024-07-21T13:11:48.8735357	Item Models: dtaether
 7b907a4c904e8516a89636b4bce0ebb79b1cb4ba assets/dtaether/models/item/aerfin_branch.json
 a06a0d25b120d648fbd7a61648b1d5c4366eb2be assets/dtaether/models/item/aerfin_seed.json
 87c98c883f427d7fb36da7a16655b323622b4964 assets/dtaether/models/item/beladon_branch.json
@@ -8,6 +8,7 @@ a06a0d25b120d648fbd7a61648b1d5c4366eb2be assets/dtaether/models/item/aerfin_seed
 db26ebcfc5e045ae9fa975027ad468c3f39b88ab assets/dtaether/models/item/blightwillow_seed.json
 37d6d8a592cac18001181402efb08d4d1d272399 assets/dtaether/models/item/blue_aerfin_seed.json
 8db64f3cdcec85fcc893ab6b2d80daf79b72b575 assets/dtaether/models/item/blue_roseroot_seed.json
+6fa8fd66ca01078a4f9773ddcec41ea8c8e48ab9 assets/dtaether/models/item/cloudcap_branch.json
 af373fed0e20a1ed77a453aa370b3cdbe7c914b8 assets/dtaether/models/item/conberry_branch.json
 dad0231132a7ffd7718d90d71e331447cc4a1470 assets/dtaether/models/item/conberry_seed.json
 9bf86c3656a7ed66d1f263a664e8ac852f4bd323 assets/dtaether/models/item/cruderoot_branch.json
@@ -28,6 +29,7 @@ ebcdedca3ba84dcc49c51071f1eda63edd24f0ef assets/dtaether/models/item/golden_aerf
 a41645edd2f7f62dbe37694d8470d92af73f6332 assets/dtaether/models/item/highsproot_branch.json
 9c9f75bb0155cecd1091b52e9a2fce03e6ab698b assets/dtaether/models/item/highsproot_seed.json
 631fef48d478d0f28068dec72b87a7d1e4cb191c assets/dtaether/models/item/holiday_seed.json
+57f07c6ee59d77d4a75ad6539ae6310935d68970 assets/dtaether/models/item/lightcap_seed.json
 90e8f028695f1c2541fdb93b59f94645ee333c64 assets/dtaether/models/item/purple_glacia_seed.json
 2a5cc4535a5d62b33f0b80cc9f4d622674a1dc4d assets/dtaether/models/item/roseroot_branch.json
 9096ffacc9580df762ac0d7aed966a1043911d2c assets/dtaether/models/item/roseroot_seed.json

@@ -1,10 +1,11 @@
-// 1.20.1	2024-07-20T19:07:36.1142383	Loot Tables
+// 1.20.1	2024-07-21T13:08:00.079679	Loot Tables
 fc19c17416be46f7d9574aaad7851b53c48f4f4f data/dtaether/loot_tables/blocks/aerfin_leaves.json
 cd3e0a09c9aad6b3ea3cd08ef85be97b4208aaf8 data/dtaether/loot_tables/blocks/beladon_leaves.json
 1fdc3a8b1a77f7bd53dbb97df49c504270d49f4e data/dtaether/loot_tables/blocks/blighted_skyroot_leaves.json
 c8cba12abf00e879118d41476920688f729c36a2 data/dtaether/loot_tables/blocks/blightwillow_leaves.json
 8e1ce3fa2687fee4b33c586a2cefdfdce1f48bdf data/dtaether/loot_tables/blocks/blue_aerfin_leaves.json
 0c267dc4d27f0c0d03341fb3d46c0e8579f8833a data/dtaether/loot_tables/blocks/blue_roseroot_leaves.json
+8183623b2ed7f6e07c16cc49a4f641fa1796c8de data/dtaether/loot_tables/blocks/cloudcap_cap.json
 8a84b86dc146776ac6a32b94abcc66bf0beb7296 data/dtaether/loot_tables/blocks/conberry_leaves.json
 3be9fbe4f6c667a8c3add4a6ffa43ff46e265509 data/dtaether/loot_tables/blocks/cruderoot_leaves.json
 b0088113cd0750a15a2f56b17817222feb964e09 data/dtaether/loot_tables/blocks/crystal_leaves.json
@@ -22,6 +23,8 @@ f2d5f84a59b4fb0eee8f772501f66c7cb06c9882 data/dtaether/loot_tables/blocks/golden
 0e44692c843de5643ae11f313eef8280bf474cff data/dtaether/loot_tables/blocks/golden_oak_leaves.json
 2fbf63af93e2478c44e98c5d1a8e795c69e66ca6 data/dtaether/loot_tables/blocks/highsproot_leaves.json
 6405cd76bd69c76a8e193977048cbf90151c9608 data/dtaether/loot_tables/blocks/holiday_leaves.json
+9331e55c64179196de0d5c409e45f4bcd0e1032b data/dtaether/loot_tables/blocks/jellyshroom_cap.json
+57b47febd22fda3211b0fbc0b4e23ce2a6a29cd6 data/dtaether/loot_tables/blocks/lightcap_cap.json
 352e4c386c6eb265e55eb29a617bd24c37523a5a data/dtaether/loot_tables/blocks/purple_glacia_leaves.json
 8eb520b12bc0b3742a3ffd7486e35fede9a0a998 data/dtaether/loot_tables/blocks/roseroot_leaves.json
 a2b1b1310685fb8d890baf179d147c18a2557528 data/dtaether/loot_tables/blocks/sakura_leaves.json
@@ -34,6 +37,7 @@ aed48aa9fa52b98cd25afd601ec3b52cb35b3ae3 data/dtaether/loot_tables/blocks/white_
 295e02fec2dda9b3d11d63f8e5fb7b67911ccf0d data/dtaether/loot_tables/trees/branches/aerfin.json
 ae713a9b5da6860e60107de385457887d0226abc data/dtaether/loot_tables/trees/branches/beladon.json
 0a45cf11c55251a52e82f5962ce186aa5cbea013 data/dtaether/loot_tables/trees/branches/blightwillow.json
+91e35551052dc0ad6f6f705a7afe7ddfaaa64710 data/dtaether/loot_tables/trees/branches/cloudcap.json
 8e0efae8795d796129e0a91654049040101764b4 data/dtaether/loot_tables/trees/branches/conberry.json
 b36bf60191c58a04672dc00034c2e57f30c8bb80 data/dtaether/loot_tables/trees/branches/cruderoot.json
 305161cce0e4a15c9730a069af3ee3983533f036 data/dtaether/loot_tables/trees/branches/crystal.json
@@ -49,6 +53,7 @@ f3fe06d983861bc0a076422f0fa4804f2894e6ad data/dtaether/loot_tables/trees/branche
 826d5b2379c13ac54c3e4e0f4220fc33f1bab4a6 data/dtaether/loot_tables/trees/branches/stripped_aerfin.json
 b983476f183054773ba266e990407bcadffed9b5 data/dtaether/loot_tables/trees/branches/stripped_beladon.json
 a89eecead56fe810e458f02ceec36f56f1825fe9 data/dtaether/loot_tables/trees/branches/stripped_blightwillow.json
+3acb5206c02630462a1b9ecf58613afc62a8767b data/dtaether/loot_tables/trees/branches/stripped_cloudcap.json
 3df479f898a222762c9cdb2ea1ba0de89e8de4ba data/dtaether/loot_tables/trees/branches/stripped_conberry.json
 f0bd9fdf48eb85f04a76c9eced48ed9e29e99788 data/dtaether/loot_tables/trees/branches/stripped_cruderoot.json
 ef16878052f0c2615ec22cbb7e15dc490386aead data/dtaether/loot_tables/trees/branches/stripped_crystal.json
@@ -93,6 +98,9 @@ d14df21d584083a54a68a808080450eef006f280 data/dtaether/loot_tables/trees/leaves/
 4b7d606a0fabf0c6f63c9fa64598dac4ad2bfe67 data/dtaether/loot_tables/trees/leaves/skyroot_pine.json
 9541cc019335c68a09c0c24063de88546454f74b data/dtaether/loot_tables/trees/leaves/sunroot.json
 206c74039aa977fcea743f94b8461eb79918be13 data/dtaether/loot_tables/trees/leaves/yagroot.json
+4a2700841a3a4a69b9f33f483d9623d2775fd549 data/dtaether/loot_tables/trees/mushroom_caps/cloudcap.json
+784172506f55570a5810bd9dd8c43462531fa7ea data/dtaether/loot_tables/trees/mushroom_caps/jellyshroom.json
+8345ea319383191ea556f1151909f067f698b9d8 data/dtaether/loot_tables/trees/mushroom_caps/lightcap.json
 59c6d67cf0da85dd32da9f8602e07eb52922bbfb data/dtaether/loot_tables/trees/roots/yagroot.json
 3fe27b544d2f6ea26ea12fc66ccd48a8dc38d4d3 data/dtaether/loot_tables/trees/voluntary/aerfin.json
 970bd4d57d5669877a934e279d3f3e8ab5ae1296 data/dtaether/loot_tables/trees/voluntary/beladon.json
@@ -113,6 +121,7 @@ bfb7d722e7d5484bb86931b2741e10597db3afcb data/dtaether/loot_tables/trees/volunta
 09e18ebb4ca753703ba30b56c06272026a26b663 data/dtaether/loot_tables/trees/voluntary/golden_oak.json
 e95b6cdf3e2e26385d7792fc4abbd4caf3f45596 data/dtaether/loot_tables/trees/voluntary/highsproot.json
 709d18fe17c18756806228fc9a14db618706c44d data/dtaether/loot_tables/trees/voluntary/holiday.json
+e8f3be9a25dee3d652b4b39e3fa17e234696bc86 data/dtaether/loot_tables/trees/voluntary/lightcap.json
 544ae8533b9213ff97f5ee4ea0af157bca4feced data/dtaether/loot_tables/trees/voluntary/purple_glacia.json
 53c973d10a13ea68065e5f411851f2c1239461a7 data/dtaether/loot_tables/trees/voluntary/roseroot.json
 402b4fbb22ccc06d36dba52734676b9d67856cfa data/dtaether/loot_tables/trees/voluntary/sakura.json

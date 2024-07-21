@@ -1,0 +1,28 @@
+{
+  "only_if_loaded": "deep_aether",
+  "type": "dynamictreesplus:mushroom",
+  "family": "dynamictreesplus:mushroom",
+  "tapering": 0,
+  "signal_energy": 6,
+  "growth_rate": 1.2,
+  "soil_longevity": 3,
+  "generate_seed": true,
+  "generate_sapling": true,
+  "cap_properties": "dtaether:lightcap",
+  "mushroom_shape_kit": "dynamictreesplus:bell",
+  "primitive_sapling": "deep_aether:lightcap_mushroom",
+  "acceptable_soils": ["aether_like"],
+  "sapling_shape": "flat_mushroom",
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/mushroom_flat"
+  },
+  "features" : [
+    "bottom_flare",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "only_if_loaded": ["dynamictreesplus","aether_redux"],
+  "type": "dynamictreesplus:mushroom",
+  "common_cap": "dtaether:cloudcap",
+  "common_species": "dtaether:cloudcap",
+  "primitive_log": "aether_redux:cloudcap_stem",
+  "primitive_stripped_log": "aether_redux:stripped_cloudcap_stem",
+  "stick": "aether:skyroot_stick",
+  "max_branch_radius": 24,
+  "texture_overrides": {
+    "branch": "aether_redux:block/natural/cloudcap_stem",
+    "branch_top": "aether_redux:block/natural/cloudcap_stem_top",
+    "stripped_branch": "aether_redux:block/natural/stripped_cloudcap_stem",
+    "stripped_branch_top": "aether_redux:block/natural/stripped_cloudcap_stem_top"
+  }
+}

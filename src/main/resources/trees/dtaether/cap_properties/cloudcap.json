@@ -1,0 +1,6 @@
+{
+  "only_if_loaded": ["dynamictreesplus","aether_redux"],
+  "primitive_cap": "aether_redux:cloud_cap_block",
+  "material_color": "LAPIS",
+  "mushroom_item": "aether_redux:cloudcap_mushling"
+}

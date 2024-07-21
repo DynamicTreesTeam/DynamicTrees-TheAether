@@ -22,5 +22,13 @@
   "generate_seed": true,
   "generate_sapling": true,
   "perfect_biomes": { "name": "gravitation:aerfin_forest" },
-  "primitive_sapling": "gravitation:golden_aerfin_sapling"
+  "primitive_sapling": "gravitation:golden_aerfin_sapling",
+  "features" : [
+    {
+      "name": "dtaether:change_grass",
+      "properties": {
+        "block": "gravitation:enchanted_moss"
+      }
+    }
+  ]
 }

@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "aether_redux:block/natural/cloudcap_stem",
+    "rings": "aether_redux:block/natural/cloudcap_stem_top"
+  }
+}

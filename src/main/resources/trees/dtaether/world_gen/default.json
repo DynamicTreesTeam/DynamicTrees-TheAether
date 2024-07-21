@@ -372,13 +372,13 @@
     "apply" : {
       "species" : {
         "random" : {
-          "dtaether:aerfin" : 1,
-          "dtaether:blue_aerfin" : 1,
-          "dtaether:golden_aerfin" : 1
+          "dtaether:aerfin" : 3,
+          "dtaether:blue_aerfin" : 2,
+          "dtaether:golden_aerfin" : 2
         }
       },
       "density" : [ 1.5 ],
-      "chance" : 0.5,
+      "chance" : 0.6,
       "forestness": 0.5
     }
   },
@@ -421,19 +421,6 @@
 
 
 
-  {
-    "only_if_loaded": ["ancient_aether", "deep_aether"],
-    "select" : { "name": "ancient_aether:sun_forest" },
-    "apply" : {
-      "species" : {
-        "method": "splice_before",
-        "random" : {
-          "dtaether:sunroot" : 1,
-          "..." : 12
-        }
-      }
-    }
-  },
   {
     "only_if_loaded": ["ancient_aether", "deep_aether"],
     "select" : { "name": "ancient_aether:sun_forest" },

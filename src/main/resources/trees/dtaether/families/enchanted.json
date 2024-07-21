@@ -4,7 +4,7 @@
   "common_species": "dtaether:enchanted",
   "primitive_log": "gravitation:enchanted_log",
   "primitive_stripped_log": "gravitation:stripped_enchanted_log",
-  "max_branch_radius": 8,
+  "stick": "aether:skyroot_stick",
   "texture_overrides": {
     "branch": "gravitation:block/natural/enchanted_log",
     "branch_top": "gravitation:block/natural/enchanted_log_top",

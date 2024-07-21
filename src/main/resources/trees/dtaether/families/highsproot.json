@@ -4,5 +4,5 @@
   "common_species": "dtaether:highsproot",
   "primitive_log": "ancient_aether:highsproot_log",
   "primitive_stripped_log": "ancient_aether:stripped_highsproot_log",
-  "max_branch_radius": 8
+  "stick": "aether:skyroot_stick"
 }

@@ -5,6 +5,7 @@
   "primitive_log": "gravitation:beladon_log",
   "primitive_stripped_log": "gravitation:stripped_beladon_log",
   "max_branch_radius": 8,
+  "stick": "aether:skyroot_stick",
   "texture_overrides": {
     "branch": "gravitation:block/natural/beladon_log",
     "branch_top": "gravitation:block/natural/beladon_log_top",

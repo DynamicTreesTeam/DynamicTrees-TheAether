@@ -1,0 +1,6 @@
+{
+  "only_if_loaded": ["dynamictreesplus","deep_aether"],
+  "primitive_cap": "deep_aether:lightcap_mushroom_block",
+  "material_color": "COLOR_BROWN",
+  "mushroom_item": "deep_aether:lightcap_mushrooms"
+}

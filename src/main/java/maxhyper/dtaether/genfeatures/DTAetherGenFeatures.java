@@ -14,10 +14,11 @@ public class DTAetherGenFeatures {
     public static final GenFeature LEAF_PILE = new LeafPileGenFeature(DynamicTreesAether.location("leaf_pile"));
     public static final GenFeature PETALS = new PetalsGenFeature(DynamicTreesAether.location("petals"));
     public static final GenFeature VINES_ON_TRUNK = new VinesOnTrunkGenFeature(DynamicTreesAether.location("vines_on_trunk"));
+    public static final GenFeature CHANGE_GRASS = new ChangeGrassGenFeature(DynamicTreesAether.location("change_grass"));
 
     public static void register(final Registry<GenFeature> registry) {
         registry.registerAll(ALTERNATIVE_BRANCH, SEASONAL_CONDITION, HOLIDAY_DECORATION,
-                NEGATIVE_BIOME_PREDICATE, HANGER_VINES, LEAF_PILE, PETALS, VINES_ON_TRUNK
+                NEGATIVE_BIOME_PREDICATE, HANGER_VINES, LEAF_PILE, PETALS, VINES_ON_TRUNK, CHANGE_GRASS
         );
     }
 

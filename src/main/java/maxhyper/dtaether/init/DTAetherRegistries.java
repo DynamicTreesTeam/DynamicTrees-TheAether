@@ -5,7 +5,6 @@ import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
 import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
-import com.ferreusveritas.dynamictrees.client.BlockColorMultipliers;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.systems.fruit.Fruit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
@@ -15,25 +14,19 @@ import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.blocks.*;
 import maxhyper.dtaether.cells.DTAetherCellKits;
 import maxhyper.dtaether.compat.CompatHandler;
-import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
+import maxhyper.dtaether.trees.DropLogsMushroomFamily;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import maxhyper.dtaether.trees.ModDependentSpecies;
-import net.minecraft.util.Mth;
-import net.minecraft.world.level.levelgen.XoroshiroRandomSource;
+import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.synth.PerlinNoise;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.stream.IntStream;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class DTAetherRegistries {
@@ -82,6 +75,7 @@ public class DTAetherRegistries {
     @SubscribeEvent
     public static void registerFamilyTypes (final TypeRegistryEvent<Family> event) {
         event.registerType(DynamicTreesAether.location("imbued_log"), ImbuedLogFamily.TYPE);
+        event.registerType(DynamicTreesAether.location("drop_logs_mushroom"), DropLogsMushroomFamily.TYPE);
     }
 
     @SubscribeEvent
