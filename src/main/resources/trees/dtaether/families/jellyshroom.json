@@ -1,0 +1,17 @@
+{
+  "only_if_loaded": ["dynamictreesplus","aether_redux"],
+  "type": "dtaether:drop_logs_mushroom",
+  "common_cap": "dtaether:jellyshroom",
+  "common_species": "dtaether:jellyshroom",
+  "primitive_log": "aether_redux:jellyshroom_stem",
+  "stick": "aether:skyroot_stick",
+  "generate_stripped_branch": false,
+  "max_branch_radius": 24,
+  "texture_overrides": {
+    "branch": "aether_redux:block/natural/jellyshroom_stem",
+    "branch_top": "aether_redux:block/natural/jellyshroom_stem_top"
+  },
+  "branch_properties": {
+    "sound": "stem"
+  }
+}

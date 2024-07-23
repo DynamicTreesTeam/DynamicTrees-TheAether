@@ -1,6 +1,14 @@
 {
   "values": [
     {
+      "id": "dtaether:cloudcap_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:jellyshroom_seed",
+      "required": false
+    },
+    {
       "id": "dtaether:lightcap_seed",
       "required": false
     }

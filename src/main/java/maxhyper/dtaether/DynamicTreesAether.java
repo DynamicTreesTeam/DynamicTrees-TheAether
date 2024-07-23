@@ -11,11 +11,14 @@ import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import maxhyper.dtaether.data.DTAetherExtraLang;
+import maxhyper.dtaether.init.DTAetherClient;
+import maxhyper.dtaether.init.DTAetherPlusRegistries;
 import maxhyper.dtaether.init.DTAetherRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -32,7 +35,9 @@ public class DynamicTreesAether
         eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::gatherData);
 
-        MinecraftForge.EVENT_BUS.register(this);
+        if (ModList.get().isLoaded("dynamictreesplus")){
+            eventBus.register(DTAetherPlusRegistries.class);
+        }
 
         RegistryHandler.setup(MOD_ID);
         DTAetherRegistries.setup(eventBus);
@@ -43,7 +48,7 @@ public class DynamicTreesAether
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-
+        DTAetherClient.setup();
     }
 
     private void gatherData(final GatherDataEvent event) {

@@ -1,6 +1,6 @@
 {
   "only_if_loaded": ["dynamictreesplus","aether_redux"],
-  "type": "dynamictreesplus:mushroom",
+  "type": "dtaether:drop_logs_mushroom",
   "common_cap": "dtaether:cloudcap",
   "common_species": "dtaether:cloudcap",
   "primitive_log": "aether_redux:cloudcap_stem",
@@ -12,5 +12,8 @@
     "branch_top": "aether_redux:block/natural/cloudcap_stem_top",
     "stripped_branch": "aether_redux:block/natural/stripped_cloudcap_stem",
     "stripped_branch_top": "aether_redux:block/natural/stripped_cloudcap_stem_top"
+  },
+  "branch_properties": {
+    "sound": "stem"
   }
 }

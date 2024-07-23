@@ -1,6 +1,16 @@
 {
   "only_if_loaded": ["dynamictreesplus","aether_redux"],
+  "type": "dtaether:drop_blocks_cap",
   "primitive_cap": "aether_redux:cloud_cap_block",
   "material_color": "LAPIS",
-  "mushroom_item": "aether_redux:cloudcap_mushling"
+  "mushroom_item": "aether_redux:cloudcap_mushling",
+  "model_overrides": {
+    "outside_face": "aether_redux:block/cloud_cap_block0",
+    "inside_face": "aether_redux:block/cloud_cap_block_inside"
+  },
+  "texture_overrides": {
+    "inside_face": "aether_redux:block/natural/cloud_cap_block_inside",
+    "outside_face": "aether_redux:block/natural/cloud_cap_block2"
+  },
+  "sound": "fungus"
 }

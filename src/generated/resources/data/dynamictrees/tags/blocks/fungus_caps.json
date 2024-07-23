@@ -1,6 +1,14 @@
 {
   "values": [
     {
+      "id": "dtaether:cloudcap_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:jellyshroom_sapling",
+      "required": false
+    },
+    {
       "id": "dtaether:lightcap_sapling",
       "required": false
     }

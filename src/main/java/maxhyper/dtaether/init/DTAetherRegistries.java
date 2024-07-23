@@ -10,17 +10,20 @@ import com.ferreusveritas.dynamictrees.systems.fruit.Fruit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.ferreusveritas.dynamictrees.util.CommonVoxelShapes;
 import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.blocks.*;
 import maxhyper.dtaether.cells.DTAetherCellKits;
 import maxhyper.dtaether.compat.CompatHandler;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
 import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
-import maxhyper.dtaether.trees.DropLogsMushroomFamily;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import maxhyper.dtaether.trees.ModDependentSpecies;
 import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -34,18 +37,17 @@ public class DTAetherRegistries {
     public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES, DynamicTreesAether.MOD_ID);
     public static final RegistryObject<DynamicCrystalIslandFeature> DYNAMIC_CRYSTAL_ISLAND_FEATURE = FEATURES.register("crystal_island", DynamicCrystalIslandFeature::new);
 
+    public static final VoxelShape CLOUDCAP_CAP = Block.box(5.5D, 3.0D, 5.5D, 10.5D, 10.0D, 10.5D);
+    public static final VoxelShape CLOUDCAP = Shapes.or(CommonVoxelShapes.MUSHROOM_STEM, CLOUDCAP_CAP);
+
     public static void setup(IEventBus modBus) {
         FEATURES.register(modBus);
         CompatHandler.setup();
     }
 
     public static void setupBlocks() {
-        setUpSoils();
+        CommonVoxelShapes.SHAPES.put(DynamicTreesAether.location("cloudcap").toString(), CLOUDCAP);
         setupConnectables();
-    }
-
-    private static void setUpSoils() {
-
     }
 
     private static void setupConnectables() {
@@ -75,7 +77,6 @@ public class DTAetherRegistries {
     @SubscribeEvent
     public static void registerFamilyTypes (final TypeRegistryEvent<Family> event) {
         event.registerType(DynamicTreesAether.location("imbued_log"), ImbuedLogFamily.TYPE);
-        event.registerType(DynamicTreesAether.location("drop_logs_mushroom"), DropLogsMushroomFamily.TYPE);
     }
 
     @SubscribeEvent

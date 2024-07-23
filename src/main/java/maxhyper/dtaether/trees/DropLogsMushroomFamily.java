@@ -1,14 +1,18 @@
 package maxhyper.dtaether.trees;
 
+import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictrees.block.branch.BasicBranchBlock;
 import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
 import com.ferreusveritas.dynamictrees.data.provider.DTLootTableProvider;
+import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.MushroomBranchBlock;
 import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomFamily;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootTable;
 
 public class DropLogsMushroomFamily extends HugeMushroomFamily {
+
+    public static final TypedRegistry.EntryType<Family> TYPE = TypedRegistry.newType(DropLogsMushroomFamily::new);
 
     public DropLogsMushroomFamily(ResourceLocation name) {
         super(name);

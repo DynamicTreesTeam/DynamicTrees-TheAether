@@ -128,7 +128,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:stick"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0

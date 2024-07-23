@@ -1,0 +1,39 @@
+{
+  "only_if_loaded": ["aether_redux", "dynamictreesplus"],
+  "type": "dtaether:drop_logs_mushroom",
+  "family": "dtaether:cloudcap",
+  "tapering": 0,
+  "signal_energy": 20,
+  "growth_rate": 0.6,
+  "soil_longevity": 8,
+  "cap_properties": "dtaether:cloudcap",
+  "mushroom_shape_kit": {
+    "name": "dynamictreesplus:bell",
+    "properties": {
+      "max_age_curve_factor": 2,
+      "min_age_curve_factor": 2,
+      "curve_height_offset": 9,
+      "curve_factor_variation": 0,
+      "max_cap_age": 8,
+      "chance_to_age": 0.4
+    }
+  },
+  "primitive_sapling": "aether_redux:cloudcap_mushling",
+  "acceptable_soils": ["aether_like"],
+  "sapling_shape": "dtaether:cloudcap",
+  "model_overrides": {
+    "sapling": "dtaether:block/mushroom_long"
+  },
+  "features" : [
+    "bottom_flare",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Cloudcap Cap"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "dtaether:block/mushroom_long",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "cap": "dtaether:block/cloudcap_cap",
+    "stem": "aether_redux:block/cloudcap_stem"
+  }
+}

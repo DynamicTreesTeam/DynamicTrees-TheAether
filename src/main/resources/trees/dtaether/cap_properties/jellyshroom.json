@@ -1,6 +1,13 @@
 {
   "only_if_loaded": ["dynamictreesplus","aether_redux"],
+  "type": "dtaether:jellyshroom",
   "primitive_cap": "aether_redux:jellyshroom_jelly_block",
   "material_color": "COLOR_PURPLE",
-  "mushroom_item": "aether_redux:jellyshroom"
+  "mushroom_item": "aether_redux:jellyshroom",
+  "generate_face_models": true,
+  "texture_overrides": {
+    "inside_face": "aether_redux:block/natural/jellyshroom_jelly_block",
+    "outside_face": "aether_redux:block/natural/jellyshroom_jelly_block"
+  },
+  "sound": "honey_block"
 }
