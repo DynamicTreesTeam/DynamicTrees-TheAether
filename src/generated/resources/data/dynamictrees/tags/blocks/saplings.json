@@ -24,18 +24,26 @@
       "id": "dtaether:blue_roseroot_sapling",
       "required": false
     },
-    "dtaether:conberry_sapling",
+    {
+      "id": "dtaether:conberry_sapling",
+      "required": false
+    },
     {
       "id": "dtaether:cruderoot_sapling",
       "required": false
     },
-    "dtaether:crystal_sapling_aether_redux",
-    "dtaether:crystal_skyroot_sapling",
+    {
+      "id": "dtaether:crystal_skyroot_sapling",
+      "required": false
+    },
     {
       "id": "dtaether:enchanted_sapling",
       "required": false
     },
-    "dtaether:enchanted_skyroot_sapling",
+    {
+      "id": "dtaether:enchanted_skyroot_sapling",
+      "required": false
+    },
     {
       "id": "dtaether:fieldsproot_sapling",
       "required": false
@@ -52,12 +60,10 @@
       "id": "dtaether:golden_aerfin_sapling",
       "required": false
     },
-    "dtaether:golden_oak_sapling",
     {
       "id": "dtaether:highsproot_sapling",
       "required": false
     },
-    "dtaether:holiday_sapling_aether_redux",
     {
       "id": "dtaether:purple_glacia_sapling",
       "required": false
@@ -70,7 +76,6 @@
       "id": "dtaether:sakura_sapling",
       "required": false
     },
-    "dtaether:skyroot_sapling",
     {
       "id": "dtaether:skyroot_pine_sapling",
       "required": false
@@ -81,6 +86,24 @@
     },
     {
       "id": "dtaether:yagroot_sapling",
+      "required": false
+    },
+    "dtaether:skyroot_sapling",
+    "dtaether:golden_oak_sapling",
+    {
+      "id": "dtaether:holiday_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:crystal_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:holiday_sapling_aether_redux",
+      "required": false
+    },
+    {
+      "id": "dtaether:crystal_sapling_aether_redux",
       "required": false
     }
   ]

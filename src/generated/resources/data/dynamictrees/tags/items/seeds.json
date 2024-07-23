@@ -24,18 +24,27 @@
       "id": "dtaether:blue_roseroot_seed",
       "required": false
     },
-    "dtaether:conberry_seed",
+    {
+      "id": "dtaether:conberry_seed",
+      "required": false
+    },
     {
       "id": "dtaether:cruderoot_seed",
       "required": false
     },
     "dtaether:crystal_seed",
-    "dtaether:crystal_skyroot_seed",
+    {
+      "id": "dtaether:crystal_skyroot_seed",
+      "required": false
+    },
     {
       "id": "dtaether:enchanted_seed",
       "required": false
     },
-    "dtaether:enchanted_skyroot_seed",
+    {
+      "id": "dtaether:enchanted_skyroot_seed",
+      "required": false
+    },
     {
       "id": "dtaether:fieldsproot_seed",
       "required": false
