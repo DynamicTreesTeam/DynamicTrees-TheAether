@@ -1,5 +1,8 @@
 {
   "values": [
-    "dtaether:stripped_cloudcap_branch"
+    {
+      "id": "dtaether:stripped_cloudcap_branch",
+      "required": false
+    }
   ]
 }
