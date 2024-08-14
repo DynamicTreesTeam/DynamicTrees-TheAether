@@ -1,10 +1,11 @@
-package maxhyper.dtaether.trees;
+package maxhyper.dtaether.blocks;
 
 import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapBlock;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
@@ -14,7 +15,12 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.zepalesque.redux.block.ReduxBlocks;
 import net.zepalesque.redux.client.audio.ReduxSoundEvents;
 
 public class JellyshroomCapProperties extends DropBlocksCapProperties {
@@ -23,6 +29,11 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
 
     public JellyshroomCapProperties(ResourceLocation registryName) {
         super(registryName);
+    }
+
+    @Override
+    public BlockBehaviour.Properties getDefaultBlockProperties(MapColor mapColor) {
+        return super.getDefaultBlockProperties(mapColor).noOcclusion().isSuffocating(ReduxBlocks::never).isViewBlocking(ReduxBlocks::never);
     }
 
     @Override
@@ -73,6 +84,15 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
 
                 super.stepOn(pLevel, pPos, pState, pEntity);
             }
+            public VoxelShape getVisualShape(BlockState pState, BlockGetter pReader, BlockPos pPos, CollisionContext pContext) {
+                return Shapes.empty();
+            }
+            public boolean propagatesSkylightDown(BlockState pState, BlockGetter pReader, BlockPos pPos) {
+                return true;
+            }
+            public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
+                return properties.isPartOfCap(pAdjacentBlockState) || super.skipRendering(pState, pAdjacentBlockState, pSide);
+            }
         };
     }
 
@@ -122,6 +142,15 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
                     pEntity.setDeltaMovement(pEntity.getDeltaMovement().multiply(d1, 1.0, d1));
                 }
                 super.stepOn(pLevel, pPos, pState, pEntity);
+            }
+            public VoxelShape getVisualShape(BlockState pState, BlockGetter pReader, BlockPos pPos, CollisionContext pContext) {
+                return Shapes.empty();
+            }
+            public boolean propagatesSkylightDown(BlockState pState, BlockGetter pReader, BlockPos pPos) {
+                return true;
+            }
+            public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
+                return properties.isPartOfCap(pAdjacentBlockState) || super.skipRendering(pState, pAdjacentBlockState, pSide);
             }
         };
     }

@@ -1,6 +1,5 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
-  "render_type": "minecraft:translucent",
+  "parent": "dtaether:block/cube_bottom_top_jelly",
   "textures": {
     "bottom": "aether_redux:block/natural/jellyshroom_jelly_block",
     "side": "aether_redux:block/natural/jellyshroom_jelly_block",

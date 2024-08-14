@@ -9,5 +9,9 @@
     "inside_face": "aether_redux:block/natural/jellyshroom_jelly_block",
     "outside_face": "aether_redux:block/natural/jellyshroom_jelly_block"
   },
+  "model_overrides": {
+    "face": "dtaether:block/template_single_face_jelly",
+    "cap_center_age_0_parent": "dtaether:block/cube_bottom_top_jelly"
+  },
   "sound": "honey_block"
 }

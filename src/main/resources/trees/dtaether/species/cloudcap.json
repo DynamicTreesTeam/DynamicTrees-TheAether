@@ -2,10 +2,11 @@
   "only_if_loaded": ["aether_redux", "dynamictreesplus"],
   "type": "dtaether:drop_logs_mushroom",
   "family": "dtaether:cloudcap",
-  "tapering": 0,
+  "tapering": 0.05,
   "signal_energy": 20,
   "growth_rate": 0.6,
   "soil_longevity": 8,
+  "max_branch_radius": 24,
   "cap_properties": "dtaether:cloudcap",
   "mushroom_shape_kit": {
     "name": "dynamictreesplus:bell",
@@ -25,7 +26,12 @@
     "sapling": "dtaether:block/mushroom_long"
   },
   "features" : [
-    "bottom_flare",
+    {
+      "name": "dtaether:big_bottom_flare",
+      "properties": {
+        "min_radius": 3
+      }
+    },
     {
       "name": "mound",
       "properties": {

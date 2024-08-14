@@ -1,15 +1,27 @@
 package maxhyper.dtaether.init;
 
+import com.ferreusveritas.dynamictrees.api.registry.Registry;
+import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
 import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
+import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
 import maxhyper.dtaether.DynamicTreesAether;
+import maxhyper.dtaether.blocks.DropBlocksCapProperties;
+import maxhyper.dtaether.blocks.JellyshroomCapProperties;
+import maxhyper.dtaether.mushroomlogic.DTAetherMushroomShapeKits;
 import maxhyper.dtaether.trees.*;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 
 public class DTAetherPlusRegistries {
+
+    @SubscribeEvent
+    public static void onMushroomShapeKitRegistry(RegistryEvent<MushroomShapeKit> event) {
+        DTAetherMushroomShapeKits.register(event.getRegistry());
+    }
 
     @SubscribeEvent
     public static void registerSpeciesTypes (final TypeRegistryEvent<Species> event) {

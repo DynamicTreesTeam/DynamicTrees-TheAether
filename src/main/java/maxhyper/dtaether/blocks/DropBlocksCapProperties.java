@@ -1,4 +1,4 @@
-package maxhyper.dtaether.trees;
+package maxhyper.dtaether.blocks;
 
 import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictrees.data.provider.DTLootTableProvider;
