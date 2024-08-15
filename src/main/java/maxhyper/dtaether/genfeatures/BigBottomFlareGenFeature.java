@@ -24,19 +24,15 @@ public class BigBottomFlareGenFeature extends BottomFlareGenFeature {
     public void flareBottom(@Nonnull GenFeatureConfiguration configuration, LevelAccessor world, BlockPos rootPos, Species species) {
         Family family = species.getFamily();
 
-        int i;
-        int lastRad = 0;
-        for (i=0; i<curve.length; i++){
-            lastRad = TreeHelper.getRadius(world, rootPos.above(1+i));
-            if (lastRad < i + configuration.get(MIN_RADIUS)) break;
-        }
-        if (i == 0) return;
-        for (int j=0; j<i; j++){
-            int radFlare = curve[j+(curve.length-i)];
+        int lastRad = TreeHelper.getRadius(world, rootPos.above(curve.length+1));
+        int effectiveRad = Math.min(Math.max(0, lastRad - configuration.get(MIN_RADIUS)), curve.length);
+
+        for (int j=0; j<effectiveRad; j++){
+            int radFlare = curve[j + (curve.length-effectiveRad)];
             int finalJ = j;
-            int finalLastRad = lastRad;
-            family.getBranch().ifPresent(branch-> branch.setRadius(
-                            world, rootPos.above(1+ finalJ), finalLastRad + radFlare, Direction.UP));
+            family.getBranch().ifPresent(branch-> branch.setRadius(world,
+                    rootPos.above(1+ finalJ), lastRad + radFlare,
+                    Direction.UP));
         }
 
     }

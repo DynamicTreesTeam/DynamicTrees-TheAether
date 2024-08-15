@@ -1,8 +1,8 @@
 package maxhyper.dtaether.init;
 
-import com.ferreusveritas.dynamictrees.api.registry.Registry;
 import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
 import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
+import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
@@ -11,8 +11,8 @@ import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.blocks.DropBlocksCapProperties;
 import maxhyper.dtaether.blocks.JellyshroomCapProperties;
 import maxhyper.dtaether.mushroomlogic.DTAetherMushroomShapeKits;
-import maxhyper.dtaether.trees.*;
-import net.minecraftforge.eventbus.api.IEventBus;
+import maxhyper.dtaether.trees.DropLogsMushroomFamily;
+import maxhyper.dtaether.trees.DropLogsMushroomSpecies;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 
@@ -38,6 +38,13 @@ public class DTAetherPlusRegistries {
         event.registerType(DynamicTreesAether.location("drop_blocks_cap"), DropBlocksCapProperties.TYPE);
         if (ModList.get().isLoaded("aether_redux")){
             event.registerType(DynamicTreesAether.location("jellyshroom"), JellyshroomCapProperties.TYPE);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onFeatureCancellerRegistry(final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<FeatureCanceller> event) {
+        if (ModList.get().isLoaded("aether_redux")){
+            ReduxOnlyFunctions.registerFeatureCancellers(event);
         }
     }
 

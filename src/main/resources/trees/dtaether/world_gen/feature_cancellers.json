@@ -42,7 +42,7 @@
     "only_if_loaded": [ "aether_redux", "dynamictreesplus" ],
     "select" : { "name": "aether_redux:cloudcaps" },
     "cancellers": {
-      "types": [ "tree", "mushroom" ],
+      "types": [ "dtaether:cloudcap", "dtaether:jellyshroom" ],
       "namespaces": ["aether", "aether_redux", "minecraft"]
     }
   }

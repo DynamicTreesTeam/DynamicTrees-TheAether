@@ -10,7 +10,7 @@
   "generate_sapling": true,
   "cap_properties": "dtaether:lightcap",
   "mushroom_shape_kit": "dynamictreesplus:bell",
-  "primitive_sapling": "deep_aether:lightcap_mushroom",
+  "primitive_sapling": "deep_aether:lightcap_mushrooms",
   "acceptable_soils": ["aether_like"],
   "sapling_shape": "flat_mushroom",
   "model_overrides": {

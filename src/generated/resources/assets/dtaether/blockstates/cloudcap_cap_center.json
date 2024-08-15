@@ -2,8 +2,164 @@
   "multipart": [
     {
       "apply": {
-        "model": "dtaether:block/mushroom/cloudcap_cap_center_age0"
+        "model": "aether_redux:block/cloud_cap_block_inside",
+        "x": 90
       },
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "aether_redux:block/cloud_cap_block1",
+          "weight": 7,
+          "x": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block0",
+          "weight": 10,
+          "x": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block2",
+          "weight": 5,
+          "x": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block4",
+          "weight": 3,
+          "x": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block3",
+          "weight": 5,
+          "x": 270
+        }
+      ],
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "aether_redux:block/cloud_cap_block0",
+          "weight": 10
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block3",
+          "weight": 5
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block4",
+          "weight": 3
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block2",
+          "weight": 5
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block1",
+          "weight": 7
+        }
+      ],
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "aether_redux:block/cloud_cap_block1",
+          "weight": 7,
+          "y": 180
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block3",
+          "weight": 5,
+          "y": 180
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block4",
+          "weight": 3,
+          "y": 180
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block0",
+          "weight": 10,
+          "y": 180
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block2",
+          "weight": 5,
+          "y": 180
+        }
+      ],
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "aether_redux:block/cloud_cap_block4",
+          "weight": 3,
+          "y": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block3",
+          "weight": 5,
+          "y": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block0",
+          "weight": 10,
+          "y": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block2",
+          "weight": 5,
+          "y": 270
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block1",
+          "weight": 7,
+          "y": 270
+        }
+      ],
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "aether_redux:block/cloud_cap_block1",
+          "weight": 7,
+          "y": 90
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block3",
+          "weight": 5,
+          "y": 90
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block0",
+          "weight": 10,
+          "y": 90
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block4",
+          "weight": 3,
+          "y": 90
+        },
+        {
+          "model": "aether_redux:block/cloud_cap_block2",
+          "weight": 5,
+          "y": 90
+        }
+      ],
       "when": {
         "age": "0"
       }
