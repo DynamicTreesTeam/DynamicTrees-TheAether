@@ -16,11 +16,13 @@ public class DTAetherGenFeatures {
     public static final GenFeature VINES_ON_TRUNK = new VinesOnTrunkGenFeature(DynamicTreesAether.location("vines_on_trunk"));
     public static final GenFeature CHANGE_GRASS = new ChangeGrassGenFeature(DynamicTreesAether.location("change_grass"));
     public static final GenFeature BIG_BOTTOM_FLARE = new BigBottomFlareGenFeature(DynamicTreesAether.location("big_bottom_flare"));
+    public static final GenFeature SPORES = new SporesGenFeature(DynamicTreesAether.location("spores"));
+    public static final GenFeature JELLY_SIDE_BRANCHES = new JellyshroomBranchesGenFeature(DynamicTreesAether.location("jelly_side_branches"));
 
     public static void register(final Registry<GenFeature> registry) {
         registry.registerAll(ALTERNATIVE_BRANCH, SEASONAL_CONDITION, HOLIDAY_DECORATION,
                 NEGATIVE_BIOME_PREDICATE, HANGER_VINES, LEAF_PILE, PETALS, VINES_ON_TRUNK,
-                CHANGE_GRASS, BIG_BOTTOM_FLARE
+                CHANGE_GRASS, BIG_BOTTOM_FLARE, SPORES, JELLY_SIDE_BRANCHES
         );
     }
 

@@ -37,6 +37,12 @@
       "properties": {
         "mound_cutoff_radius": 999
       }
+    },
+    {
+      "name": "dtaether:spores",
+      "properties": {
+        "block": "aether_redux:cloudcap_spores"
+      }
     }
   ],
   "lang_overrides": {

@@ -151,7 +151,7 @@
     "apply" : {
       "species" : {
         "random" : {
-          "dtaether:cloudcap" : 6,
+          "dtaether:cloudcap" : 4,
           "dtaether:jellyshroom" : 1
         }
       },

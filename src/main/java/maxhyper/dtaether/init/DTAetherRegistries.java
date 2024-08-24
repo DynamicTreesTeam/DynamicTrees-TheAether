@@ -5,6 +5,7 @@ import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
+import com.ferreusveritas.dynamictrees.systems.BranchConnectables;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
@@ -18,12 +19,15 @@ import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import maxhyper.dtaether.trees.ModDependentSpecies;
 import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -45,10 +49,9 @@ public class DTAetherRegistries {
 
     public static void setupBlocks() {
         CommonVoxelShapes.SHAPES.put(DynamicTreesAether.location("cloudcap").toString(), CLOUDCAP);
-        setupConnectables();
-    }
-
-    private static void setupConnectables() {
+        if (ModList.get().isLoaded("aether_redux")){
+            ReduxOnlyFunctions.setupConnectables();
+        }
 
     }
 

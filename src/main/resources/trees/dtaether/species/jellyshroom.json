@@ -9,7 +9,7 @@
   "mushroom_shape_kit": {
     "name": "dtaether:ball",
     "properties": {
-      "max_cap_age": 4
+      "max_cap_age": 7
     }
   },
   "primitive_sapling": "aether_redux:jellyshroom",
@@ -18,6 +18,14 @@
   "model_overrides": {
     "sapling": "dynamictrees:block/smartmodel/mushroom_round"
   },
+  "features" : [
+    {
+      "name": "dtaether:jelly_side_branches",
+      "properties": {
+        "block": "aether_redux:jellyshroom_jelly_block"
+      }
+    }
+  ],
   "lang_overrides": {
     "seed": "Jellyshroom Cap"
   }

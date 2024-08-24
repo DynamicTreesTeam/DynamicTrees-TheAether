@@ -1,9 +1,14 @@
 package maxhyper.dtaether.blocks;
 
+import com.ferreusveritas.dynamictrees.api.TreeHelper;
 import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
+import com.ferreusveritas.dynamictrees.api.treedata.TreePart;
+import com.ferreusveritas.dynamictrees.systems.GrowSignal;
+import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapBlock;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
+import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
@@ -151,6 +156,38 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
             }
             public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
                 return properties.isPartOfCap(pAdjacentBlockState) || super.skipRendering(pState, pAdjacentBlockState, pSide);
+            }
+
+            @Override
+            public boolean tryGrowCap(Level level, CapProperties capProp, int currentAge, GrowSignal signal, BlockPos pos, BlockPos previousPos, boolean forceAge) {
+                Species var9 = signal.getSpecies();
+                if (var9 instanceof HugeMushroomSpecies species) {
+                    if (!level.isEmptyBlock(pos) && !(level.getBlockState(pos).getBlock() instanceof DynamicCapBlock)) {
+                        TreePart treePart = TreeHelper.getTreePart(level.getBlockState(pos));
+                        return treePart instanceof DynamicCapCenterBlock;
+                    } else {
+                        int age = currentAge;
+                        if (currentAge == 0) {
+                            age = 1;
+                        } else if (forceAge || level.getRandom().nextFloat() < species.getChanceToAge()) {
+                            age = Math.min(age + 1, this.properties.getMaxAge(species));
+                        }
+
+                        level.setBlock(pos, this.getCapBlockStateForPlacement(level, pos, age == 0 ? 1 : age, capProp.getDynamicCapState(true), false), 2);
+                        if (age != currentAge) {
+                            this.ageBranchUnderCap(level, pos, signal, currentAge);
+                        }
+
+                        if (!(signal.getSpecies() instanceof HugeMushroomSpecies)) {
+                            return false;
+                        } else {
+                            this.generateCap(age, level, (HugeMushroomSpecies)signal.getSpecies(), pos, previousPos, currentAge, signal.rootPos);
+                            return true;
+                        }
+                    }
+                } else {
+                    return false;
+                }
             }
         };
     }

@@ -8,6 +8,7 @@ import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
 import maxhyper.dtaether.DynamicTreesAether;
+import maxhyper.dtaether.blocks.CloudcapCapProperties;
 import maxhyper.dtaether.blocks.DropBlocksCapProperties;
 import maxhyper.dtaether.blocks.JellyshroomCapProperties;
 import maxhyper.dtaether.mushroomlogic.DTAetherMushroomShapeKits;
@@ -38,6 +39,7 @@ public class DTAetherPlusRegistries {
         event.registerType(DynamicTreesAether.location("drop_blocks_cap"), DropBlocksCapProperties.TYPE);
         if (ModList.get().isLoaded("aether_redux")){
             event.registerType(DynamicTreesAether.location("jellyshroom"), JellyshroomCapProperties.TYPE);
+            event.registerType(DynamicTreesAether.location("cloudcap"), CloudcapCapProperties.TYPE);
         }
     }
 
