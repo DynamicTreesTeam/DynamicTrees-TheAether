@@ -4,6 +4,7 @@ import com.ferreusveritas.dynamictrees.api.TreeHelper;
 import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictrees.api.treedata.TreePart;
 import com.ferreusveritas.dynamictrees.systems.GrowSignal;
+import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapBlock;

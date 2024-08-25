@@ -32,7 +32,7 @@ public class CloudcapCapProperties extends DropBlocksCapProperties{
         return new DynamicCapCenterBlock(this, properties){
             @Override
             protected void generateCap(int newAge, Level pLevel, HugeMushroomSpecies species, BlockPos newPos, BlockPos currentPos, int currentAge, BlockPos rootPos) {
-                DynamicCapBlock capBlock = (DynamicCapBlock)this.properties.getDynamicCapBlock().orElse(null);
+                DynamicCapBlock capBlock = this.properties.getDynamicCapBlock().orElse(null);
                 if (capBlock != null) {
                     Set<CoordUtils.Surround> surrounds = new HashSet<>();
                     if (currentPos != newPos || currentAge != newAge) {
@@ -56,10 +56,6 @@ public class CloudcapCapProperties extends DropBlocksCapProperties{
                 }
             }
 
-            @Override
-            public void destroy(LevelAccessor pLevel, BlockPos pPos, BlockState pState) {
-                super.destroy(pLevel, pPos, pState);
-            }
         };
     }
 }
