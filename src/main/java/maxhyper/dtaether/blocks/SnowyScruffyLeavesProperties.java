@@ -59,7 +59,8 @@ public class SnowyScruffyLeavesProperties extends ScruffyLeavesProperties {
     @Override
     public BlockState getDynamicLeavesState(int hydro) {
         BlockState state = dynamicLeavesBlockHydroStates[Mth.clamp(hydro, 0, LeavesProperties.maxHydro)];
-        if (state != null) state = state.setValue(SnowyLeavesBlock.SNOWY, false);
+        if (state != null && state.hasProperty(SnowyLeavesBlock.SNOWY))
+            state = state.setValue(SnowyLeavesBlock.SNOWY, false);
         return Optional.ofNullable(state)
                 .orElse(Blocks.AIR.defaultBlockState());
     }

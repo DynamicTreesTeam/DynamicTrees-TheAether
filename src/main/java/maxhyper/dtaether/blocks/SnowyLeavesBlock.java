@@ -35,8 +35,12 @@ public class SnowyLeavesBlock extends DynamicLeavesBlock {
 
     @Override
     public BlockState getStateForPlacement(@NotNull BlockPlaceContext context) {
-        BlockState blockstate = context.getLevel().getBlockState(context.getClickedPos().above());
-        return super.getStateForPlacement(context).setValue(SNOWY, isSnowySetting(blockstate));
+        BlockState placementState = super.getStateForPlacement(context);
+        if (placementState.hasProperty(SNOWY)){
+            BlockState blockstate = context.getLevel().getBlockState(context.getClickedPos().above());
+            return placementState.setValue(SNOWY, isSnowySetting(blockstate));
+        }
+        return placementState;
     }
 
     private static boolean isSnowySetting(BlockState state) {
@@ -59,6 +63,8 @@ public class SnowyLeavesBlock extends DynamicLeavesBlock {
     }
 
     public BlockState getLeavesBlockStateForPlacement(LevelAccessor level, BlockPos pos, BlockState leavesStateWithHydro, int oldHydro, boolean worldGen) {
-        return leavesStateWithHydro.setValue(SNOWY, false);
+        if (leavesStateWithHydro.hasProperty(SNOWY))
+            return leavesStateWithHydro.setValue(SNOWY, false);
+        return leavesStateWithHydro;
     }
 }
