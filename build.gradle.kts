@@ -97,27 +97,30 @@ dependencies {
     minecraft("net.minecraftforge:forge:${mcVersion}-${property("forgeVersion")}")
 
     //Dynamic Trees
-    implementation(fg.deobf("curse.maven:dynamictrees-252818:5558006"))
+    implementation(fg.deobf("curse.maven:dynamictrees-252818:6410558"))
     implementation(fg.deobf("curse.maven:dynamictreesplus-478155:5536181"))
     //implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
     //implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
     //The Aether itself
-    implementation(fg.deobf("curse.maven:aether-255308:5302178"))
+    implementation(fg.deobf("curse.maven:aether-255308:6134920"))
 
     //Addon dependencies
-    runtimeOnly(fg.deobf("curse.maven:geckolib-388172:5414523"))
-    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:5378180"))
+    runtimeOnly(fg.deobf("curse.maven:geckolib-388172:6333474"))
+    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:6290448"))
     runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:4789008"))
     runtimeOnly(fg.deobf("curse.maven:the-twilight-forest-227639:5468648"))
-    runtimeOnly(fg.deobf("curse.maven:dynamic-trees-the-twilight-forest-391986:5536317"))
+    runtimeOnly(fg.deobf("curse.maven:dynamic-trees-the-twilight-forest-391986:5554436"))
     runtimeOnly(fg.deobf("curse.maven:structure-gel-api-378802:5278429"))
+    runtimeOnly(fg.deobf("curse.maven:placebo-283644:6274231"))
+    runtimeOnly(fg.deobf("curse.maven:curios-309927:6418456"))
+    runtimeOnly(fg.deobf("curse.maven:apothic-attributes-898963:5634071"))
     //Aether addons
-    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:5441091"))
-    implementation(fg.deobf("curse.maven:aether-redux-867237:5541740"))
+    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:6221130"))
+    implementation(fg.deobf("curse.maven:aether-redux-867237:5872671"))
     runtimeOnly(fg.deobf("curse.maven:aether-lost-content-318602:4927038"))
-    runtimeOnly(fg.deobf("curse.maven:aether-gravitation-855631:5086492"))
-    runtimeOnly(fg.deobf("curse.maven:ancient-aether-886751:5364191"))
+    runtimeOnly(fg.deobf("curse.maven:aether-gravitation-855631:6123604"))
+    runtimeOnly(fg.deobf("curse.maven:ancient-aether-886751:6400544"))
     runtimeOnly(fg.deobf("curse.maven:umbral-skies-855821:4768252"))
 
     //Other useful mods
