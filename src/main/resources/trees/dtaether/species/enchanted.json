@@ -12,7 +12,7 @@
     "#is_nether": 0.75,
     "#forge:is_wet": 0.75
   },
-  "perfect_biomes": { "tags": ["#minecraft:is_aether", "#forge:is_magical"] },
+  "perfect_biomes": { "name": "gravitation:undergrowth" },
   "primitive_sapling": "gravitation:enchanted_sapling",
   "lang_overrides": {
     "species": "Enchanted Tree",

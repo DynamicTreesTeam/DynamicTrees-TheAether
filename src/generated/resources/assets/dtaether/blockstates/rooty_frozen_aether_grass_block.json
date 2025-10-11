@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "gravitation:block/enchanted_moss"
+        "model": "gravitation:block/frozen_aether_grass_block"
       }
     },
     {

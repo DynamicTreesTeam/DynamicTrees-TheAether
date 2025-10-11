@@ -19,6 +19,6 @@
   "environment_factors" : {
     "#forge:is_wet": 0.7
   },
-  "perfect_biomes": { "name": "gravitation:aerfin_forest" },
+  "perfect_biomes": { "name": "gravitation:frosted_forest" },
   "primitive_sapling": "gravitation:aerfin_sapling"
 }

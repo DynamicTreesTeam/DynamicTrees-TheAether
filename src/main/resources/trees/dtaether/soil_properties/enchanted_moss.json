@@ -1,5 +1,0 @@
-{
-  "only_if_loaded": "gravitation",
-  "primitive_soil": "gravitation:enchanted_moss",
-  "acceptable_soils": [ "dirt_like", "aether_like" ]
-}

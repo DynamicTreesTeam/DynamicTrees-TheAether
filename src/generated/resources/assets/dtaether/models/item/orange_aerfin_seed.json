@@ -1,6 +1,6 @@
 {
   "parent": "dynamictrees:item/standard_seed",
   "textures": {
-    "layer0": "dtaether:item/golden_aerfin_seed"
+    "layer0": "dtaether:item/orange_aerfin_seed"
   }
 }

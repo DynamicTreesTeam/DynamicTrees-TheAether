@@ -97,8 +97,8 @@ dependencies {
     minecraft("net.minecraftforge:forge:${mcVersion}-${property("forgeVersion")}")
 
     //Dynamic Trees
-    implementation(fg.deobf("curse.maven:dynamictrees-252818:6410558"))
-    implementation(fg.deobf("curse.maven:dynamictreesplus-478155:5536181"))
+    implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
+    implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
     //implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
     //implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
@@ -106,7 +106,7 @@ dependencies {
     implementation(fg.deobf("curse.maven:aether-255308:6134920"))
 
     //Addon dependencies
-    runtimeOnly(fg.deobf("curse.maven:geckolib-388172:6333474"))
+    runtimeOnly(fg.deobf("curse.maven:geckolib-388172:7025129"))
     runtimeOnly(fg.deobf("curse.maven:terrablender-563928:6290448"))
     runtimeOnly(fg.deobf("curse.maven:aeroblender-879879:4789008"))
     runtimeOnly(fg.deobf("curse.maven:the-twilight-forest-227639:5468648"))
@@ -116,17 +116,17 @@ dependencies {
     runtimeOnly(fg.deobf("curse.maven:curios-309927:6418456"))
     runtimeOnly(fg.deobf("curse.maven:apothic-attributes-898963:5634071"))
     //Aether addons
-    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:6221130"))
-    implementation(fg.deobf("curse.maven:aether-redux-867237:5872671"))
+    runtimeOnly(fg.deobf("curse.maven:deep-aether-852465:6839617"))
+    implementation(fg.deobf("curse.maven:aether-redux-867237:6596294"))
     runtimeOnly(fg.deobf("curse.maven:aether-lost-content-318602:4927038"))
-    runtimeOnly(fg.deobf("curse.maven:aether-gravitation-855631:6123604"))
+    runtimeOnly(fg.deobf("curse.maven:aether-gravitation-855631:7076378"))
     runtimeOnly(fg.deobf("curse.maven:ancient-aether-886751:6400544"))
     runtimeOnly(fg.deobf("curse.maven:umbral-skies-855821:4768252"))
 
     //Other useful mods
-    runtimeOnly(fg.deobf("curse.maven:jade-324717:5072729"))
-    runtimeOnly(fg.deobf("curse.maven:jei-238222:5101366"))
-    runtimeOnly(fg.deobf("curse.maven:cc-tweaked-282001:5118388"))
+    runtimeOnly(fg.deobf("curse.maven:jade-324717:6855440"))
+    runtimeOnly(fg.deobf("curse.maven:jei-238222:7037120"))
+    runtimeOnly(fg.deobf("curse.maven:cc-tweaked-282001:5714507"))
     runtimeOnly(fg.deobf("curse.maven:suggestion-provider-fix-469647:4591193"))
 }
 

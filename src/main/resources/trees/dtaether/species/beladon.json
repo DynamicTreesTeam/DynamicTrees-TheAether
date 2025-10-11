@@ -1,17 +1,27 @@
 {
   "only_if_loaded": "gravitation",
   "family": "dtaether:beladon",
-  "tapering": 0.3,
-  "signal_energy": 16.0,
-  "lowest_branch_height": 5,
-  "up_probability": 1,
-  "growth_rate": 0.8,
+  "tapering": 0.6,
+  "signal_energy": 8.0,
+  "lowest_branch_height": 1,
+  "growth_rate": 0.6,
+  "soil_longevity": 4,
+  "growth_logic_kit": {
+    "name": "conifer",
+    "properties": {
+      "energy_divisor": 5,
+      "height_variation": 3
+    }
+  },
   "leaves_properties": "dtaether:beladon",
   "environment_factors" : {
     "#forge:is_dry": 0.5
   },
   "perfect_biomes": { "tag": "#aether:is_aether" },
   "primitive_sapling": "gravitation:beladon_sapling",
+  "features" : [
+    "conifer_topper"
+  ],
   "lang_overrides": {
     "seed": "Beladon Catkin"
   }

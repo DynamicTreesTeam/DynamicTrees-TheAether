@@ -12,11 +12,11 @@
               "rarity": 1.0
             }
           ],
-          "name": "dtaether:golden_aerfin_seed"
+          "name": "dtaether:orange_aerfin_seed"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtaether:trees/voluntary/golden_aerfin"
+  "random_sequence": "dtaether:trees/voluntary/orange_aerfin"
 }

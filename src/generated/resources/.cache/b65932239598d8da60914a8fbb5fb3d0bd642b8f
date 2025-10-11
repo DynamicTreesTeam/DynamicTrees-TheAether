@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-22T12:25:27.542928	Item Models: dtaether
+// 1.20.1	2025-10-11T00:33:22.29677116	Item Models: dtaether
 7b907a4c904e8516a89636b4bce0ebb79b1cb4ba assets/dtaether/models/item/aerfin_branch.json
 a06a0d25b120d648fbd7a61648b1d5c4366eb2be assets/dtaether/models/item/aerfin_seed.json
 87c98c883f427d7fb36da7a16655b323622b4964 assets/dtaether/models/item/beladon_branch.json
@@ -6,7 +6,6 @@ a06a0d25b120d648fbd7a61648b1d5c4366eb2be assets/dtaether/models/item/aerfin_seed
 5141125890b3310009897a2f132d54fded846d09 assets/dtaether/models/item/blighted_skyroot_seed.json
 7685e5bf29d7f0c98a938c3f86583d564c1ebc52 assets/dtaether/models/item/blightwillow_branch.json
 db26ebcfc5e045ae9fa975027ad468c3f39b88ab assets/dtaether/models/item/blightwillow_seed.json
-37d6d8a592cac18001181402efb08d4d1d272399 assets/dtaether/models/item/blue_aerfin_seed.json
 8db64f3cdcec85fcc893ab6b2d80daf79b72b575 assets/dtaether/models/item/blue_roseroot_seed.json
 6fa8fd66ca01078a4f9773ddcec41ea8c8e48ab9 assets/dtaether/models/item/cloudcap_branch.json
 5ef36792082d817118f0f391af0dc3c3e5c702fd assets/dtaether/models/item/cloudcap_seed.json
@@ -25,7 +24,6 @@ f193c7186475ab8f2f78b340093c1e217a6a0542 assets/dtaether/models/item/fieldsproot
 6bde0b4a04e151f01b70eadf98f2903c4681403a assets/dtaether/models/item/gilded_oak_seed.json
 2f1843ae85129f29010f677cac7657500b3b788c assets/dtaether/models/item/glacia_branch.json
 4c19c6be75db9895acbf50e373b0d1afb51e9989 assets/dtaether/models/item/glacia_seed.json
-ebcdedca3ba84dcc49c51071f1eda63edd24f0ef assets/dtaether/models/item/golden_aerfin_seed.json
 85b958343bb7261898a8bdba59ed7ab03b6bc405 assets/dtaether/models/item/golden_oak_seed.json
 a41645edd2f7f62dbe37694d8470d92af73f6332 assets/dtaether/models/item/highsproot_branch.json
 9c9f75bb0155cecd1091b52e9a2fce03e6ab698b assets/dtaether/models/item/highsproot_seed.json
@@ -33,6 +31,7 @@ a41645edd2f7f62dbe37694d8470d92af73f6332 assets/dtaether/models/item/highsproot_
 5228f5d2230d2693ffdfb1529205e7932b552a1f assets/dtaether/models/item/jellyshroom_branch.json
 fc3101b176400524e35ff29ff92e22c0f8711a00 assets/dtaether/models/item/jellyshroom_seed.json
 57f07c6ee59d77d4a75ad6539ae6310935d68970 assets/dtaether/models/item/lightcap_seed.json
+e975d91eb56fad249ff3aadbc841fb7b495f7f5c assets/dtaether/models/item/orange_aerfin_seed.json
 90e8f028695f1c2541fdb93b59f94645ee333c64 assets/dtaether/models/item/purple_glacia_seed.json
 2a5cc4535a5d62b33f0b80cc9f4d622674a1dc4d assets/dtaether/models/item/roseroot_branch.json
 9096ffacc9580df762ac0d7aed966a1043911d2c assets/dtaether/models/item/roseroot_seed.json

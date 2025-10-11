@@ -1,23 +1,7 @@
 {
   "values": [
     {
-      "id": "dtaether:stripped_aerfin_branch",
-      "required": false
-    },
-    {
       "id": "dtaether:stripped_beladon_branch",
-      "required": false
-    },
-    {
-      "id": "dtaether:stripped_blightwillow_branch",
-      "required": false
-    },
-    {
-      "id": "dtaether:stripped_conberry_branch",
-      "required": false
-    },
-    {
-      "id": "dtaether:stripped_cruderoot_branch",
       "required": false
     },
     {
@@ -25,7 +9,15 @@
       "required": false
     },
     {
-      "id": "dtaether:stripped_enchanted_branch",
+      "id": "dtaether:stripped_highsproot_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_sakura_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_blightwillow_branch",
       "required": false
     },
     {
@@ -33,11 +25,7 @@
       "required": false
     },
     {
-      "id": "dtaether:stripped_glacia_branch",
-      "required": false
-    },
-    {
-      "id": "dtaether:stripped_highsproot_branch",
+      "id": "dtaether:stripped_conberry_branch",
       "required": false
     },
     {
@@ -45,16 +33,28 @@
       "required": false
     },
     {
-      "id": "dtaether:stripped_sakura_branch",
-      "required": false
-    },
-    "dtaether:stripped_skyroot_branch",
-    {
       "id": "dtaether:stripped_sunroot_branch",
       "required": false
     },
     {
       "id": "dtaether:stripped_yagroot_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_glacia_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_enchanted_branch",
+      "required": false
+    },
+    "dtaether:stripped_skyroot_branch",
+    {
+      "id": "dtaether:stripped_aerfin_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_cruderoot_branch",
       "required": false
     }
   ]

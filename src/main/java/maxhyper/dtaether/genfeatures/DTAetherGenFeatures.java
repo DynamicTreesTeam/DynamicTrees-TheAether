@@ -1,7 +1,10 @@
 package maxhyper.dtaether.genfeatures;
 
 import com.ferreusveritas.dynamictrees.api.registry.Registry;
+import com.ferreusveritas.dynamictrees.systems.genfeature.BiomePredicateGenFeature;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
+
+import com.ferreusveritas.dynamictrees.systems.genfeature.VinesGenFeature;
 import maxhyper.dtaether.DynamicTreesAether;
 
 public class DTAetherGenFeatures {
@@ -18,11 +21,13 @@ public class DTAetherGenFeatures {
     public static final GenFeature BIG_BOTTOM_FLARE = new BigBottomFlareGenFeature(DynamicTreesAether.location("big_bottom_flare"));
     public static final GenFeature SPORES = new SporesGenFeature(DynamicTreesAether.location("spores"));
     public static final GenFeature JELLY_SIDE_BRANCHES = new JellyshroomBranchesGenFeature(DynamicTreesAether.location("jelly_side_branches"));
+    public static final GenFeature VINES = new VinesGenFeature(DynamicTreesAether.location("vines"));
+    public static final GenFeature BIOME_PREDICATE = new BiomePredicateGenFeature(DynamicTreesAether.location("biome_predicate"));
 
     public static void register(final Registry<GenFeature> registry) {
         registry.registerAll(ALTERNATIVE_BRANCH, SEASONAL_CONDITION, HOLIDAY_DECORATION,
                 NEGATIVE_BIOME_PREDICATE, HANGER_VINES, LEAF_PILE, PETALS, VINES_ON_TRUNK,
-                CHANGE_GRASS, BIG_BOTTOM_FLARE, SPORES, JELLY_SIDE_BRANCHES
+                CHANGE_GRASS, BIG_BOTTOM_FLARE, SPORES, JELLY_SIDE_BRANCHES, VINES, BIOME_PREDICATE
         );
     }
 

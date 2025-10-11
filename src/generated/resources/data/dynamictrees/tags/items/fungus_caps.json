@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "dtaether:cloudcap_seed",
-      "required": false
-    },
-    {
-      "id": "dtaether:jellyshroom_seed",
-      "required": false
-    },
-    {
-      "id": "dtaether:lightcap_seed",
-      "required": false
-    }
+    "dtaether:jellyshroom_seed",
+    "dtaether:cloudcap_seed",
+    "dtaether:lightcap_seed"
   ]
 }

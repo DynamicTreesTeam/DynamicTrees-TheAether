@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "gravitation:blue_aerfin_leaves"
+              "name": "gravitation:orange_aerfin_leaves"
             },
             {
               "type": "dynamictrees:seed_item",
@@ -134,5 +134,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtaether:blocks/blue_aerfin_leaves"
+  "random_sequence": "dtaether:blocks/orange_aerfin_leaves"
 }

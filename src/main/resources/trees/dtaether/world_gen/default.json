@@ -46,8 +46,6 @@
 
 
 
-
-
   {
     "only_if_loaded": "aether_redux",
     "select" : { "name": "aether_redux:glacial_tundra" },
@@ -167,7 +165,12 @@
     "only_if_loaded": "deep_aether",
     "select" : { "name": "deep_aether:aerlavender_fields" },
     "apply" : {
-      "species" : "dtaether:golden_oak",
+      "species" : {
+        "random" : {
+          "dtaether:golden_oak" : 1,
+          "dtaether:skyroot" : 1
+        }
+      },
       "density": 0,
       "chance": 0.1
     }
@@ -247,9 +250,42 @@
       "forestness": 1
     }
   },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:luminescent_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:skyroot" : 12,
+          "dtaether:mega_skyroot" : 1
+        }
+      },
+      "density" : [ 0.6 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
 
 
 
+
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "name": "aether:skyroot_woodland" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:skyroot_pine" : 32,
+          "dtaether:skyroot" : 1,
+          "dtaether:holiday" : 1,
+          "dtaether:crystal_skyroot" : 1
+        }
+      },
+      "density" : [ 0.9 ],
+      "chance" : 1,
+      "forestness": 1
+    }
+  },
   {
     "only_if_loaded": "ancient_aether",
     "select" : { "name": "ancient_aether:elevated_forest" },
@@ -287,11 +323,12 @@
     "apply" : {
       "species" : {
         "random" : {
-          "dtaether:skyroot" : 4,
-          "dtaether:golden_oak" : 1
+          "dtaether:skyroot" : 12,
+          "dtaether:golden_oak" : 4,
+          "dtaether:crystal_skyroot": 1
         }
       },
-      "density" : [ 1 ],
+      "density" : [ 0.6 ],
       "chance" : 1,
       "forestness": 1
     }
@@ -363,18 +400,44 @@
       "chance" : 0.2
     }
   },
+  {
+    "only_if_loaded": "ancient_aether",
+    "select" : { "OR": [ {"name": "aether:skyroot_forest"}, {"name": "aether:skyroot_grove"}] },
+    "apply" : {
+      "species" : {
+        "method": "splice_before",
+        "random" : {
+          "dtaether:crystal_skyroot" : 2,
+          "..." : 24
+        }
+      }
+    }
+  },
+  {
+    "only_if_loaded": ["ancient_aether", "aether_redux"],
+    "select" : { "name": "aether_redux:skyroot_shrublands" },
+    "apply" : {
+      "species" : {
+        "method": "splice_before",
+        "random" : {
+          "dtaether:skyroot_pine" : 1,
+          "..." : 20
+        }
+      }
+    }
+  },
+
 
 
 
   {
     "only_if_loaded": "gravitation",
-    "select" : { "name": "gravitation:aerfin_forest" },
+    "select" : { "name": "gravitation:frosted_forest" },
     "apply" : {
       "species" : {
         "random" : {
           "dtaether:aerfin" : 3,
-          "dtaether:blue_aerfin" : 2,
-          "dtaether:golden_aerfin" : 2
+          "dtaether:orange_aerfin" : 2
         }
       },
       "density" : [ 1.5 ],
@@ -384,40 +447,19 @@
   },
   {
     "only_if_loaded": "gravitation",
-    "select" : { "name": "gravitation:golden_mountain" },
+    "select" : { "name": "gravitation:undergrowth" },
     "apply" : {
-      "species" : "dtaether:golden_aerfin",
-      "density" : [ 0.5 ],
-      "chance" : 0.3
+      "species" : {
+        "random" : {
+          "dtaether:beladon" : 8,
+          "dtaether:enchanted" : 1
+        }
+      },
+      "density" : [ 0.9 ],
+      "chance" : 0.5
     }
   },
-  {
-    "only_if_loaded": "gravitation",
-    "select" : { "name": "gravitation:beladon_forest" },
-    "apply" : {
-      "species" : "dtaether:beladon",
-      "density" : [ 0.5 ],
-      "chance" : 0.3
-    }
-  },
-  {
-    "only_if_loaded": "gravitation",
-    "select" : { "name": "gravitation:beladon_plains" },
-    "apply" : {
-      "species" : "dtaether:beladon",
-      "density" : [ 0.2 ],
-      "chance" : 0.1
-    }
-  },
-  {
-    "only_if_loaded": "gravitation",
-    "select" : { "name": "gravitation:enchanted_forest" },
-    "apply" : {
-      "species" : "dtaether:enchanted",
-      "density" : [ 0.5 ],
-      "chance" : 0.3
-    }
-  },
+
 
 
 

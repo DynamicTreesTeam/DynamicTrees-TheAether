@@ -9,5 +9,37 @@
     "#forge:is_dry": 0.5
   },
   "perfect_biomes": { "tag": "#aether:is_aether" },
-  "primitive_sapling": "aether:skyroot_sapling"
+  "primitive_sapling": "aether:skyroot_sapling",
+  "mega_species": "dtaether:mega_skyroot",
+  "features" : [
+    {
+      "name": "biome_predicate",
+      "only_if_loaded": "deep_aether",
+      "properties": {
+        "biome_predicate": "deep_aether:luminescent_forest",
+        "only_world_gen": true,
+        "gen_feature": {
+            "name": "vines",
+            "properties": {
+                "quantity": 16
+            }
+        }
+      }
+    },
+    {
+      "name": "dtaether:biome_predicate",
+      "only_if_loaded": "deep_aether",
+      "properties": {
+        "biome_predicate": "deep_aether:luminescent_forest",
+        "only_world_gen": true,
+        "gen_feature": {
+            "name": "dtaether:vines",
+            "properties": {
+                "block": "deep_aether:glowing_vine",
+                "quantity": 8
+            }
+        }
+      }
+    }
+  ]
 }
