@@ -1,5 +1,9 @@
 {
   "values": [
+    "dtaether:crystal_seed",
+    "dtaether:holiday_seed",
+    "dtaether:golden_oak_seed",
+    "dtaether:skyroot_seed",
     {
       "id": "dtaether:beladon_seed",
       "required": false
@@ -8,7 +12,6 @@
       "id": "dtaether:enchanted_skyroot_seed",
       "required": false
     },
-    "dtaether:crystal_seed",
     {
       "id": "dtaether:highsproot_seed",
       "required": false
@@ -37,7 +40,6 @@
       "id": "dtaether:blue_roseroot_seed",
       "required": false
     },
-    "dtaether:holiday_seed",
     {
       "id": "dtaether:conberry_seed",
       "required": false
@@ -70,8 +72,6 @@
       "id": "dtaether:enchanted_seed",
       "required": false
     },
-    "dtaether:golden_oak_seed",
-    "dtaether:skyroot_seed",
     {
       "id": "dtaether:crystal_skyroot_seed",
       "required": false

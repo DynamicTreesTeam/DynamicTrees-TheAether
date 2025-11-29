@@ -1,6 +1,12 @@
 {
   "values": [
-    "dtaether:jellyshroom_branch",
-    "dtaether:cloudcap_branch"
+    {
+      "id": "dtaether:jellyshroom_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:cloudcap_branch",
+      "required": false
+    }
   ]
 }

@@ -1,5 +1,8 @@
 {
   "values": [
+    "dtaether:rooty_enchanted_aether_grass_block",
+    "dtaether:rooty_aether_dirt",
+    "dtaether:rooty_aether_grass_block",
     {
       "id": "dtaether:rooty_aether_coarse_dirt",
       "required": false
@@ -12,18 +15,18 @@
       "id": "dtaether:rooty_yagroot_aerial_roots",
       "required": false
     },
-    "dtaether:rooty_frozen_aether_grass_block",
+    {
+      "id": "dtaether:rooty_frozen_aether_grass_block",
+      "required": false
+    },
     {
       "id": "dtaether:rooty_aether_mud",
       "required": false
     },
-    "dtaether:rooty_enchanted_aether_grass_block",
     {
       "id": "dtaether:rooty_gravity_gravel",
       "required": false
     },
-    "dtaether:rooty_aether_dirt",
-    "dtaether:rooty_aether_dirt",
     {
       "id": "dtaether:rooty_aether_mud",
       "required": false
@@ -32,7 +35,6 @@
       "id": "dtaether:rooty_aether_moss_block",
       "required": false
     },
-    "dtaether:rooty_aether_grass_block",
     {
       "id": "dtaether:rooty_blightmoss_block",
       "required": false

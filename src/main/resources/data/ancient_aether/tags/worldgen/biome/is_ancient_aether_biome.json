@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "ancient_aether:sky_lake"
+    {
+      "id": "ancient_aether:sky_lake",
+      "required": false
+    }
   ]
 }

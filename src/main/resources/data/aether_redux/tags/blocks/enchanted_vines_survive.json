@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "dtaether:golden_oak_leaves",
-    "dtaether:gilded_oak_leaves"
+    {
+      "id": "dtaether:gilded_oak_leaves",
+      "required": false
+    }
   ]
 }
