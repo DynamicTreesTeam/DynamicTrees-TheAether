@@ -3,10 +3,6 @@
   "family": "dtaether:skyroot",
   "variant_properties": [
     {
-      "only_if_loaded": "aether_redux",
-      "family": "dtaether:glacia"
-    },
-    {
       "only_if_loaded": "lost_aether_content",
       "drop_seeds": true,
       "primitive_saplings": [

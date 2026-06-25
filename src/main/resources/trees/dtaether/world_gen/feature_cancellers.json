@@ -29,21 +29,5 @@
       "types": [ "tree" ],
       "namespaces": ["aether", "gravitation", "minecraft"]
     }
-  },
-  {
-    "only_if_loaded": "aether_redux",
-    "select" : { "names": [ "aether_redux:.*", "!aether_redux:cloudcaps" ] },
-    "cancellers": {
-      "types": [ "tree" ],
-      "namespaces": ["aether", "aether_redux", "minecraft"]
-    }
-  },
-  {
-    "only_if_loaded": [ "aether_redux", "dynamictreesplus" ],
-    "select" : { "name": "aether_redux:cloudcaps" },
-    "cancellers": {
-      "types": [ "dtaether:cloudcap", "dtaether:jellyshroom" ],
-      "namespaces": ["aether", "aether_redux", "minecraft"]
-    }
   }
 ]

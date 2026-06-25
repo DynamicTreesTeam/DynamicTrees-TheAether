@@ -9,7 +9,7 @@
   "soil_longevity": 6,
   "max_branch_radius": 24,
   "leaves_properties": "dtaether:conberry",
-  "growth_logic_kit": "dtaether:conberry",
+  "growth_logic_kit": "dtaddon_lib:conberry",
   "environment_factors" : {
     "#forge:is_cold": 0.7
   },

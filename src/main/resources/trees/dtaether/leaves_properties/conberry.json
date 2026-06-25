@@ -1,5 +1,5 @@
 {
   "only_if_loaded": "deep_aether",
-  "type": "dtaether:particle",
+  "type": "dtaddon_lib:particle",
   "primitive_leaves": "deep_aether:conberry_leaves"
 }

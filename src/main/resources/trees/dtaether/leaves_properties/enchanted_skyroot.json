@@ -1,5 +1,5 @@
 {
   "only_if_loaded": "ancient_aether",
-  "type": "dtaether:particle",
+  "type": "dtaddon_lib:particle",
   "primitive_leaves": "ancient_aether:enchanted_skyroot_leaves"
 }

@@ -27,7 +27,6 @@ import com.dtteam.dynamictreesplus.tree.HugeMushroomSpecies;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -59,7 +58,6 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
             public LootTable.Builder createBranchDrops(HolderLookup.Provider registries) {
                 return DTLootTableBuilder.createBranchDrops(this.getPrimitiveLog().get(), getFamily().getStick(1).getItem(), registries);
             }
-            //THIS IS FOR CLOUDCAPS. CRUDE SOLUTION BUT IM LAZY
             @Override
             public BranchDestructionData destroyBranchFromNode(Level level, BlockPos cutPos, Direction toolDir, boolean wholeTree, @Nullable final LivingEntity entity) {
                 final BlockState blockState = level.getBlockState(cutPos);
@@ -129,21 +127,6 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
                             }
                         }
                         capMap.setVoxel(endPos, (byte) 0); // We know that the endpoint does not have a leaves block in it because it was a branch.
-                    }
-                    //DESTROY THE SPORES
-                    for (CoordUtils.Surround surr : CoordUtils.Surround.values()){
-                        BlockPos pos = endPos.offset(surr.getOffset());
-                        BlockState state = level.getBlockState(pos);
-                        if (level.getBlockState(pos).is(BuiltInRegistries.BLOCK.get(
-                                ResourceLocation.fromNamespaceAndPath("aether_redux", "cloudcap_spores")))){
-                            if (entity instanceof Player){
-                                BlockEntity te = level.getBlockEntity(pos);
-                                state.getBlock().onDestroyedByPlayer(state, level, pos, (Player)entity, true, level.getFluidState(pos));
-                                state.getBlock().playerDestroy(level, (Player)entity, pos, state, te, tool);
-                            } else {
-                                level.setBlock(pos, Blocks.AIR.defaultBlockState(), 0);
-                            }
-                        }
                     }
                 }
 

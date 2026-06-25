@@ -13,7 +13,7 @@
   "always_show_on_waila": false,
   "features" : [
     {
-      "name": "dtaether:vines_on_trunk",
+      "name": "dtaddon_lib:vines_on_trunk",
       "properties": {
         "block": "ancient_aether:grape_vine"
       }

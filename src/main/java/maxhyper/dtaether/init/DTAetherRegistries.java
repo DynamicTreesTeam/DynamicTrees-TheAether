@@ -1,10 +1,8 @@
 package maxhyper.dtaether.init;
 
-import com.dtteam.dynamictrees.api.cell.CellKit;
 import com.dtteam.dynamictrees.event.TypeRegistryEvent;
 import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
 import com.dtteam.dynamictrees.block.soil.SoilProperties;
-import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.BranchConnectables;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.tree.family.Family;
@@ -12,10 +10,7 @@ import com.dtteam.dynamictrees.tree.species.Species;
 import com.dtteam.dynamictrees.block.CommonVoxelShapes;
 import maxhyper.dtaether.DynamicTreesAether;
 import maxhyper.dtaether.blocks.*;
-import maxhyper.dtaether.cells.DTAetherCellKits;
-import maxhyper.dtaether.compat.CompatHandler;
 import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
-import maxhyper.dtaether.growthlogic.DTAetherGrowthLogicKits;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import maxhyper.dtaether.trees.ModDependentSpecies;
 import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
@@ -38,50 +33,21 @@ public class DTAetherRegistries {
     public static final DeferredHolder<Feature<?>, DynamicCrystalIslandFeature> DYNAMIC_CRYSTAL_ISLAND_FEATURE =
             FEATURES.register("crystal_island", DynamicCrystalIslandFeature::new);
 
-    public static final VoxelShape CLOUDCAP_CAP = Block.box(5.5D, 3.0D, 5.5D, 10.5D, 10.0D, 10.5D);
-    public static final VoxelShape CLOUDCAP = Shapes.or(CommonVoxelShapes.SAPLING_TRUNK, CLOUDCAP_CAP);
-
     public static void setup(IEventBus modBus) {
         FEATURES.register(modBus);
-        CompatHandler.setup();
         DTAetherGenFeatures.register(GenFeature.REGISTRY);
-        DTAetherCellKits.register(CellKit.REGISTRY);
-        DTAetherGrowthLogicKits.register(GrowthLogicKit.REGISTRY);
-
         Species.REGISTRY.registerType(DynamicTreesAether.location("mod_dependent"), ModDependentSpecies.TYPE);
         Family.REGISTRY.registerType(DynamicTreesAether.location("imbued_log"), ImbuedLogFamily.TYPE);
         SoilProperties.REGISTRY.registerType(DynamicTreesAether.location("alt_tint"), AltTintSoilProperties.TYPE);
-        LeavesProperties.REGISTRY.registerType(DynamicTreesAether.location("particle"), ParticleLeavesProperties.TYPE);
-        LeavesProperties.REGISTRY.registerType(DynamicTreesAether.location("fieldsproot"), FieldsprootLeavesProperties.TYPE);
-        LeavesProperties.REGISTRY.registerType(DynamicTreesAether.location("scruffy_particle"), ScruffyParticleLeavesProperties.TYPE);
-        LeavesProperties.REGISTRY.registerType(DynamicTreesAether.location("scruffy_snowy"), SnowyScruffyLeavesProperties.TYPE);
     }
 
     public static void setupBlocks() {
-        CommonVoxelShapes.SHAPES.put(DynamicTreesAether.location("cloudcap").toString(), CLOUDCAP);
-        if (ModList.get().isLoaded("aether_redux")) {
-            ReduxOnlyFunctions.setupConnectables();
-        }
     }
 
     @SubscribeEvent
     public static void onGenFeatureRegistry (final com.dtteam.dynamictrees.event.RegistryEvent<GenFeature> event) {
         if (event.isEntryOfType(GenFeature.class)) {
             DTAetherGenFeatures.register(event.getRegistry());
-        }
-    }
-
-    @SubscribeEvent
-    public static void onCellKitRegistry (final com.dtteam.dynamictrees.event.RegistryEvent<CellKit> event) {
-        if (event.isEntryOfType(CellKit.class)) {
-            DTAetherCellKits.register(event.getRegistry());
-        }
-    }
-
-    @SubscribeEvent
-    public static void onGrowthLogicKitRegistry (final com.dtteam.dynamictrees.event.RegistryEvent<GrowthLogicKit> event) {
-        if (event.isEntryOfType(GrowthLogicKit.class)) {
-            DTAetherGrowthLogicKits.register(event.getRegistry());
         }
     }
 
@@ -109,10 +75,6 @@ public class DTAetherRegistries {
     @SubscribeEvent
     public static void registerLeavesPropertiesTypes (final TypeRegistryEvent<LeavesProperties> event) {
         if (event.isEntryOfType(LeavesProperties.class)) {
-            event.registerType(DynamicTreesAether.location("particle"), ParticleLeavesProperties.TYPE);
-            event.registerType(DynamicTreesAether.location("fieldsproot"), FieldsprootLeavesProperties.TYPE);
-            event.registerType(DynamicTreesAether.location("scruffy_particle"), ScruffyParticleLeavesProperties.TYPE);
-            event.registerType(DynamicTreesAether.location("scruffy_snowy"), SnowyScruffyLeavesProperties.TYPE);
         }
     }
 

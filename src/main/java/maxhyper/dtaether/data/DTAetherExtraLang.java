@@ -11,7 +11,6 @@ public class DTAetherExtraLang implements Generator<DTDataProvider.Language, Str
     public void generate(DTDataProvider.Language provider, String input, Generator.Dependencies dependencies) {
         if (provider instanceof DTLangProvider langProvider) {
             langProvider.add("block.dtaether.imbued_skyroot_branch", "Skyroot Tree");
-            langProvider.add("block.dtaether.imbued_blightwillow_branch", "Blightwillow Tree");
         }
     }
 

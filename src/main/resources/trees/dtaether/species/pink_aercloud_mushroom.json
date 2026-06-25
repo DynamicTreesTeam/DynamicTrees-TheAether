@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "deep_aether",
-  "type": "dtaether:drop_logs_mushroom",
+  "type": "dtaddon_lib:drop_logs",
   "family": "dtaether:aercloud_mushroom",
   "tapering": 0.05,
   "signal_energy": 9,

@@ -25,7 +25,7 @@
       }
     },
     {
-      "name": "dtaether:hanger_vines",
+      "name": "dtaddon_lib:hanger_vines",
       "properties": {
         "block": "deep_aether:sunroot_hanger",
         "max_length": 5,

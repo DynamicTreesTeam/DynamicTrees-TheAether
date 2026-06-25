@@ -3,19 +3,7 @@
   "family": "dtaether:skyroot",
   "variant_properties": [
     {
-      "only_if_loaded": "aether_redux",
-      "family": "dtaether:crystal",
-      "primitive_saplings": [
-        {"sapling_block": "aether_redux:crystal_sapling",
-          "can_craft_seed_to_sapling": false},
-        {"sapling_block": "aether_redux:crystal_fruit_sapling"},
-        {"sapling_item": "aether:white_apple",
-          "can_craft_seed_to_sapling": false}
-      ]
-    },
-    {
       "only_if_loaded": "lost_aether_content",
-      "only_if_not_loaded": "aether_redux",
       "primitive_saplings": [
         {"sapling_block": "lost_aether_content:crystal_sapling"},
         {"sapling_item": "aether:white_apple",
@@ -50,16 +38,10 @@
   "features" : [
     "conifer_topper",
     {
-      "name": "dtaether:negative_biome_predicate",
+      "name": "fruit",
       "properties": {
-        "biome_predicate" : "aether_redux:skyfields",
-        "gen_feature": {
-          "name": "fruit",
-          "properties": {
-            "fruit": "dtaether:white_apple",
-            "fruiting_radius": 4
-          }
-        }
+        "fruit": "dtaether:white_apple",
+        "fruiting_radius": 4
       }
     }
   ],

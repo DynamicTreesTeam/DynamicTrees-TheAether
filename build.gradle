@@ -1,0 +1,173 @@
+import java.time.Instant
+import java.time.format.DateTimeFormatter
+
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.141'
+    id 'idea'
+    id 'maven-publish'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+repositories {
+    maven {
+        url = 'https://www.cursemaven.com'
+        content {
+            includeGroup 'curse.maven'
+        }
+    }
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup 'maven.modrinth'
+        }
+    }
+    maven { url = 'https://maven.parchmentmc.org' }
+    maven { url = 'https://ldtteam.jfrog.io/ldtteam/modding' }
+    mavenCentral()
+    mavenLocal()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+neoForge {
+    version = neo_version
+
+    parchment {
+        minecraftVersion = parchment_minecraft_version
+        mappingsVersion = parchment_mappings_version
+    }
+
+    runs {
+        configureEach {
+            logLevel = org.slf4j.event.Level.DEBUG
+            systemProperty 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+        }
+
+        client {
+            client()
+            gameDirectory = file('run')
+        }
+
+        server {
+            server()
+            gameDirectory = file('run-server')
+        }
+
+        data {
+            data()
+            gameDirectory = file('run')
+            programArguments.addAll(
+                    '--mod', mod_id,
+                    '--all',
+                    '--output', file('src/generated/resources/').absolutePath,
+                    '--existing', file('src/main/resources').absolutePath,
+                    '--existing-mod', 'dynamictrees',
+                    '--existing-mod', 'dynamictreesplus',
+                    '--existing-mod', 'aether'
+            )
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+    srcDir 'src/localization/resources'
+}
+
+dependencies {
+    implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-${minecraft_version}:${dynamic_trees_version}"
+    implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:${dynamic_trees_plus_version}"
+    implementation "maven.modrinth:dynamic-trees-addon-lib:${dynamic_trees_addon_lib_version}"
+    implementation "curse.maven:aether-255308:${aether_file_id}"
+}
+
+tasks.withType(ProcessResources).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    includeEmptyDirs = false
+
+    def replaceProperties = [
+            minecraft_version                    : minecraft_version,
+            minecraft_version_range              : minecraft_version_range,
+            neo_version                          : neo_version,
+            neo_version_range                    : neo_version_range,
+            loader_version_range                 : loader_version_range,
+            mod_id                               : mod_id,
+            mod_name                             : mod_name,
+            mod_license                          : mod_license,
+            mod_version                          : mod_version,
+            mod_authors                          : mod_authors,
+            mod_credits                          : mod_credits,
+            mod_description                      : mod_description,
+            dynamic_trees_version_range          : dynamic_trees_version_range,
+            dynamic_trees_plus_version_range     : dynamic_trees_plus_version_range,
+            dynamic_trees_addon_lib_version_range: dynamic_trees_addon_lib_version_range,
+            aether_version_range                 : aether_version_range,
+            deep_aether_version_range            : deep_aether_version_range,
+            gravitation_version_range            : gravitation_version_range
+    ]
+    inputs.properties replaceProperties
+
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand replaceProperties
+    }
+}
+
+tasks.jar {
+    manifest {
+        attributes(
+                'Specification-Title': project.name,
+                'Specification-Vendor': 'Dynamic Trees Team',
+                'Specification-Version': '1',
+                'Implementation-Title': project.name,
+                'Implementation-Version': project.version,
+                'Implementation-Vendor': 'Dynamic Trees Team',
+                'Implementation-Timestamp': DateTimeFormatter.ISO_INSTANT.format(Instant.now())
+        )
+    }
+}
+
+tasks.withType(Jar).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+java {
+    withSourcesJar()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(GenerateModuleMetadata).configureEach {
+    enabled = false
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = uri("${project.projectDir}/mcmodsrepo")
+        }
+    }
+}

@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "gravitation",
-  "type": "dtaether:particle",
+  "type": "dtaddon_lib:particle",
   "primitive_leaves": "gravitation:beladon_leaves",
   "smother": 6,
   "cell_kit": "dynamictrees:conifer",

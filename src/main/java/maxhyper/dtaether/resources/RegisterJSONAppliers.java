@@ -9,7 +9,6 @@ import com.dtteam.dynamictrees.tree.species.Species;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import maxhyper.dtaether.DynamicTreesAether;
-import maxhyper.dtaether.blocks.ParticleLeavesProperties;
 import maxhyper.dtaether.trees.ModDependentSpecies;
 import maxhyper.dtaether.trees.ImbuedLogFamily;
 import net.minecraft.resources.ResourceLocation;

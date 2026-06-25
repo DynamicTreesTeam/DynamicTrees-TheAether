@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "gravitation",
-  "type": "dtaether:particle",
+  "type": "dtaddon_lib:particle",
   "primitive_leaves": "gravitation:enchanted_leaves",
   "texture_overrides": {
     "leaves": "gravitation:block/natural/enchanted_leaves"
