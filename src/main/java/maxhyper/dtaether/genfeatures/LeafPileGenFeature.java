@@ -1,8 +1,8 @@
 package maxhyper.dtaether.genfeatures;
 
-import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguration;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
+import com.dtteam.dynamictrees.tree.species.Species;
 import maxhyper.dtaether.compat.CompatHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -49,11 +49,12 @@ public class LeafPileGenFeature extends PetalsGenFeature {
     public boolean shouldApply(Species species, GenFeatureConfiguration configuration) {
         if (configuration.get(BLOCK) == Blocks.AIR) return false;
         BlockState state = configuration.get(BLOCK).defaultBlockState();
-        return state.hasProperty(layersProperty());
+        IntegerProperty layers = layersProperty(state);
+        return layers != null && state.hasProperty(layers);
     }
 
-    private IntegerProperty layersProperty (){
-        return CompatHandler.blockStateProperties.getLeafPileLayersProperty();
+    private IntegerProperty layersProperty (BlockState state){
+        return CompatHandler.blockStateProperties.getLeafPileLayersProperty(state);
     }
 
     protected boolean canBePlacedOnBlock (LevelAccessor level, BlockPos pos, Block block){
@@ -63,12 +64,15 @@ public class LeafPileGenFeature extends PetalsGenFeature {
         } else if (blockstate.is(BlockTags.SNOW_LAYER_CAN_SURVIVE_ON)) {
             return true;
         } else {
-            return Block.isFaceFull(blockstate.getCollisionShape(level, pos), Direction.UP) || blockstate.is(block) && blockstate.getValue(layersProperty()) == 16;
+            IntegerProperty layers = layersProperty(blockstate);
+            return Block.isFaceFull(blockstate.getCollisionShape(level, pos), Direction.UP)
+                    || blockstate.is(block) && layers != null && blockstate.getValue(layers) == 16;
         }
     }
 
     protected BlockState getPetalsForPlacement (GenFeatureConfiguration configuration, LevelAccessor level, BlockPos pos, BlockState state){
-        return state.setValue(layersProperty(), 1+level.getRandom().nextInt(configuration.get(MAX_LAYERS)));
+        IntegerProperty layers = layersProperty(state);
+        return layers == null ? state : state.setValue(layers, 1 + level.getRandom().nextInt(configuration.get(MAX_LAYERS)));
     }
 
 }

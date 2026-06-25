@@ -1,9 +1,9 @@
 package maxhyper.dtaether.blocks;
 
-import com.ferreusveritas.dynamictrees.DynamicTrees;
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.block.rooty.RootyBlock;
-import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
+import com.dtteam.dynamictrees.DynamicTrees;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.block.soil.SoilBlock;
+import com.dtteam.dynamictrees.block.soil.SoilProperties;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
@@ -22,14 +22,14 @@ public class AltTintSoilProperties extends SoilProperties {
     }
 
     @Override
-    protected RootyBlock createBlock(BlockBehaviour.Properties blockProperties) {
-        return new RootyBlock(this, blockProperties){
+    protected SoilBlock createBlock(BlockBehaviour.Properties blockProperties) {
+        return new SoilBlock(this, blockProperties){
             @Override
             public int colorMultiplier(BlockColors blockColors, BlockState state, @Nullable BlockAndTintGetter level, @Nullable BlockPos pos, int tintIndex) {
                 final int white = 0xFFFFFFFF;
                 return switch (tintIndex) {
                     case 1 -> blockColors.getColor(getPrimitiveSoilState(state), level, pos, tintIndex);
-                    case 2 -> state.getBlock() instanceof RootyBlock ? rootColor(state, level, pos) : white;
+                    case 2 -> state.getBlock() instanceof SoilBlock ? rootColor(state, level, pos) : white;
                     default -> white;
                 };
             }

@@ -1,11 +1,11 @@
 package maxhyper.dtaether.genfeatures;
 
-import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-import com.ferreusveritas.dynamictrees.init.DTTrees;
-import com.ferreusveritas.dynamictrees.systems.genfeature.BiomePredicateGenFeature;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguration;
-import com.ferreusveritas.dynamictrees.systems.genfeature.context.FullGenerationContext;
-import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGenerationContext;
+import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
+import com.dtteam.dynamictrees.DynamicTrees;
+import com.dtteam.dynamictrees.systems.genfeature.BiomePredicateGenFeature;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
+import com.dtteam.dynamictrees.systems.genfeature.context.FullGenerationContext;
+import com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext;
 import net.minecraft.resources.ResourceLocation;
 
 public class NegativeBiomePredicateGenFeature extends BiomePredicateGenFeature {
@@ -27,7 +27,7 @@ public class NegativeBiomePredicateGenFeature extends BiomePredicateGenFeature {
     @Override
     protected boolean generate(GenFeatureConfiguration configuration, FullGenerationContext context) {
         final GenFeatureConfiguration configurationToPlace = configuration.get(GEN_FEATURE);
-        if (configuration.getGenFeature().getRegistryName().equals(DTTrees.NULL)) return false;
+        if (configuration.getGenFeature().getRegistryName().equals(DynamicTrees.NULL)) return false;
 
         if (!configuration.get(BIOME_PREDICATE).test(context.biome())) {
             return configurationToPlace.generate(Type.FULL, context);
@@ -40,7 +40,7 @@ public class NegativeBiomePredicateGenFeature extends BiomePredicateGenFeature {
     protected boolean postGenerate(GenFeatureConfiguration configuration, PostGenerationContext context) {
         final boolean worldGen = context.isWorldGen();
         final GenFeatureConfiguration configurationToPlace = configuration.get(POST_GEN_FEATURE);
-        if (configuration.getGenFeature().getRegistryName().equals(DTTrees.NULL)) return false;
+        if (configuration.getGenFeature().getRegistryName().equals(DynamicTrees.NULL)) return false;
 
         if (!(configuration.get(ONLY_WORLD_GEN) && !worldGen) &&
                 //Negate the predicate test

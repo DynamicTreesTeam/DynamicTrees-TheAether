@@ -1,0 +1,8 @@
+{
+  "parent": "dynamictrees:block/smartmodel/mushroom_flat",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "cap": "dtaether:block/pink_aercloud_mushroom_cap",
+    "stem": "aether:block/cold_aercloud"
+  }
+}

@@ -8,6 +8,6 @@ public interface addonBlockStateProperties {
     BlockState setPrismaticness (BlockState state, int petal, int value);
     boolean hasPrismaticness (BlockState state);
 
-    IntegerProperty getLeafPileLayersProperty ();
+    IntegerProperty getLeafPileLayersProperty (BlockState state);
 
 }

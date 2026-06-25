@@ -1,14 +1,14 @@
 package maxhyper.dtaether.genfeatures;
 
-import com.ferreusveritas.dynamictrees.api.TreeHelper;
-import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-import com.ferreusveritas.dynamictrees.api.network.MapSignal;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguration;
-import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGenerationContext;
-import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGrowContext;
-import com.ferreusveritas.dynamictrees.systems.nodemapper.FindEndsNode;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.tree.TreeHelper;
+import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
+import com.dtteam.dynamictrees.api.network.MapSignal;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
+import com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext;
+import com.dtteam.dynamictrees.systems.genfeature.context.PostGrowContext;
+import com.dtteam.dynamictrees.systems.nodemapper.FindEndsNode;
+import com.dtteam.dynamictrees.tree.species.Species;
 import maxhyper.dtaether.compat.CompatHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -21,7 +21,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.levelgen.XoroshiroRandomSource;
-import net.minecraftforge.common.IPlantable;
 
 import java.util.*;
 
@@ -122,7 +121,7 @@ public class PetalsGenFeature extends GenFeature {
     }
 
     protected boolean canBePlacedOnBlock (LevelAccessor level, BlockPos pos, Block block){
-        return block instanceof IPlantable pPetalsBlock && level.getBlockState(pos).canSustainPlant(level, pos, Direction.UP, pPetalsBlock);
+        return block.defaultBlockState().canSurvive(level, pos.above());
     }
 
     protected BlockState getPetalsForPlacement (GenFeatureConfiguration configuration, LevelAccessor level, BlockPos pos, BlockState state){

@@ -1,0 +1,25 @@
+{
+  "values": [
+    {
+      "id": "dtaether:stripped_conberry_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_cruderoot_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_roseroot_branch",
+      "required": false
+    },
+    "dtaether:stripped_skyroot_branch",
+    {
+      "id": "dtaether:stripped_sunroot_branch",
+      "required": false
+    },
+    {
+      "id": "dtaether:stripped_yagroot_branch",
+      "required": false
+    }
+  ]
+}

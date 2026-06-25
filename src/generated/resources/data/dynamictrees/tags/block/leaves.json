@@ -1,0 +1,42 @@
+{
+  "values": [
+    {
+      "id": "dtaether:blue_roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:conberry_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:cruderoot_leaves",
+      "required": false
+    },
+    "dtaether:crystal_leaves",
+    "dtaether:decorated_holiday_leaves",
+    {
+      "id": "dtaether:flowering_blue_roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:flowering_roseroot_leaves",
+      "required": false
+    },
+    "dtaether:golden_oak_leaves",
+    "dtaether:holiday_leaves",
+    {
+      "id": "dtaether:roseroot_leaves",
+      "required": false
+    },
+    "dtaether:skyroot_leaves",
+    "dtaether:skyroot_bush_leaves",
+    {
+      "id": "dtaether:sunroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:yagroot_leaves",
+      "required": false
+    }
+  ]
+}

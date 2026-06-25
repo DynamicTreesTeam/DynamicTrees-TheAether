@@ -1,7 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "aether_redux:block/natural/fieldsproot_log",
-    "rings": "aether_redux:block/natural/fieldsproot_log_top"
-  }
-}

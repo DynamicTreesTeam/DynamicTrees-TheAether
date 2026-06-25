@@ -1,8 +1,8 @@
 package maxhyper.dtaether.mushroomlogic;
 
-import com.ferreusveritas.dynamictrees.api.registry.Registry;
-import com.ferreusveritas.dynamictreesplus.DynamicTreesPlus;
-import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
+import com.dtteam.dynamictrees.api.registry.Registry;
+import com.dtteam.dynamictreesplus.DynamicTreesPlus;
+import com.dtteam.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
 import maxhyper.dtaether.DynamicTreesAether;
 
 public class DTAetherMushroomShapeKits {

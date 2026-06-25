@@ -1,7 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "aether_redux:block/natural/stripped_crystal_log",
-    "rings": "aether_redux:block/natural/stripped_crystal_log_top"
-  }
-}

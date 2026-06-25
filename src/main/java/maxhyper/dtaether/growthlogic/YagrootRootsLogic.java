@@ -1,15 +1,13 @@
 package maxhyper.dtaether.growthlogic;
 
-import com.ferreusveritas.dynamictrees.api.TreeHelper;
-import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
-import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKitConfiguration;
-import com.ferreusveritas.dynamictrees.growthlogic.MangroveRootsLogic;
-import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionManipulationContext;
-import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionSelectionContext;
-import com.ferreusveritas.dynamictrees.growthlogic.context.PositionalSpeciesContext;
-import com.ferreusveritas.dynamictrees.tree.species.MangroveSpecies;
-import com.ferreusveritas.dynamictrees.util.MathHelper;
+import com.dtteam.dynamictrees.tree.TreeHelper;
+import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
+import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
+import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
+import com.dtteam.dynamictrees.systems.growthlogic.MangroveRootsLogic;
+import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
+import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionSelectionContext;
+import com.dtteam.dynamictrees.systems.growthlogic.context.PositionalSpeciesContext;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;

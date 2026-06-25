@@ -1,17 +1,17 @@
 package maxhyper.dtaether.world;
 
 import com.aetherteam.aether.data.resources.AetherFeatureStates;
-import com.ferreusveritas.dynamictrees.api.TreeHelper;
-import com.ferreusveritas.dynamictrees.systems.poissondisc.UniversalPoissonDiscProvider;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
-import com.ferreusveritas.dynamictrees.util.LevelContext;
-import com.ferreusveritas.dynamictrees.util.SafeChunkBounds;
-import com.ferreusveritas.dynamictrees.worldgen.DynamicTreeFeature;
-import com.ferreusveritas.dynamictrees.worldgen.GenerationContext;
+import com.dtteam.dynamictrees.tree.TreeHelper;
+import com.dtteam.dynamictrees.systems.poissondisc.UniversalPoissonDiscProvider;
+import com.dtteam.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.api.worldgen.LevelContext;
+import com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature;
+import com.dtteam.dynamictrees.worldgen.DynamicTreeGenerationContext;
 import com.mojang.serialization.Codec;
 import maxhyper.dtaether.DynamicTreesAether;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.LevelAccessor;
@@ -21,8 +21,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.fml.ModList;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
@@ -56,7 +55,9 @@ public class DynamicCrystalIslandFeature extends Feature<NoneFeatureConfiguratio
         BlockState grassState = getGrassState(context.level(), newOrigin);
 
         setBlock(context.level(), newOrigin, grassState);
-        if (crystalSpecies.isValid() && crystalSpecies.generate(new GenerationContext(levelContext, crystalSpecies, newOrigin, newOrigin.mutable(), context.level().getBiome(newOrigin), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()), 8, SafeChunkBounds.ANY_WG))){
+        if (crystalSpecies.isValid() && crystalSpecies.generate(new DynamicTreeGenerationContext(levelContext, crystalSpecies,
+                newOrigin, newOrigin.mutable(), context.level().getBiome(newOrigin),
+                Direction.Plane.HORIZONTAL.getRandomDirection(context.random()), 8, true))){
             for(int i = 0; i < 3; ++i) {
                 BlockState state;
                 if (i == 0) {
@@ -84,13 +85,13 @@ public class DynamicCrystalIslandFeature extends Feature<NoneFeatureConfiguratio
     protected BlockState getGrassState (LevelAccessor level, BlockPos pos){
         BlockState grassState = AetherFeatureStates.AETHER_GRASS_BLOCK;
         List<ResourceLocation> biomes = Arrays.stream(new ResourceLocation[]{
-                new ResourceLocation(DEEP_AETHER, "golden_heights"),
-                new ResourceLocation(DEEP_AETHER, "golden_grove")
+                ResourceLocation.fromNamespaceAndPath(DEEP_AETHER, "golden_heights"),
+                ResourceLocation.fromNamespaceAndPath(DEEP_AETHER, "golden_grove")
         }).toList();
         if (ModList.get().isLoaded(DEEP_AETHER) &&
                 biomes.stream().anyMatch((rl)->level.getBiome(pos).is(rl))){
             if (goldenGrassState == null){
-                Block grassBlock = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DEEP_AETHER, "golden_heights_grass_block"));
+                Block grassBlock = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(DEEP_AETHER, "golden_heights_grass_block"));
                 if (grassBlock != null && grassBlock != Blocks.AIR){
                     goldenGrassState = grassBlock.defaultBlockState();
                 }

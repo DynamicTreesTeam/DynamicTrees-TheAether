@@ -1,13 +1,14 @@
 package maxhyper.dtaether.blocks;
 
-import com.ferreusveritas.dynamictrees.api.data.Generator;
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.block.leaves.DynamicLeavesBlock;
-import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.block.leaves.ScruffyLeavesProperties;
-import com.ferreusveritas.dynamictrees.data.provider.DTBlockStateProvider;
-import com.ferreusveritas.dynamictrees.util.CoordUtils;
-import com.ferreusveritas.dynamictrees.util.MutableLazyValue;
+import com.dtteam.dynamictrees.data.Generator;
+import com.dtteam.dynamictrees.data.DTDataProvider;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.block.leaves.DynamicLeavesBlock;
+import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
+import com.dtteam.dynamictrees.block.leaves.ScruffyLeavesProperties;
+import com.dtteam.dynamictrees.data.provider.DTBlockStateProvider;
+import com.dtteam.dynamictrees.utility.CoordUtils;
+import com.dtteam.dynamictrees.api.lazyvalue.MutableLazyValue;
 import maxhyper.dtaether.data.SnowyLeavesStateGenerator;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -35,11 +36,11 @@ public class SnowyScruffyLeavesProperties extends ScruffyLeavesProperties {
         super(registryName);
     }
 
-    protected final MutableLazyValue<Generator<DTBlockStateProvider, LeavesProperties>> stateGenerator =
+    protected final MutableLazyValue<Generator<DTDataProvider.BlockState, LeavesProperties>> stateGenerator =
             MutableLazyValue.supplied(SnowyLeavesStateGenerator::new);
 
     @Override
-    public void generateStateData(DTBlockStateProvider provider) {
+    public void generateStateData(DTDataProvider.BlockState provider) {
         // Generate leaves block state and model.
         this.stateGenerator.get().generate(provider, this);
     }

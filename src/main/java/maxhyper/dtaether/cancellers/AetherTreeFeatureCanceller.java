@@ -1,14 +1,14 @@
 package maxhyper.dtaether.cancellers;
 
-import com.ferreusveritas.dynamictrees.api.worldgen.BiomePropertySelectors;
-import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
+import com.dtteam.dynamictrees.api.worldgen.BiomePropertySelectors;
+import com.dtteam.dynamictrees.api.worldgen.FeatureCanceller;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraftforge.registries.ForgeRegistries;
 
 public class AetherTreeFeatureCanceller<T extends FeatureConfiguration> extends FeatureCanceller {
 
@@ -35,7 +35,7 @@ public class AetherTreeFeatureCanceller<T extends FeatureConfiguration> extends 
             String nameSpace = "";
             final ConfiguredFeature<?, ?> nextConfiguredFeature = configuredFeature.getFeatures().findFirst().get();
             final FeatureConfiguration nextFeatureConfig = nextConfiguredFeature.config();
-            final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(nextConfiguredFeature.feature());
+            final ResourceLocation featureRegistryName = BuiltInRegistries.FEATURE.getKey(nextConfiguredFeature.feature());
             if (featureRegistryName != null) {
                 nameSpace = featureRegistryName.getNamespace();
             }
@@ -56,7 +56,7 @@ public class AetherTreeFeatureCanceller<T extends FeatureConfiguration> extends 
         for (WeightedPlacedFeature feature : featureConfig.features) {
             final PlacedFeature currentPlacedFeature = feature.feature.value();
             final ConfiguredFeature<?,?> currentConfiguredFeature = currentPlacedFeature.feature().value();
-            final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(currentConfiguredFeature.getFeatures().findFirst().get().feature());
+            final ResourceLocation featureRegistryName = BuiltInRegistries.FEATURE.getKey(currentConfiguredFeature.getFeatures().findFirst().get().feature());
 
             if (this.treeFeatureConfigClass.isInstance(currentConfiguredFeature.config()) && featureRegistryName != null &&
                     featureCancellations.shouldCancelNamespace(featureRegistryName.getNamespace())) {

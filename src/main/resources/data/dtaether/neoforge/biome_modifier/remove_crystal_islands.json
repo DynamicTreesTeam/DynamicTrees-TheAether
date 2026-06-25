@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#aether:is_aether",
+  "features": "aether:crystal_island",
+  "steps": ["top_layer_modification"]
+}

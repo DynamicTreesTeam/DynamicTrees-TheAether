@@ -1,10 +1,10 @@
 package maxhyper.dtaether.mushroomlogic;
 
-import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
-import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.MushroomShapeConfiguration;
-import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.context.MushroomCapContext;
-import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
+import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
+import com.dtteam.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
+import com.dtteam.dynamictreesplus.systems.mushroomlogic.MushroomShapeConfiguration;
+import com.dtteam.dynamictreesplus.systems.mushroomlogic.context.MushroomCapContext;
+import com.dtteam.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;

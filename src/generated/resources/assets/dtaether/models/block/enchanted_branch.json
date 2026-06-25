@@ -1,7 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "gravitation:block/natural/enchanted_log",
-    "rings": "gravitation:block/natural/enchanted_log_top"
-  }
-}

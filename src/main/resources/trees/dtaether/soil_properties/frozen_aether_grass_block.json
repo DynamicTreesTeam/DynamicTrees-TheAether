@@ -1,4 +1,5 @@
 {
+  "only_if_loaded": "gravitation",
   "primitive_soil": "gravitation:frozen_aether_grass_block",
   "acceptable_soils": [ "dirt_like", "aether_like" ]
 }

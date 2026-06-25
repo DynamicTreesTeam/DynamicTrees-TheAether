@@ -1,15 +1,18 @@
 package maxhyper.dtaether.data;
 
-import com.ferreusveritas.dynamictrees.api.data.Generator;
-import com.ferreusveritas.dynamictrees.data.provider.DTLangProvider;
+import com.dtteam.dynamictrees.data.Generator;
+import com.dtteam.dynamictrees.data.DTDataProvider;
+import com.dtteam.dynamictrees.data.provider.DTLangProvider;
 
-public class DTAetherExtraLang implements Generator<DTLangProvider, String> {
+public class DTAetherExtraLang implements Generator<DTDataProvider.Language, String> {
     public DTAetherExtraLang() {
     }
 
-    public void generate(DTLangProvider provider, String input, Generator.Dependencies dependencies) {
-        provider.add("block.dtaether.imbued_skyroot_branch", "Skyroot Tree");
-        provider.add("block.dtaether.imbued_blightwillow_branch", "Blightwillow Tree");
+    public void generate(DTDataProvider.Language provider, String input, Generator.Dependencies dependencies) {
+        if (provider instanceof DTLangProvider langProvider) {
+            langProvider.add("block.dtaether.imbued_skyroot_branch", "Skyroot Tree");
+            langProvider.add("block.dtaether.imbued_blightwillow_branch", "Blightwillow Tree");
+        }
     }
 
     public Generator.Dependencies gatherDependencies(String input) {

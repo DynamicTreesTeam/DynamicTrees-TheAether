@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "dtaether:blue_aercloud_mushroom_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:lightcap_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:pink_aercloud_mushroom_sapling",
+      "required": false
+    }
+  ]
+}

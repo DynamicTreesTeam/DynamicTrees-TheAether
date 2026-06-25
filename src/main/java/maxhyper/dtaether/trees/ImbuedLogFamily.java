@@ -1,19 +1,19 @@
 package maxhyper.dtaether.trees;
 
-import com.ferreusveritas.dynamictrees.api.data.BranchStateGenerator;
-import com.ferreusveritas.dynamictrees.api.data.Generator;
-import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.block.branch.BasicBranchBlock;
-import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-import com.ferreusveritas.dynamictrees.compat.waila.WailaOther;
-import com.ferreusveritas.dynamictrees.data.provider.BranchLoaderBuilder;
-import com.ferreusveritas.dynamictrees.data.provider.DTBlockStateProvider;
-import com.ferreusveritas.dynamictrees.data.provider.DTLangProvider;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.util.MutableLazyValue;
-import com.ferreusveritas.dynamictrees.util.Optionals;
-import com.ferreusveritas.dynamictrees.util.ResourceLocationUtils;
+import com.dtteam.dynamictrees.data.generator.BranchStateGenerator;
+import com.dtteam.dynamictrees.data.Generator;
+import com.dtteam.dynamictrees.data.DTDataProvider;
+import com.dtteam.dynamictrees.api.registry.RegistryHandler;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.block.branch.BasicBranchBlock;
+import com.dtteam.dynamictrees.block.branch.BranchBlock;
+import com.dtteam.dynamictrees.compat.WailaHelper;
+import com.dtteam.dynamictrees.data.builder.BranchLoaderBuilder;
+import com.dtteam.dynamictrees.data.provider.DTBlockStateProvider;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.api.lazyvalue.MutableLazyValue;
+import com.dtteam.dynamictrees.utility.Optionals;
+import com.dtteam.dynamictrees.utility.ResourceLocationUtils;
 import maxhyper.dtaether.blocks.ImbuedBranchBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -29,7 +29,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
@@ -47,7 +46,7 @@ public class ImbuedLogFamily extends Family {
     protected Item imbuedDropItem;
     protected ResourceLocation imbuedBranchName;
     protected ResourceLocation stripLootLocation;
-    protected final MutableLazyValue<Generator<DTBlockStateProvider, Family>> imbuedBranchStateGenerator;
+    protected final MutableLazyValue<Generator<DTDataProvider.BlockState, Family>> imbuedBranchStateGenerator;
 
     public ImbuedLogFamily(ResourceLocation name) {
         super(name);
@@ -58,11 +57,6 @@ public class ImbuedLogFamily extends Family {
     public void setupBlocks() {
         super.setupBlocks();
         this.imbuedBranch = setupBranch(createImbuedBranch(getBranchName("imbued_")), true);
-    }
-
-    @Override
-    public void generateLangData(DTLangProvider provider) {
-        super.generateLangData(provider);
     }
 
     public void setStripLootLocation(ResourceLocation stripLootLocation) {
@@ -86,7 +80,7 @@ public class ImbuedLogFamily extends Family {
                 branch.stripBranch(state, level, pos, player, heldItem);
                 if (level.isClientSide) {
                     level.playSound(player, pos, SoundEvents.AXE_STRIP, SoundSource.BLOCKS, 1.0F, 1.0F);
-                    WailaOther.invalidateWailaPosition();
+                    WailaHelper.invalidateWailaPosition();
                 }
 
             };
@@ -131,7 +125,7 @@ public class ImbuedLogFamily extends Family {
         return Optionals.ofItem(imbuedDropItem);
     }
 
-    public void generateStateData(DTBlockStateProvider provider) {
+    public void generateStateData(DTDataProvider.BlockState provider) {
         super.generateStateData(provider);
         (this.imbuedBranchStateGenerator.get()).generate(provider, this);
     }
@@ -158,13 +152,18 @@ public class ImbuedLogFamily extends Family {
             return super.gatherDependencies(input);
         }
         @Override
-        public void generate(DTBlockStateProvider provider, @NotNull Family input, Generator.Dependencies dependencies) {
+        public void generate(DTDataProvider.BlockState prov, @NotNull Family input, Generator.Dependencies dependencies) {
+            if (!(prov instanceof DTBlockStateProvider provider)) {
+                return;
+            }
             BranchBlock branch = dependencies.get(BRANCH);
-            BranchLoaderBuilder builder = (provider.models().getBuilder((Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(branch))).getPath())).customLoader(branch.getFamily().getBranchLoaderConstructor());
+            BranchLoaderBuilder builder = provider.models()
+                    .getBuilder(Objects.requireNonNull(BuiltInRegistries.BLOCK.getKey(branch)).getPath())
+                    .customLoader(BranchLoaderBuilder.branchBuilders.get(input.getBranchLoader()));
             Block block = dependencies.get(PRIMITIVE_LOG);
             Objects.requireNonNull(builder);
             if (input instanceof ImbuedLogFamily goldenLogFamily){
-                goldenLogFamily.addGoldenBranchTextures(builder::texture, provider.block(ForgeRegistries.BLOCKS.getKey(block)), block);
+                goldenLogFamily.addGoldenBranchTextures(builder::texture, provider.block(BuiltInRegistries.BLOCK.getKey(block)), block);
                 provider.simpleBlock(branch, builder.end());
             }
 

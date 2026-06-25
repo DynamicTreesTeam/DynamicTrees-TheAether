@@ -1,0 +1,6 @@
+{
+  "parent": "dynamictrees:item/standard_seed",
+  "textures": {
+    "layer0": "deep_aether:block/pink_aercloud_mushrooms"
+  }
+}

@@ -1,14 +1,14 @@
 package maxhyper.dtaether.trees;
 
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.deserialisation.JsonDeserialisers;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
+import com.dtteam.dynamictrees.deserialization.JsonDeserializers;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.tree.species.Species;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.fml.ModList;
+import net.neoforged.fml.ModList;
 
 public class ModDependentSpecies extends Species {
 
@@ -31,7 +31,7 @@ public class ModDependentSpecies extends Species {
         String modId = object.get(ONLY_IF_LOADED).getAsString();
         if (ModList.get().isLoaded(modId) && (!object.has(ONLY_IF_NOT_LOADED) || !ModList.get().isLoaded(object.get(ONLY_IF_NOT_LOADED).getAsString()))){
             if (object.has(FAMILY)){
-                ResourceLocation familyRes = new ResourceLocation(object.get(FAMILY).getAsString());
+                ResourceLocation familyRes = ResourceLocation.parse(object.get(FAMILY).getAsString());
                 Family family = Family.REGISTRY.get(familyRes);
                 this.setFamily(family);
                 setSaplingName(this.getRegistryName().getPath()+"_sapling_"+modId);
@@ -45,16 +45,16 @@ public class ModDependentSpecies extends Species {
                 JsonArray array = object.getAsJsonArray(FEATURES);
                 array.forEach((elem)->{
                             if (elem.isJsonObject())
-                                JsonDeserialisers.CONFIGURED_GEN_FEATURE.deserialiseIfValid(elem, (res)-> addGenFeature(res.get()));
+                                JsonDeserializers.CONFIGURED_GEN_FEATURE.deserializeIfValid(elem, (res)-> addGenFeature(res.get()));
                             else if (elem.isJsonPrimitive())
-                                JsonDeserialisers.GEN_FEATURE.deserialiseIfValid(elem, (res)-> addGenFeature(res.get()));
+                                JsonDeserializers.GEN_FEATURE.deserializeIfValid(elem, (res)-> addGenFeature(res.get()));
                         }
                 );
             }
             if (object.has(PRIMITIVE_SAPLINGS)){
                 JsonArray array = object.getAsJsonArray(PRIMITIVE_SAPLINGS);
                 array.forEach((elem)->
-                        JsonDeserialisers.SEED_SAPLING_RECIPE.deserialiseIfValid(elem, (res)-> addPrimitiveSaplingRecipe(res.get()))
+                        JsonDeserializers.SEED_SAPLING_RECIPE.deserializeIfValid(elem, (res)-> addPrimitiveSaplingRecipe(res.get()))
                 );
             }
             if (object.has(DROP_SEEDS)){

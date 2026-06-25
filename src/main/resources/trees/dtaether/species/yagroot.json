@@ -1,6 +1,6 @@
 {
   "only_if_loaded": "deep_aether",
-  "type": "mangrove",
+  "type": "underground_roots",
   "family": "dtaether:yagroot",
   "tapering": 0.25,
   "signal_energy": 20.0,

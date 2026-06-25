@@ -1,6 +1,6 @@
 package maxhyper.dtaether.cells;
 
-import com.ferreusveritas.dynamictrees.cell.MatrixCell;
+import com.dtteam.dynamictrees.systems.cell.MatrixCell;
 
 public class BlightwillowLeafCell extends MatrixCell {
 

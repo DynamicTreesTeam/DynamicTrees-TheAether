@@ -1,6 +1,6 @@
 package maxhyper.dtaether.init;
 
-import com.ferreusveritas.dynamictrees.client.BlockColorMultipliers;
+import com.dtteam.dynamictrees.client.BlockColorMultipliers;
 import maxhyper.dtaether.DynamicTreesAether;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -8,27 +8,25 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.XoroshiroRandomSource;
 import net.minecraft.world.level.levelgen.synth.PerlinNoise;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.RegisterColorHandlersEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 
 import java.util.stream.IntStream;
 
-@Mod.EventBusSubscriber(modid = DynamicTreesAether.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = DynamicTreesAether.MOD_ID, value = Dist.CLIENT)
 public class DTAetherClient {
 
     public static void setup(){
-//        Block jellyCap = ForgeRegistries.BLOCKS.getValue(DynamicTreesAether.location("jellyshroom_cap"));
-//        Block jellyCapCenter = ForgeRegistries.BLOCKS.getValue(DynamicTreesAether.location("jellyshroom_cap_center"));
 //        ItemBlockRenderTypes.setRenderLayer(jellyCap, RenderType.translucent());
     }
 
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)
-    public static void registerColorHandlersEvent(RegisterColorHandlersEvent event){
+    public static void registerColorHandlersEvent(RegisterColorHandlersEvent.Block event){
         registerJsonColorMultipliers();
     }
 

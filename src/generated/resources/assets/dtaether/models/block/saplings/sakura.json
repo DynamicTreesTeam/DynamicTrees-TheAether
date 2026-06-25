@@ -1,8 +1,0 @@
-{
-  "parent": "dynamictrees:block/smartmodel/sapling",
-  "render_type": "minecraft:cutout_mipped",
-  "textures": {
-    "leaves": "ancient_aether:block/sakura_leaves",
-    "log": "ancient_aether:block/sakura_log"
-  }
-}

@@ -1,5 +1,5 @@
 {
-  "type": "mangrove",
+  "type": "underground_roots",
   "only_if_loaded": "deep_aether",
   "common_leaves": "dtaether:yagroot",
   "common_species": "dtaether:yagroot",

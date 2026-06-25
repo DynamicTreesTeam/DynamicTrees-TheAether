@@ -1,18 +1,21 @@
 package maxhyper.dtaether.blocks;
 
-import com.ferreusveritas.dynamictrees.api.TreeHelper;
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.api.treedata.TreePart;
-import com.ferreusveritas.dynamictrees.systems.GrowSignal;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapBlock;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
-import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
+import com.dtteam.dynamictrees.tree.TreeHelper;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.api.treedata.TreePart;
+import com.dtteam.dynamictrees.systems.GrowSignal;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictreesplus.block.mushroom.CapProperties;
+import com.dtteam.dynamictreesplus.block.mushroom.DynamicCapBlock;
+import com.dtteam.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
+import com.dtteam.dynamictreesplus.tree.HugeMushroomSpecies;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -26,8 +29,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.zepalesque.redux.block.ReduxBlocks;
-import net.zepalesque.redux.client.audio.ReduxSoundEvents;
 
 public class JellyshroomCapProperties extends DropBlocksCapProperties {
 
@@ -38,8 +39,10 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
     }
 
     @Override
-    public BlockBehaviour.Properties getDefaultBlockProperties(MapColor mapColor) {
-        return super.getDefaultBlockProperties(mapColor).noOcclusion().isSuffocating(ReduxBlocks::never).isViewBlocking(ReduxBlocks::never);
+    public BlockBehaviour.Properties getDefaultBlockProperties() {
+        return super.getDefaultBlockProperties().noOcclusion()
+                .isSuffocating((state, level, pos) -> false)
+                .isViewBlocking((state, level, pos) -> false);
     }
 
     @Override
@@ -62,7 +65,7 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
                     } else {
                         var10001 = null;
                     }
-                    pLevel.playSound(var10001, pPos, ReduxSoundEvents.FUNGUS_BOUNCE.get(), SoundSource.BLOCKS, Math.min(pFallDistance / 10.0F, 0.8F), 0.9F + pLevel.random.nextFloat() * 0.2F);
+                    pLevel.playSound(var10001, pPos, getBounceSound(), SoundSource.BLOCKS, Math.min(pFallDistance / 10.0F, 0.8F), 0.9F + pLevel.random.nextFloat() * 0.2F);
                 }
             }
             @Override
@@ -122,7 +125,7 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
                     } else {
                         var10001 = null;
                     }
-                    pLevel.playSound(var10001, pPos, ReduxSoundEvents.FUNGUS_BOUNCE.get(), SoundSource.BLOCKS, Math.min(pFallDistance / 10.0F, 0.8F), 0.9F + pLevel.random.nextFloat() * 0.2F);
+                    pLevel.playSound(var10001, pPos, getBounceSound(), SoundSource.BLOCKS, Math.min(pFallDistance / 10.0F, 0.8F), 0.9F + pLevel.random.nextFloat() * 0.2F);
                 }
             }
             @Override
@@ -191,6 +194,13 @@ public class JellyshroomCapProperties extends DropBlocksCapProperties {
                 }
             }
         };
+    }
+
+    private static SoundEvent getBounceSound() {
+        SoundEvent sound = BuiltInRegistries.SOUND_EVENT.get(
+                ResourceLocation.fromNamespaceAndPath("aether_redux", "fungus_bounce")
+        );
+        return sound != null ? sound : SoundEvents.SLIME_BLOCK_FALL;
     }
 
 }

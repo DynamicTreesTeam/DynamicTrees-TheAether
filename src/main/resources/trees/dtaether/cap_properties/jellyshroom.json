@@ -1,5 +1,5 @@
 {
-  "only_if_loaded": ["dynamictreesplus","aether_redux"],
+  "only_if_loaded": "aether_redux",
   "type": "dtaether:jellyshroom",
   "primitive_cap": "aether_redux:jellyshroom_jelly_block",
   "material_color": "COLOR_PURPLE",

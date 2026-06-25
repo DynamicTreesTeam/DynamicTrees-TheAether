@@ -1,25 +1,28 @@
 package maxhyper.dtaether.blocks;
 
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.util.CoordUtils;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapBlock;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
-import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.context.MushroomCapContext;
-import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.utility.CoordUtils;
+import com.dtteam.dynamictreesplus.block.mushroom.CapProperties;
+import com.dtteam.dynamictreesplus.block.mushroom.DynamicCapBlock;
+import com.dtteam.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
+import com.dtteam.dynamictreesplus.systems.mushroomlogic.context.MushroomCapContext;
+import com.dtteam.dynamictreesplus.tree.HugeMushroomSpecies;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.zepalesque.redux.block.ReduxBlocks;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class CloudcapCapProperties extends DropBlocksCapProperties{
+    private static final ResourceLocation CLOUDCAP_SPORES =
+            ResourceLocation.fromNamespaceAndPath("aether_redux", "cloudcap_spores");
 
     public static final TypedRegistry.EntryType<CapProperties> TYPE = TypedRegistry.newType(CloudcapCapProperties::new);
 
@@ -39,7 +42,7 @@ public class CloudcapCapProperties extends DropBlocksCapProperties{
                         species.getMushroomShapeKit().clearMushroomCap(new MushroomCapContext(pLevel, currentPos, species, currentAge));
                         for (CoordUtils.Surround surr : CoordUtils.Surround.values()){
                             BlockPos pos = currentPos.below().offset(surr.getOffset());
-                            if (pLevel.getBlockState(pos).is(ReduxBlocks.CLOUDCAP_SPORES.get())){
+                            if (pLevel.getBlockState(pos).is(getCloudcapSpores())){
                                 surrounds.add(surr);
                                 pLevel.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
                             }
@@ -50,12 +53,16 @@ public class CloudcapCapProperties extends DropBlocksCapProperties{
                     for (CoordUtils.Surround surr : surrounds){
                         BlockPos pos = newPos.below().offset(surr.getOffset());
                         if (pLevel.isEmptyBlock(pos)){
-                            pLevel.setBlock(pos, ReduxBlocks.CLOUDCAP_SPORES.get().defaultBlockState(), 3);
+                            pLevel.setBlock(pos, getCloudcapSpores().defaultBlockState(), 3);
                         }
                     }
                 }
             }
 
         };
+    }
+
+    private static Block getCloudcapSpores() {
+        return BuiltInRegistries.BLOCK.get(CLOUDCAP_SPORES);
     }
 }

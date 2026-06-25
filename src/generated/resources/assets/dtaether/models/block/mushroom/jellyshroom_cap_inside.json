@@ -1,6 +1,0 @@
-{
-  "parent": "dtaether:block/template_single_face_jelly",
-  "textures": {
-    "texture": "aether_redux:block/natural/jellyshroom_jelly_block"
-  }
-}

@@ -10,7 +10,7 @@
     "only_if_loaded": "deep_aether",
     "select" : { "name": "deep_aether:.*" },
     "cancellers": {
-      "types": [ "tree" ],
+      "types": [ "tree", "dtaether:aercloud_mushroom" ],
       "namespaces": ["aether", "deep_aether", "minecraft"]
     }
   },

@@ -1,28 +1,33 @@
 package maxhyper.dtaether.trees;
 
-import com.ferreusveritas.dynamictrees.DynamicTrees;
-import com.ferreusveritas.dynamictrees.api.network.MapSignal;
-import com.ferreusveritas.dynamictrees.api.network.NodeInspector;
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.block.branch.BasicBranchBlock;
-import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-import com.ferreusveritas.dynamictrees.data.provider.DTLootTableProvider;
-import com.ferreusveritas.dynamictrees.systems.nodemapper.DestroyerNode;
-import com.ferreusveritas.dynamictrees.systems.nodemapper.NetVolumeNode;
-import com.ferreusveritas.dynamictrees.systems.nodemapper.SpeciesNode;
-import com.ferreusveritas.dynamictrees.systems.nodemapper.StateNode;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
-import com.ferreusveritas.dynamictrees.util.*;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapBlock;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
-import com.ferreusveritas.dynamictreesplus.block.mushroom.MushroomBranchBlock;
-import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.context.MushroomCapContext;
-import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomFamily;
-import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
+import com.dtteam.dynamictrees.DynamicTrees;
+import com.dtteam.dynamictrees.api.network.MapSignal;
+import com.dtteam.dynamictrees.api.network.NodeInspector;
+import com.dtteam.dynamictrees.api.network.BranchDestructionData;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.api.voxmap.BlockPosBounds;
+import com.dtteam.dynamictrees.api.voxmap.SimpleVoxmap;
+import com.dtteam.dynamictrees.block.branch.BasicBranchBlock;
+import com.dtteam.dynamictrees.block.branch.BranchBlock;
+import com.dtteam.dynamictrees.data.DTLootTableBuilder;
+import com.dtteam.dynamictrees.systems.nodemapper.DestroyerNode;
+import com.dtteam.dynamictrees.systems.nodemapper.NetVolumeNode;
+import com.dtteam.dynamictrees.systems.nodemapper.SpeciesNode;
+import com.dtteam.dynamictrees.systems.nodemapper.StateNode;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.utility.*;
+import com.dtteam.dynamictreesplus.block.mushroom.CapProperties;
+import com.dtteam.dynamictreesplus.block.mushroom.DynamicCapBlock;
+import com.dtteam.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
+import com.dtteam.dynamictreesplus.block.mushroom.MushroomBranchBlock;
+import com.dtteam.dynamictreesplus.systems.mushroomlogic.context.MushroomCapContext;
+import com.dtteam.dynamictreesplus.tree.HugeMushroomFamily;
+import com.dtteam.dynamictreesplus.tree.HugeMushroomSpecies;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -33,7 +38,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.loot.LootTable;
-import net.zepalesque.redux.block.ReduxBlocks;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -52,8 +56,8 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
     protected BranchBlock createBranchBlock(ResourceLocation name) {
         BasicBranchBlock branch = new MushroomBranchBlock(name, this.getProperties()){
             @Override
-            public LootTable.Builder createBranchDrops() {
-                return DTLootTableProvider.BlockLoot.createBranchDrops(this.getPrimitiveLog().get(), getFamily().getStick(1).getItem());
+            public LootTable.Builder createBranchDrops(HolderLookup.Provider registries) {
+                return DTLootTableBuilder.createBranchDrops(this.getPrimitiveLog().get(), getFamily().getStick(1).getItem(), registries);
             }
             //THIS IS FOR CLOUDCAPS. CRUDE SOLUTION BUT IM LAZY
             @Override
@@ -93,7 +97,11 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
                     cutDir = Direction.DOWN;
                 }
 
-                return new BranchDestructionData(species, stateMapper.getBranchConnectionMap(), destroyedLeaves, leavesDropsList, endPoints, volumeSum.getVolume(), cutPos, cutDir, toolDir, trunkHeight);
+                return new BranchDestructionData(
+                        species, stateMapper.getBranchConnectionMap(), destroyedLeaves, leavesDropsList, endPoints,
+                        volumeSum.getVolume(), cutPos, cutPos, cutDir, toolDir, trunkHeight,
+                        getCachedSoilState(level, cutPos.offset(cutDir.getNormal()), false)
+                );
             }
 
             public void destroyMushroomCap(final @NotNull Level level, final @NotNull BlockPos cutPos, final @NotNull Species species, final @NotNull ItemStack tool, final @NotNull List<BlockPos> endPoints, final @NotNull Map<BlockPos, BlockState> destroyedCapBlocks, final @NotNull List<ItemStackPos> drops, Entity entity) {
@@ -105,7 +113,7 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
                 }
 
                 // Make a bounding volume that holds all the endpoints and expand the volume for the leaves' radius.
-                final BlockBounds bounds = getFamily().expandLeavesBlockBounds(new BlockBounds(endPoints));
+                final BlockPosBounds bounds = getFamily().expandLeavesBlockBounds(new BlockPosBounds(endPoints));
 
                 // Create a voxmap to store the leaf destruction map.
                 final SimpleVoxmap capMap = new SimpleVoxmap(bounds);
@@ -126,13 +134,14 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
                     for (CoordUtils.Surround surr : CoordUtils.Surround.values()){
                         BlockPos pos = endPos.offset(surr.getOffset());
                         BlockState state = level.getBlockState(pos);
-                        if (level.getBlockState(pos).is(ReduxBlocks.CLOUDCAP_SPORES.get())){
+                        if (level.getBlockState(pos).is(BuiltInRegistries.BLOCK.get(
+                                ResourceLocation.fromNamespaceAndPath("aether_redux", "cloudcap_spores")))){
                             if (entity instanceof Player){
                                 BlockEntity te = level.getBlockEntity(pos);
                                 state.getBlock().onDestroyedByPlayer(state, level, pos, (Player)entity, true, level.getFluidState(pos));
                                 state.getBlock().playerDestroy(level, (Player)entity, pos, state, te, tool);
                             } else {
-                                level.setBlock(pos, BlockStates.AIR, 0);
+                                level.setBlock(pos, Blocks.AIR.defaultBlockState(), 0);
                             }
                         }
                     }
@@ -141,7 +150,7 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
                 final List<ItemStack> dropList = new ArrayList<>();
 
                 // Destroy all family compatible leaves.
-                for (final SimpleVoxmap.Cell cell : capMap.getAllNonZeroCells()) {
+                for (final SimpleVoxmap.VoxmapCell cell : capMap.getAllNonZeroCells()) {
                     final BlockPos.MutableBlockPos pos = cell.getPos();
                     final BlockState state = level.getBlockState(pos);
                     if (family.isCompatibleCap(mushSpecies, state, level, pos)) {
@@ -150,7 +159,7 @@ public class DropLogsMushroomFamily extends HugeMushroomFamily {
                         dropList.addAll(cap.getDrops(level, pos, tool, species));
                         final BlockPos imPos = pos.immutable(); // We are storing this so it must be immutable
                         final BlockPos relPos = imPos.subtract(cutPos);
-                        level.setBlock(imPos, BlockStates.AIR, 3);
+                        level.setBlock(imPos, Blocks.AIR.defaultBlockState(), 3);
                         destroyedCapBlocks.put(relPos, state);
                         dropList.forEach(i -> drops.add(new ItemStackPos(i, relPos)));
                     }

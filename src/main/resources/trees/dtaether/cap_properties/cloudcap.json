@@ -1,5 +1,5 @@
 {
-  "only_if_loaded": ["dynamictreesplus","aether_redux"],
+  "only_if_loaded": "aether_redux",
   "type": "dtaether:cloudcap",
   "primitive_cap": "aether_redux:cloud_cap_block",
   "material_color": "LAPIS",

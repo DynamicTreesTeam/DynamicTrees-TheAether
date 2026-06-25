@@ -1,5 +1,5 @@
 {
-  "only_if_loaded": ["deep_aether", "dynamictreesplus"],
+  "only_if_loaded": "deep_aether",
   "type": "dynamictreesplus:mushroom",
   "family": "dynamictreesplus:mushroom",
   "tapering": 0,

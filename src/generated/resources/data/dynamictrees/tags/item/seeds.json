@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "dtaether:blue_roseroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:conberry_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:cruderoot_seed",
+      "required": false
+    },
+    "dtaether:crystal_seed",
+    "dtaether:golden_oak_seed",
+    "dtaether:holiday_seed",
+    {
+      "id": "dtaether:roseroot_seed",
+      "required": false
+    },
+    "dtaether:skyroot_seed",
+    {
+      "id": "dtaether:sunroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:yagroot_seed",
+      "required": false
+    }
+  ]
+}

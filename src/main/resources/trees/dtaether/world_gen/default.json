@@ -265,6 +265,37 @@
       "forestness": 1
     }
   },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:sacred_lands" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:skyroot" : 12,
+          "dtaether:golden_oak" : 2,
+          "dtaether:holiday" : 1
+        }
+      },
+      "density" : [ 0.7 ],
+      "chance" : 1,
+      "forestness": 0.8
+    }
+  },
+  {
+    "only_if_loaded": "deep_aether",
+    "select" : { "name": "deep_aether:overgrown_cloud" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dtaether:blue_aercloud_mushroom" : 1,
+          "dtaether:pink_aercloud_mushroom" : 1
+        }
+      },
+      "density" : [ 0.5 ],
+      "chance" : 0.65,
+      "forestness": 0.7
+    }
+  },
 
 
 
