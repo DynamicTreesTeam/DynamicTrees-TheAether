@@ -1,8 +1,0 @@
-{
-  "loader": "dynamictrees:roots",
-  "render_type": "minecraft:cutout_mipped",
-  "textures": {
-    "bark": "deep_aether:block/yagroot_roots_side",
-    "rings": "deep_aether:block/yagroot_roots_top"
-  }
-}

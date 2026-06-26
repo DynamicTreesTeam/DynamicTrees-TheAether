@@ -1,0 +1,253 @@
+[
+  {
+    "select" : { "name": "twilightforest:dark_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:darkwood" : 4,
+          "dttwilightforest:dark_forest_oak" : 1,
+          "dttwilightforest:dark_forest_birch" : 1
+        }
+      },
+      "density" : [ 1.1 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:dark_forest_center" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:darkwood" : 4,
+          "dttwilightforest:dark_forest_oak" : 1,
+          "dttwilightforest:dark_forest_birch" : 1
+        }
+      },
+      "density" : [ 1.1 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:canopy" : 6,
+          "dttwilightforest:mega_canopy" : 1,
+          "dynamictrees:oak" : 3,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:firefly_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:canopy" : 6,
+          "dynamictrees:oak" : 3,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:dense_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:robust_twilight_oak" : 6,
+          "dttwilightforest:canopy" : 6,
+          "dttwilightforest:mega_canopy" : 1,
+          "dynamictrees:oak" : 3,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "density" : [ 1, 0.5 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:enchanted_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:rainbow_oak" : 1,
+          "dttwilightforest:canopy" : 2,
+          "dynamictrees:oak" : 2,
+          "dynamictrees:birch" : 2
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:spooky_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:spooky_canopy" : 4,
+          "dttwilightforest:twilight_oak" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 0.4
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:swamp" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:mangrove" : 6,
+          "dynamictrees:swamp_oak" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 0.8
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:fire_swamp" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:mangrove" : 6,
+          "dynamictrees:swamp_oak" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 0.8
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:oak_savannah" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:robust_twilight_oak" : 1,
+          "dynamictrees:oak" : 3
+        }
+      },
+      "density" : [ 0.01 ],
+      "chance" : 0.1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:highlands" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dynamictrees:mega_spruce" : 2,
+          "dynamictrees:spruce" : 3,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "density" : [ 1 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:snowy_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:giga_spruce" : 1,
+          "dynamictrees:mega_spruce" : 3
+        }
+      },
+      "density" : [ 0.7 ],
+      "chance" : 1
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:spooky_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:spooky_canopy" : 7,
+          "dttwilightforest:twilight_oak" : 3
+        }
+      },
+      "density" : [ 0.8 ],
+      "chance" : 0.8
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:mushroom_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:canopy" : 2,
+          "dttwilightforest:mega_canopy" : 1,
+          "dynamictrees:oak" : 3,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "density" : [ 0.8 ],
+      "chance" : 0.8
+    }
+  },
+  {
+    "select" : { "name": "twilightforest:dense_mushroom_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dttwilightforest:canopy" : 1,
+          "dttwilightforest:mega_canopy" : 1,
+          "dynamictrees:oak" : 1,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "density" : [ 1.2 ],
+      "chance" : 0.8
+    }
+  },
+
+
+
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select" : { "name": "twilightforest:mushroom_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dynamictreesplus:red_mushroom": 3,
+          "dynamictreesplus:brown_mushroom": 3,
+          "dttwilightforest:canopy_red_mushroom": 2,
+          "dttwilightforest:canopy_brown_mushroom": 2,
+          "dttwilightforest:canopy" : 2,
+          "dttwilightforest:mega_canopy" : 1,
+          "dynamictrees:oak" : 3,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "chance" : 1
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select" : { "name": "twilightforest:dense_mushroom_forest" },
+    "apply" : {
+      "species" : {
+        "random" : {
+          "dynamictreesplus:mega_red_mushroom": 1,
+          "dynamictreesplus:mega_brown_mushroom": 1,
+          "dttwilightforest:canopy_red_mushroom": 5,
+          "dttwilightforest:canopy_brown_mushroom": 5,
+          "dttwilightforest:canopy" : 1,
+          "dttwilightforest:mega_canopy" : 1,
+          "dynamictrees:oak" : 1,
+          "dynamictrees:birch" : 1
+        }
+      },
+      "chance" : 1
+    }
+  }
+]

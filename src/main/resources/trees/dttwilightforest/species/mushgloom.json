@@ -1,0 +1,36 @@
+{
+  "only_if_loaded": "dynamictreesplus",
+  "type": "dttwilightforest:mushgloom",
+  "family": "dttwilightforest:mushgloom",
+  "tapering": 0,
+  "signal_energy": 4,
+  "growth_rate": 0.2,
+  "soil_longevity": 1,
+  "growth_logic_kit": {
+    "name": "dynamictreesplus:straight",
+    "properties": {
+      "height_variation": 2
+    }
+  },
+  "cap_properties": "dttwilightforest:mushgloom",
+  "mushroom_shape_kit": {
+    "name": "dynamictreesplus:bell",
+    "properties": {
+      "max_cap_age": 2,
+      "max_age_curve_factor": 2,
+      "min_age_curve_factor": 2,
+      "curve_factor_variation": 0
+    }
+  },
+  "primitive_sapling": "twilightforest:mushgloom",
+  "sapling_shape": "dttwilightforest:round_short_mushroom",
+  "acceptable_soils": [],
+  "max_light_for_planting": 16,
+  "acceptable_growth_blocks": ["twilightforest:uberous_soil"],
+  "model_overrides": {
+    "sapling": "dttwilightforest:block/smartmodel/mushgloom_sapling"
+  },
+  "lang_overrides": {
+    "seed": "Mushgloom Cap"
+  }
+}

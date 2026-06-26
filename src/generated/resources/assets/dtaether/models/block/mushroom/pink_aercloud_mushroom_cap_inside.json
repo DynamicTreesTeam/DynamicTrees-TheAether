@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_single_face",
-  "textures": {
-    "texture": "deep_aether:block/aercloud_mushroom_inside"
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "twilightforest:block/huge_mushgloom_stem",
+    "rings": "twilightforest:block/huge_gloom_inside"
+  }
+}

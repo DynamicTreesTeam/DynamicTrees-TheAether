@@ -1,0 +1,6 @@
+{
+  "primitive_leaves": "twilightforest:twilight_oak_leaves",
+  "texture_overrides": {
+    "leaves": "minecraft:block/oak_leaves"
+}
+}

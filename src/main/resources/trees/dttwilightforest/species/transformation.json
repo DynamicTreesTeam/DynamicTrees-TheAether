@@ -1,0 +1,27 @@
+{
+  "family": "dttwilightforest:transformation",
+  "tapering": 0.5,
+  "signal_energy": 16.0,
+  "up_probability": 6,
+  "lowest_branch_height": 5,
+  "leaves_properties": "dttwilightforest:transformation",
+  "environment_factors" : {
+
+  },
+  "perfect_biomes": { "types": [ "forest" ] },
+  "primitive_sapling": "twilightforest:transformation_sapling",
+  "drop_seeds": false,
+  "features" : [
+    "mushroom_rot",
+    {
+      "name": "dttwilightforest:magic_core",
+      "properties": {
+        "min_radius": 5,
+        "height": 4
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Seed of Transformation"
+  }
+}

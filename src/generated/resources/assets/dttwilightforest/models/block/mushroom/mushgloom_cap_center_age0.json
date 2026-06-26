@@ -1,0 +1,8 @@
+{
+  "parent": "dttwilightforest:block/smartmodel/tall_slab",
+  "textures": {
+    "bottom": "twilightforest:block/huge_gloom_inside",
+    "side": "twilightforest:block/huge_gloom_cap",
+    "top": "twilightforest:block/huge_gloom_cap"
+  }
+}

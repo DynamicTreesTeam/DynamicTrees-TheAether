@@ -1,0 +1,26 @@
+{
+  "family": "oak",
+  "tapering": 0.3,
+  "signal_energy": 12.0,
+  "growth_rate": 0.8,
+  "always_show_on_waila": false,
+  "leaves_properties": "dttwilightforest:dark_forest_oak",
+  "environment_factors" : {
+    "cold": 0.75,
+    "hot": 0.5,
+    "dry": 0.5,
+    "forest": 1.05
+  },
+  "perfect_biomes": { "types": [ "forest" ] },
+  "common_override": { "name": "twilightforest:dark_forest" },
+  "features" : [
+    {
+      "name": "rot_soil",
+      "properties": {
+        "rotten_soil": "podzol"
+      }
+    },
+    "mushroom_rot",
+    "bee_nest"
+  ]
+}

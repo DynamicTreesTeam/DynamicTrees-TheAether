@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "entries": [
+    "dttwilightforest:replace_canopy_sapling",
+    "dttwilightforest:replace_darkwood_sapling",
+    "dttwilightforest:replace_hollow_oak_sapling",
+    "dttwilightforest:replace_mangrove_sapling",
+    "dttwilightforest:replace_twilight_oak_sapling",
+    "dttwilightforest:replace_mining_sapling",
+    "dttwilightforest:replace_sorting_sapling",
+    "dttwilightforest:replace_time_sapling",
+    "dttwilightforest:replace_transformation_sapling"
+  ]
+}

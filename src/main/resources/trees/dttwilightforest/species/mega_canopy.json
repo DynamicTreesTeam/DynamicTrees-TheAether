@@ -1,0 +1,64 @@
+{
+  "family": "dttwilightforest:canopy",
+  "tapering": 0.16,
+  "signal_energy": 48.0,
+  "up_probability": 12,
+  "lowest_branch_height": 24,
+  "growth_rate": 1.1,
+  "soil_longevity": 24,
+  "max_branch_radius": 24,
+  "growth_logic_kit": {
+    "name": "dttwilightforest:canopy",
+    "properties": {
+      "canopy_height": 10,
+      "height_variation": 8
+    }
+  },
+  "leaves_properties": "dttwilightforest:canopy",
+  "world_gen_leaf_map_height": 64,
+  "environment_factors": {},
+  "perfect_biomes": {
+    "types": [
+      "forest"
+    ]
+  },
+  "generate_seed": true,
+  "generate_sapling": true,
+  "features": [
+    {
+      "name": "dttwilightforest:firefly",
+      "properties": {
+        "block": "twilightforest:firefly"
+      }
+    },
+    "dttwilightforest:underground_roots",
+    "bottom_flare",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 9,
+        "scale_factor": 20
+      }
+    },
+    {
+      "name": "clear_volume",
+      "properties": {
+        "height": 28
+      }
+    }
+  ],
+  "sapling_shape": "fat_sapling",
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/large_sapling"
+  },
+  "lang_overrides": {
+    "species": "Mega Canopy Tree",
+    "seed": "Mega Canopy Tree Seed"
+  }
+}

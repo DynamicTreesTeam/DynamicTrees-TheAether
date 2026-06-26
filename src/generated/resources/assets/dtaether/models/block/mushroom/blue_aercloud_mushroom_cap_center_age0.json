@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "deep_aether:block/aercloud_mushroom_inside",
-    "side": "deep_aether:block/blue_aercloud_mushroom_block",
-    "top": "deep_aether:block/blue_aercloud_mushroom_block"
-  }
-}

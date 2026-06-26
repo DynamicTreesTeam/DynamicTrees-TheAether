@@ -2,55 +2,71 @@
   "sources": [
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "aether:block/natural/cold_aercloud"
+      "resource": "twilightforest:block/canopy_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/conberry_log_top"
+      "resource": "twilightforest:block/stripped_canopy_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/stripped_conberry_log_top"
+      "resource": "twilightforest:block/dark_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/cruderoot_log_top"
+      "resource": "twilightforest:block/stripped_dark_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/stripped_cruderoot_log_top"
+      "resource": "twilightforest:block/mining_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/roseroot_log_top"
+      "resource": "twilightforest:block/stripped_mining_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/stripped_roseroot_log_top"
+      "resource": "twilightforest:block/huge_gloom_inside"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "aether:block/natural/skyroot_log_top"
+      "resource": "twilightforest:block/sorting_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "aether:block/natural/stripped_skyroot_log_top"
+      "resource": "twilightforest:block/stripped_sorting_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/sunroot_log_top"
+      "resource": "twilightforest:block/time_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/stripped_sunroot_log_top"
+      "resource": "twilightforest:block/stripped_time_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/yagroot_log_top"
+      "resource": "twilightforest:block/transformation_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "deep_aether:block/stripped_yagroot_log_top"
+      "resource": "twilightforest:block/stripped_transformation_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "twilightforest:block/mangrove_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "twilightforest:block/stripped_mangrove_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "twilightforest:block/twilight_oak_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "twilightforest:block/stripped_twilight_oak_log_top"
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "type": "dttwilightforest:replace_item",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "twilightforest:tree_cache"
+        }
+      ]
+    }
+  ],
+  "old_item": "twilightforest:sorting_sapling",
+  "new_item": "dttwilightforest:sorting_seed"
+}

@@ -1,8 +1,0 @@
-{
-  "type": "dtaddon_lib:particle",
-  "primitive_leaves": "aether:holiday_leaves",
-  "texture_overrides": {
-    "leaves": "aether:block/natural/holiday_leaves"
-  },
-  "cell_kit": "dynamictrees:conifer"
-}

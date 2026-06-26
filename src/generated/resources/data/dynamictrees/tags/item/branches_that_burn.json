@@ -1,25 +1,12 @@
 {
   "values": [
-    {
-      "id": "dtaether:conberry_branch",
-      "required": false
-    },
-    {
-      "id": "dtaether:cruderoot_branch",
-      "required": false
-    },
-    {
-      "id": "dtaether:roseroot_branch",
-      "required": false
-    },
-    "dtaether:skyroot_branch",
-    {
-      "id": "dtaether:sunroot_branch",
-      "required": false
-    },
-    {
-      "id": "dtaether:yagroot_branch",
-      "required": false
-    }
+    "dttwilightforest:canopy_branch",
+    "dttwilightforest:darkwood_branch",
+    "dttwilightforest:mining_branch",
+    "dttwilightforest:sorting_branch",
+    "dttwilightforest:time_branch",
+    "dttwilightforest:transformation_branch",
+    "dttwilightforest:twilight_mangrove_branch",
+    "dttwilightforest:twilight_oak_branch"
   ]
 }

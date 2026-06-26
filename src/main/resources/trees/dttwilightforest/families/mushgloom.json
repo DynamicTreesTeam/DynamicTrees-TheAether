@@ -1,0 +1,20 @@
+{
+  "only_if_loaded": "dynamictreesplus",
+  "type": "dynamictreesplus:mushroom",
+  "common_cap": "dttwilightforest:mushgloom",
+  "common_species": "dttwilightforest:mushgloom",
+  "primitive_log": "twilightforest:huge_mushgloom_stem",
+  "stick": "air",
+  "generate_stripped_branch": false,
+  "loot_volume_multiplier": 2.5,
+  "branch_properties": {
+    "light": 5
+  },
+  "texture_overrides": {
+    "branch": "twilightforest:block/huge_mushgloom_stem",
+    "branch_top": "twilightforest:block/huge_gloom_inside"
+  },
+  "lang_overrides": {
+    "branch": "Mushgloom"
+  }
+}

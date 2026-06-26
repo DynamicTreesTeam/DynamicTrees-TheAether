@@ -1,7 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "deep_aether:block/stripped_cruderoot_log",
-    "rings": "deep_aether:block/stripped_cruderoot_log_top"
-  }
-}

@@ -1,7 +1,6 @@
 {
     "pack": {
-        "description": "DTAether resources",
-        "pack_format": 34,
-        "_comment": "Dynamic Trees for Aether resources"
+        "description": "DTArsNouveau",
+        "pack_format": 8
     }
 }

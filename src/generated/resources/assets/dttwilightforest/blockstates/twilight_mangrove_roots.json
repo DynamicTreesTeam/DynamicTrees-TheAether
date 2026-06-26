@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "layer=covered": {
+      "model": "minecraft:block/dirt"
+    },
+    "layer=exposed": {
+      "model": "dttwilightforest:block/twilight_mangrove_roots"
+    },
+    "layer=filled": {
+      "model": "dttwilightforest:block/twilight_mangrove_roots_filled"
+    }
+  }
+}

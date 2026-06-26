@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "dtaether:yagroot_roots",
-      "required": false
-    }
+    "dttwilightforest:twilight_mangrove_roots"
   ]
 }

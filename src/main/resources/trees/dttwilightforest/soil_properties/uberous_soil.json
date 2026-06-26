@@ -1,0 +1,5 @@
+{
+  "primitive_soil": "twilightforest:uberous_soil",
+  "acceptable_soils": [ "dirt_like" ],
+  "substitute_soil" : "dirt"
+}

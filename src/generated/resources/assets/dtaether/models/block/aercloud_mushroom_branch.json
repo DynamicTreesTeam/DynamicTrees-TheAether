@@ -1,7 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "aether:block/natural/cold_aercloud",
-    "rings": "aether:block/natural/cold_aercloud"
-  }
-}
