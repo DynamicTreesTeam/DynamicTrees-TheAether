@@ -1,4 +1,4 @@
-package maxhyper.dtaether.genfeatures;
+package com.dtteam.dtaether.genfeatures;
 
 import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
 import com.dtteam.dynamictrees.DynamicTrees;

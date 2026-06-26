@@ -1,4 +1,4 @@
-package maxhyper.dtaether;
+package com.dtteam.dtaether;
 
 import com.dtteam.dynamictrees.data.GatherDataHelper;
 import com.dtteam.dynamictrees.registry.NeoForgeRegistryHandler;
@@ -10,10 +10,10 @@ import com.dtteam.dynamictrees.block.pod.Pod;
 import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.tree.species.Species;
 import com.dtteam.dynamictreesplus.block.mushroom.CapProperties;
-import maxhyper.dtaether.data.DTAetherExtraLang;
-import maxhyper.dtaether.init.DTAetherClient;
-import maxhyper.dtaether.init.DTAetherPlusRegistries;
-import maxhyper.dtaether.init.DTAetherRegistries;
+import com.dtteam.dtaether.data.DTAetherExtraLang;
+import com.dtteam.dtaether.init.DTAetherClient;
+import com.dtteam.dtaether.init.DTAetherPlusRegistries;
+import com.dtteam.dtaether.init.DTAetherRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.bus.api.IEventBus;

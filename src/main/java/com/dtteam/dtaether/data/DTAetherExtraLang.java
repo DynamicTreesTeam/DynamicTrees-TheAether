@@ -1,4 +1,4 @@
-package maxhyper.dtaether.data;
+package com.dtteam.dtaether.data;
 
 import com.dtteam.dynamictrees.data.Generator;
 import com.dtteam.dynamictrees.data.DTDataProvider;

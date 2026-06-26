@@ -1,4 +1,4 @@
-package maxhyper.dtaether.blocks;
+package com.dtteam.dtaether.blocks;
 
 import com.dtteam.dynamictrees.DynamicTrees;
 import com.dtteam.dynamictrees.api.registry.TypedRegistry;

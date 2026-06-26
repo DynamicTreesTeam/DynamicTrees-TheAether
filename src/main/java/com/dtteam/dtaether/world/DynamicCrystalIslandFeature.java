@@ -1,4 +1,4 @@
-package maxhyper.dtaether.world;
+package com.dtteam.dtaether.world;
 
 import com.aetherteam.aether.data.resources.AetherFeatureStates;
 import com.dtteam.dynamictrees.tree.TreeHelper;
@@ -8,7 +8,7 @@ import com.dtteam.dynamictrees.api.worldgen.LevelContext;
 import com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature;
 import com.dtteam.dynamictrees.worldgen.DynamicTreeGenerationContext;
 import com.mojang.serialization.Codec;
-import maxhyper.dtaether.DynamicTreesAether;
+import com.dtteam.dtaether.DynamicTreesAether;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;

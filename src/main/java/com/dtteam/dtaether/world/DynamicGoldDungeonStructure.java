@@ -1,10 +1,10 @@
-//package maxhyper.dtaether.world;
+//package com.dtteam.dtaether.world;
 //
 //import com.aetherteam.aether.world.structure.GoldDungeonStructure;
 //import com.aetherteam.aether.world.structurepiece.golddungeon.GoldIsland;
 //import com.aetherteam.aether.world.structurepiece.golddungeon.GoldStub;
 //import com.dtteam.dynamictrees.tree.species.Species;
-//import maxhyper.dtaether.DynamicTreesAether;
+//import com.dtteam.dtaether.DynamicTreesAether;
 //import net.minecraft.util.RandomSource;
 //import net.minecraft.world.level.ChunkPos;
 //import net.minecraft.world.level.StructureManager;

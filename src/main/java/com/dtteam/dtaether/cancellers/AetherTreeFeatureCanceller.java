@@ -1,4 +1,4 @@
-package maxhyper.dtaether.cancellers;
+package com.dtteam.dtaether.cancellers;
 
 import com.dtteam.dynamictrees.api.worldgen.BiomePropertySelectors;
 import com.dtteam.dynamictrees.api.worldgen.FeatureCanceller;

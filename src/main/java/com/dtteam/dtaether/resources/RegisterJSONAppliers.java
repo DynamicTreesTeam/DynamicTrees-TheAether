@@ -1,4 +1,4 @@
-package maxhyper.dtaether.resources;
+package com.dtteam.dtaether.resources;
 
 import com.dtteam.dynamictrees.event.ApplierRegistryEvent;
 import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
@@ -8,9 +8,9 @@ import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.tree.species.Species;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import maxhyper.dtaether.DynamicTreesAether;
-import maxhyper.dtaether.trees.ModDependentSpecies;
-import maxhyper.dtaether.trees.ImbuedLogFamily;
+import com.dtteam.dtaether.DynamicTreesAether;
+import com.dtteam.dtaether.trees.ModDependentSpecies;
+import com.dtteam.dtaether.trees.ImbuedLogFamily;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

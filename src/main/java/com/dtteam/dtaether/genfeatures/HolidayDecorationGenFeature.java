@@ -1,4 +1,4 @@
-package maxhyper.dtaether.genfeatures;
+package com.dtteam.dtaether.genfeatures;
 import com.aetherteam.aether.AetherConfig;
 import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.world.treedecorator.HolidayTreeDecorator;

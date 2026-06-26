@@ -1,4 +1,4 @@
-package maxhyper.dtaether.blocks;
+package com.dtteam.dtaether.blocks;
 
 import com.aetherteam.aether.AetherTags;
 import com.aetherteam.aether.loot.AetherLoot;
@@ -10,7 +10,7 @@ import com.dtteam.dynamictrees.loot.function.MultiplyByLogsCount;
 import com.dtteam.dynamictrees.loot.function.MultiplyBySticksCount;
 import com.dtteam.dynamictrees.systems.nodemapper.NetVolumeNode;
 import com.dtteam.dynamictrees.utility.ItemUtils;
-import maxhyper.dtaether.trees.ImbuedLogFamily;
+import com.dtteam.dtaether.trees.ImbuedLogFamily;
 import net.minecraft.advancements.critereon.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;

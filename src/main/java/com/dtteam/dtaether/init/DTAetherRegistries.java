@@ -1,4 +1,4 @@
-package maxhyper.dtaether.init;
+package com.dtteam.dtaether.init;
 
 import com.dtteam.dynamictrees.event.TypeRegistryEvent;
 import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
@@ -8,12 +8,12 @@ import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.tree.species.Species;
 import com.dtteam.dynamictrees.block.CommonVoxelShapes;
-import maxhyper.dtaether.DynamicTreesAether;
-import maxhyper.dtaether.blocks.*;
-import maxhyper.dtaether.genfeatures.DTAetherGenFeatures;
-import maxhyper.dtaether.trees.ImbuedLogFamily;
-import maxhyper.dtaether.trees.ModDependentSpecies;
-import maxhyper.dtaether.world.DynamicCrystalIslandFeature;
+import com.dtteam.dtaether.DynamicTreesAether;
+import com.dtteam.dtaether.blocks.*;
+import com.dtteam.dtaether.genfeatures.DTAetherGenFeatures;
+import com.dtteam.dtaether.trees.ImbuedLogFamily;
+import com.dtteam.dtaether.trees.ModDependentSpecies;
+import com.dtteam.dtaether.world.DynamicCrystalIslandFeature;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;

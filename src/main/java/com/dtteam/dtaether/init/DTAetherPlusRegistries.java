@@ -1,13 +1,13 @@
-package maxhyper.dtaether.init;
+package com.dtteam.dtaether.init;
 
 import com.dtteam.dynamictrees.event.RegistryEvent;
 import com.dtteam.dynamictrees.event.TypeRegistryEvent;
 import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.api.worldgen.FeatureCanceller;
 import com.dtteam.dynamictreesplus.block.mushroom.CapProperties;
-import maxhyper.dtaether.DynamicTreesAether;
-import maxhyper.dtaether.blocks.DropBlocksCapProperties;
-import maxhyper.dtaether.trees.DropLogsMushroomFamily;
+import com.dtteam.dtaether.DynamicTreesAether;
+import com.dtteam.dtaether.blocks.DropBlocksCapProperties;
+import com.dtteam.dtaether.trees.DropLogsMushroomFamily;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 

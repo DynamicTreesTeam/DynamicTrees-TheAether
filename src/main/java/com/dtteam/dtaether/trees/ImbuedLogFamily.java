@@ -1,4 +1,4 @@
-package maxhyper.dtaether.trees;
+package com.dtteam.dtaether.trees;
 
 import com.dtteam.dynamictrees.data.generator.BranchStateGenerator;
 import com.dtteam.dynamictrees.data.Generator;
@@ -14,7 +14,7 @@ import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.api.lazyvalue.MutableLazyValue;
 import com.dtteam.dynamictrees.utility.Optionals;
 import com.dtteam.dynamictrees.utility.ResourceLocationUtils;
-import maxhyper.dtaether.blocks.ImbuedBranchBlock;
+import com.dtteam.dtaether.blocks.ImbuedBranchBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.tags.IntrinsicHolderTagsProvider;

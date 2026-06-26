@@ -1,9 +1,9 @@
-package maxhyper.dtaether.init;
+package com.dtteam.dtaether.init;
 
 import com.dtteam.dynamictrees.api.worldgen.FeatureCanceller;
 import com.dtteam.dynamictrees.event.RegistryEvent;
-import maxhyper.dtaether.DynamicTreesAether;
-import maxhyper.dtaether.cancellers.AetherTreeFeatureCanceller;
+import com.dtteam.dtaether.DynamicTreesAether;
+import com.dtteam.dtaether.cancellers.AetherTreeFeatureCanceller;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 
 public final class DeepAetherOnlyFunctions {

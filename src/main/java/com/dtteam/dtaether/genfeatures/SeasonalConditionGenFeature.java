@@ -1,4 +1,4 @@
-package maxhyper.dtaether.genfeatures;
+package com.dtteam.dtaether.genfeatures;
 import com.aetherteam.aether.AetherConfig;
 import com.dtteam.dynamictrees.tree.TreeHelper;
 import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;

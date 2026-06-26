@@ -1,4 +1,4 @@
-package maxhyper.dtaether.trees;
+package com.dtteam.dtaether.trees;
 
 import com.dtteam.dynamictrees.DynamicTrees;
 import com.dtteam.dynamictrees.api.network.MapSignal;

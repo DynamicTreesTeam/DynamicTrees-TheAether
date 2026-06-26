@@ -38,13 +38,13 @@
             }
         },
         {
-            "name": "dtaether:biome_predicate",
+            "name": "dynamictrees:biome_predicate",
             "only_if_loaded": "deep_aether",
             "properties": {
                 "biome_predicate": "deep_aether:luminescent_forest",
                 "only_world_gen": true,
                 "gen_feature": {
-                    "name": "dtaether:vines",
+                    "name": "dynamictrees:vines",
                     "properties": {
                         "block": "deep_aether:glowing_vine",
                         "quantity": 16,

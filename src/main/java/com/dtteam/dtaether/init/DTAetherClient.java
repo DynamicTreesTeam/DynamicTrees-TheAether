@@ -1,4 +1,4 @@
-package maxhyper.dtaether.init;
+package com.dtteam.dtaether.init;
 
 public final class DTAetherClient {
 
