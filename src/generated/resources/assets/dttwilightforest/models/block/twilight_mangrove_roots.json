@@ -1,8 +1,0 @@
-{
-  "loader": "dynamictrees:roots",
-  "render_type": "minecraft:cutout_mipped",
-  "textures": {
-    "bark": "twilightforest:block/mangrove_root",
-    "rings": "twilightforest:block/mangrove_root"
-  }
-}

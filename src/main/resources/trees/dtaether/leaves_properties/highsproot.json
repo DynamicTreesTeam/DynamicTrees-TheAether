@@ -1,0 +1,6 @@
+{
+  "only_if_loaded": "ancient_aether",
+  "primitive_leaves": "ancient_aether:highsproot_leaves",
+  "smother": 6,
+  "cell_kit": "dynamictrees:conifer"
+}

@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "deep_aether:block/stripped_conberry_log",
+    "rings": "deep_aether:block/stripped_conberry_log_top"
+  }
+}

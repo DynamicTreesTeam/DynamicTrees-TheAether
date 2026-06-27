@@ -1,16 +1,42 @@
 {
   "values": [
-    "dttwilightforest:canopy_leaves",
-    "dttwilightforest:darkwood_leaves",
-    "dttwilightforest:dark_forest_birch_leaves",
-    "dttwilightforest:dark_forest_oak_leaves",
-    "dttwilightforest:twilight_mangrove_leaves",
-    "dttwilightforest:mining_leaves",
-    "dttwilightforest:rainbow_oak_leaves",
-    "dttwilightforest:robust_twilight_oak_leaves",
-    "dttwilightforest:sorting_leaves",
-    "dttwilightforest:time_leaves",
-    "dttwilightforest:transformation_leaves",
-    "dttwilightforest:twilight_oak_leaves"
+    {
+      "id": "dtaether:blue_roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:conberry_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:cruderoot_leaves",
+      "required": false
+    },
+    "dtaether:crystal_leaves",
+    "dtaether:decorated_holiday_leaves",
+    {
+      "id": "dtaether:flowering_blue_roseroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:flowering_roseroot_leaves",
+      "required": false
+    },
+    "dtaether:golden_oak_leaves",
+    "dtaether:holiday_leaves",
+    {
+      "id": "dtaether:roseroot_leaves",
+      "required": false
+    },
+    "dtaether:skyroot_leaves",
+    "dtaether:skyroot_bush_leaves",
+    {
+      "id": "dtaether:sunroot_leaves",
+      "required": false
+    },
+    {
+      "id": "dtaether:yagroot_leaves",
+      "required": false
+    }
   ]
 }

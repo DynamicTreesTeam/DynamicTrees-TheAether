@@ -1,8 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "twilightforest:block/time_log_core",
-    "rings": "twilightforest:block/time_log_top"
-  },
-  "family": "dttwilightforest:time"
-}

@@ -1,0 +1,5 @@
+{
+  "only_if_loaded": "ancient_aether",
+  "primitive_soil": "ancient_aether:gravity_gravel",
+  "acceptable_soils": [ "gravel_like", "aether_like" ]
+}

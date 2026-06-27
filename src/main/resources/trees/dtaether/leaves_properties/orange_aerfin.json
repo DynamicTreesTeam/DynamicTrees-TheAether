@@ -1,0 +1,10 @@
+{
+  "only_if_loaded": "gravitation",
+  "type": "dtaddon_lib:particle",
+  "primitive_leaves": "gravitation:orange_aerfin_leaves",
+  "cell_kit": "dynamictrees:acacia",
+  "smother": 6,
+  "texture_overrides": {
+    "leaves": "gravitation:block/natural/orange_aerfin_leaves"
+  }
+}

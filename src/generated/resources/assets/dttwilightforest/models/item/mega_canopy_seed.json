@@ -1,6 +1,0 @@
-{
-  "parent": "dynamictrees:item/standard_seed",
-  "textures": {
-    "layer0": "dttwilightforest:item/mega_canopy_seed"
-  }
-}

@@ -1,0 +1,9 @@
+{
+  "type": "dtaddon_lib:particle",
+  "primitive_leaves": "aether:crystal_leaves",
+  "texture_overrides": {
+    "leaves": "aether:block/natural/crystal_leaves"
+  },
+  "smother": 6,
+  "cell_kit": "dynamictrees:conifer"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/mushroom_block_inside",
+    "side": "deep_aether:block/lightcap_mushroom_block",
+    "top": "deep_aether:block/lightcap_mushroom_block"
+  }
+}

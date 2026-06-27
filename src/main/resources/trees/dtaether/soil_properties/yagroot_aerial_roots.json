@@ -1,0 +1,6 @@
+{
+  "only_if_loaded": "deep_aether",
+  "type": "aerial_roots",
+  "primitive_soil": "deep_aether:yagroot_log",
+  "acceptable_soils": [ ]
+}

@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:roots",
+  "textures": {
+    "bark": "deep_aether:block/muddy_yagroot_roots_side",
+    "rings": "deep_aether:block/muddy_yagroot_roots_top"
+  }
+}

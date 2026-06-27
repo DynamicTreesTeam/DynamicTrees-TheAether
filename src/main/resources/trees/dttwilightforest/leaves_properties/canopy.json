@@ -1,7 +1,0 @@
-{
-  "primitive_leaves": "twilightforest:canopy_leaves",
-  "cell_kit": "dynamictrees:acacia",
-  "texture_overrides": {
-    "leaves": "minecraft:block/spruce_leaves"
-  }
-}

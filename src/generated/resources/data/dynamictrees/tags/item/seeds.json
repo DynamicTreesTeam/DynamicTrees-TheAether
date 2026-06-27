@@ -1,16 +1,32 @@
 {
   "values": [
-    "dttwilightforest:canopy_seed",
-    "dttwilightforest:darkwood_seed",
-    "dttwilightforest:giga_spruce_seed",
-    "dttwilightforest:mangrove_seed",
-    "dttwilightforest:mega_canopy_seed",
-    "dttwilightforest:mining_seed",
-    "dttwilightforest:rainbow_oak_seed",
-    "dttwilightforest:robust_twilight_oak_seed",
-    "dttwilightforest:sorting_seed",
-    "dttwilightforest:time_seed",
-    "dttwilightforest:transformation_seed",
-    "dttwilightforest:twilight_oak_seed"
+    {
+      "id": "dtaether:blue_roseroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:conberry_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:cruderoot_seed",
+      "required": false
+    },
+    "dtaether:crystal_seed",
+    "dtaether:golden_oak_seed",
+    "dtaether:holiday_seed",
+    {
+      "id": "dtaether:roseroot_seed",
+      "required": false
+    },
+    "dtaether:skyroot_seed",
+    {
+      "id": "dtaether:sunroot_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:yagroot_seed",
+      "required": false
+    }
   ]
 }

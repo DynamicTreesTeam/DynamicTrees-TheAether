@@ -1,7 +1,15 @@
 {
   "values": [
     {
-      "id": "dttwilightforest:mushgloom_seed",
+      "id": "dtaether:blue_aercloud_mushroom_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:lightcap_seed",
+      "required": false
+    },
+    {
+      "id": "dtaether:pink_aercloud_mushroom_seed",
       "required": false
     }
   ]

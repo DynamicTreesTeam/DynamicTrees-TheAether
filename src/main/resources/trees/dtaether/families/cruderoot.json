@@ -1,0 +1,8 @@
+{
+  "only_if_loaded": "deep_aether",
+  "common_leaves": "dtaether:cruderoot",
+  "common_species": "dtaether:cruderoot",
+  "primitive_log": "deep_aether:cruderoot_log",
+  "primitive_stripped_log": "deep_aether:stripped_cruderoot_log",
+  "stick": "aether:skyroot_stick"
+}

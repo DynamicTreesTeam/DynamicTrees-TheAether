@@ -1,8 +1,0 @@
-{
-  "parent": "dttwilightforest:block/smartmodel/mushgloom_sapling",
-  "render_type": "minecraft:cutout_mipped",
-  "textures": {
-    "cap": "dttwilightforest:block/mushgloom_cap",
-    "stem": "twilightforest:block/huge_mushgloom_stem"
-  }
-}

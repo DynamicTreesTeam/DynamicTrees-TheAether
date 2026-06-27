@@ -3,19 +3,19 @@ import java.time.format.DateTimeFormatter
 
 plugins {
     id 'java-library'
-    id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.141'
     id 'idea'
+    id 'maven-publish'
 }
 
-version = mod_version
+version = "${minecraft_version}-${mod_version}"
 group = mod_group_id
 
+base {
+    archivesName = mod_id
+}
+
 repositories {
-    mavenLocal()
-    maven {
-        url = 'https://maven.neoforged.net/releases/'
-    }
     maven {
         url = 'https://www.cursemaven.com'
         content {
@@ -23,47 +23,26 @@ repositories {
         }
     }
     maven {
-        url = 'https://harleyoconnor.com/maven'
-    }
-    maven {
         url = 'https://api.modrinth.com/maven'
         content {
             includeGroup 'maven.modrinth'
         }
     }
-    maven {
-        url = 'https://maven.parchmentmc.org'
-    }
+    maven { url = 'https://maven.parchmentmc.org' }
+    maven { url = 'https://ldtteam.jfrog.io/ldtteam/modding' }
     mavenCentral()
-}
-
-base {
-    archivesName = "${mod_id}-${minecraft_version}"
-}
-
-java {
-    toolchain.languageVersion = JavaLanguageVersion.of(21)
-    withSourcesJar()
-}
-
-sourceSets.main.resources {
-    srcDir 'src/generated/resources'
+    mavenLocal()
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 neoForge {
-    version = project.neo_version
+    version = neo_version
 
     parchment {
-        minecraftVersion = project.parchment_minecraft_version
-        mappingsVersion = project.parchment_mappings_version
-    }
-
-    accessTransformers.from(file('src/main/resources/META-INF/accesstransformer.cfg'))
-
-    mods {
-        "${mod_id}" {
-            sourceSet(sourceSets.main)
-        }
+        minecraftVersion = parchment_minecraft_version
+        mappingsVersion = parchment_mappings_version
     }
 
     runs {
@@ -75,16 +54,6 @@ neoForge {
         client {
             client()
             gameDirectory = file('run')
-
-            if (project.hasProperty('mcUuid')) {
-                programArguments.addAll '--uuid', project.mcUuid
-            }
-            if (project.hasProperty('mcUsername')) {
-                programArguments.addAll '--username', project.mcUsername
-            }
-            if (project.hasProperty('mcAccessToken')) {
-                programArguments.addAll '--accessToken', project.mcAccessToken
-            }
         }
 
         server {
@@ -95,42 +64,60 @@ neoForge {
         data {
             data()
             gameDirectory = file('run')
-            programArguments.addAll '--mod', project.mod_id, '--all',
+            programArguments.addAll(
+                    '--mod', mod_id,
+                    '--all',
                     '--output', file('src/generated/resources/').absolutePath,
                     '--existing', file('src/main/resources').absolutePath,
                     '--existing-mod', 'dynamictrees',
-                    '--existing-mod', 'twilightforest'
+                    '--existing-mod', 'dynamictreesplus',
+                    '--existing-mod', 'aether'
+            )
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
         }
     }
 }
 
-dependencies {
-    implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-${minecraft_version}:${dynamic_trees_version}"
-    implementation("com.dtteam.dynamictreesplus:DynamicTreesPlus:${dynamic_trees_plus_version}") {
-        exclude group: 'curse.maven', module: 'dynamictrees-252818'
-    }
-    implementation "curse.maven:the-twilight-forest-227639:${twilight_forest_file_id}"
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+    srcDir 'src/localization/resources'
 }
 
-tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
+dependencies {
+    implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-${minecraft_version}:${dynamic_trees_version}"
+    implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:${dynamic_trees_plus_version}"
+    implementation "maven.modrinth:dynamic-trees-addon-lib:${dynamic_trees_addon_lib_version}"
+    implementation "curse.maven:aether-255308:${aether_file_id}"
 }
 
 tasks.withType(ProcessResources).configureEach {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    includeEmptyDirs = false
 
     def replaceProperties = [
-            loader_version_range       : loader_version_range,
-            mod_id                     : mod_id,
-            mod_name                   : mod_name,
-            mod_license                : mod_license,
-            mod_version                : mod_version,
-            mod_authors                : mod_authors,
-            mod_description            : mod_description,
-            minecraft_version_range    : minecraft_version_range,
-            dynamic_trees_version      : dynamic_trees_version,
-            dynamic_trees_plus_version : dynamic_trees_plus_version,
-            twilight_forest_version    : twilight_forest_version
+            minecraft_version                    : minecraft_version,
+            minecraft_version_range              : minecraft_version_range,
+            neo_version                          : neo_version,
+            neo_version_range                    : neo_version_range,
+            loader_version_range                 : loader_version_range,
+            mod_id                               : mod_id,
+            mod_name                             : mod_name,
+            mod_license                          : mod_license,
+            mod_version                          : mod_version,
+            mod_authors                          : mod_authors,
+            mod_credits                          : mod_credits,
+            mod_description                      : mod_description,
+            dynamic_trees_version_range          : dynamic_trees_version_range,
+            dynamic_trees_plus_version_range     : dynamic_trees_plus_version_range,
+            dynamic_trees_addon_lib_version_range: dynamic_trees_addon_lib_version_range,
+            aether_version_range                 : aether_version_range,
+            deep_aether_version_range            : deep_aether_version_range,
+            gravitation_version_range            : gravitation_version_range
     ]
     inputs.properties replaceProperties
 
@@ -139,17 +126,32 @@ tasks.withType(ProcessResources).configureEach {
     }
 }
 
-tasks.named('jar', Jar).configure {
+tasks.jar {
     manifest {
         attributes(
                 'Specification-Title': project.name,
-                'Specification-Vendor': 'Max Hyper',
+                'Specification-Vendor': 'Dynamic Trees Team',
                 'Specification-Version': '1',
                 'Implementation-Title': project.name,
                 'Implementation-Version': project.version,
-                'Implementation-Vendor': 'Max Hyper',
+                'Implementation-Vendor': 'Dynamic Trees Team',
                 'Implementation-Timestamp': DateTimeFormatter.ISO_INSTANT.format(Instant.now())
         )
+    }
+}
+
+tasks.withType(Jar).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+java {
+    withSourcesJar()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
@@ -159,13 +161,13 @@ tasks.withType(GenerateModuleMetadata).configureEach {
 
 publishing {
     publications {
-        register('mavenJava', MavenPublication) {
+        mavenJava(MavenPublication) {
             from components.java
         }
     }
     repositories {
         maven {
-            url = "file://${project.projectDir}/mcmodsrepo"
+            url = uri("${project.projectDir}/mcmodsrepo")
         }
     }
 }

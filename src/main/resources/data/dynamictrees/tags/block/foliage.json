@@ -1,7 +1,45 @@
 {
   "replace": false,
   "values": [
-    "twilightforest:huge_lily_pad",
-    "twilightforest:huge_water_lily"
+    "#minecraft:replaceable_by_trees",
+    "#minecraft:flowers",
+    "aether:berry_bush",
+    "aether:berry_bush_stem",
+    {
+      "id": "deep_aether:lightcap_mushrooms",
+      "required": false
+    },
+    {
+      "id": "deep_aether:aerlavender",
+      "required": false
+    },
+    {
+      "id": "deep_aether:tall_aerlavender",
+      "required": false
+    },
+    {
+      "id": "deep_aether:aether_cattails",
+      "required": false
+    },
+    {
+      "id": "deep_aether:tall_aether_cattails",
+      "required": false
+    },
+    {
+      "id": "deep_aether:echaisy",
+      "required": false
+    },
+    {
+      "id": "deep_aether:aether_moss_carpet",
+      "required": false
+    },
+    {
+      "id": "deep_aether:tall_glowing_grass",
+      "required": false
+    },
+    {
+      "id": "deep_aether:glowing_spores",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "deep_aether:block/cruderoot_log",
+    "rings": "deep_aether:block/cruderoot_log_top"
+  }
+}

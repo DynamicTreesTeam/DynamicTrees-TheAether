@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/root_branch",
+  "textures": {
+    "bark": "deep_aether:block/yagroot_roots_side",
+    "rings": "deep_aether:block/yagroot_roots_top"
+  }
+}

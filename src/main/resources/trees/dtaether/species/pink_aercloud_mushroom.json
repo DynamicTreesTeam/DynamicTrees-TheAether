@@ -1,0 +1,43 @@
+{
+  "only_if_loaded": "deep_aether",
+  "type": "dtaddon_lib:drop_logs",
+  "family": "dtaether:aercloud_mushroom",
+  "tapering": 0.05,
+  "signal_energy": 9,
+  "growth_rate": 0.9,
+  "soil_longevity": 4,
+  "max_branch_radius": 12,
+  "generate_seed": true,
+  "generate_sapling": true,
+  "cap_properties": "dtaether:pink_aercloud_mushroom",
+  "mushroom_shape_kit": {
+    "name": "dynamictreesplus:bell",
+    "properties": {
+      "max_cap_age": 8,
+      "max_age_curve_factor": 3,
+      "min_age_curve_factor": 2,
+      "curve_height_offset": 3,
+      "curve_factor_variation": 1
+    }
+  },
+  "primitive_sapling": "deep_aether:pink_aercloud_mushrooms",
+  "acceptable_soils": ["aether_like"],
+  "sapling_shape": "flat_mushroom",
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/mushroom_flat"
+  },
+  "texture_overrides": {
+    "seed": "deep_aether:block/pink_aercloud_mushrooms"
+  },
+  "features": [
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Pink Aercloud Mushrooms"
+  }
+}

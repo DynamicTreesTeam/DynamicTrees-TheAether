@@ -1,6 +1,36 @@
 {
   "values": [
-    "dttwilightforest:rooty_twilight_mangrove_aerial_roots",
-    "dynamictrees:rooty_dirt"
+    {
+      "id": "dtaether:rooty_aercloud_grass_block",
+      "required": false
+    },
+    {
+      "id": "dtaether:rooty_aether_coarse_dirt",
+      "required": false
+    },
+    "dtaether:rooty_aether_dirt",
+    "dtaether:rooty_aether_dirt",
+    "dtaether:rooty_aether_grass_block",
+    {
+      "id": "dtaether:rooty_aether_moss_block",
+      "required": false
+    },
+    {
+      "id": "dtaether:rooty_aether_mud",
+      "required": false
+    },
+    "dtaether:rooty_enchanted_aether_grass_block",
+    {
+      "id": "dtaether:rooty_golden_heights_grass_block",
+      "required": false
+    },
+    {
+      "id": "dtaether:rooty_aether_mud",
+      "required": false
+    },
+    {
+      "id": "dtaether:rooty_yagroot_aerial_roots",
+      "required": false
+    }
   ]
 }

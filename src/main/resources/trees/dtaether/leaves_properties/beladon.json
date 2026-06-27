@@ -1,0 +1,10 @@
+{
+  "only_if_loaded": "gravitation",
+  "type": "dtaddon_lib:particle",
+  "primitive_leaves": "gravitation:beladon_leaves",
+  "smother": 6,
+  "cell_kit": "dynamictrees:conifer",
+  "texture_overrides": {
+    "leaves": "gravitation:block/natural/beladon_leaves"
+  }
+}

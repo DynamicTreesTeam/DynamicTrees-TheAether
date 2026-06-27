@@ -1,8 +1,0 @@
-{
-  "block_registry_name": "twilight_mangrove_leaves",
-  "primitive_leaves": "twilightforest:mangrove_leaves",
-  "cell_kit": "dynamictrees:acacia",
-  "texture_overrides": {
-    "leaves": "minecraft:block/birch_leaves"
-  }
-}

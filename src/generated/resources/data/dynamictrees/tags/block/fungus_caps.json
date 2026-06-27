@@ -1,7 +1,15 @@
 {
   "values": [
     {
-      "id": "dttwilightforest:mushgloom_sapling",
+      "id": "dtaether:blue_aercloud_mushroom_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:lightcap_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:pink_aercloud_mushroom_sapling",
       "required": false
     }
   ]

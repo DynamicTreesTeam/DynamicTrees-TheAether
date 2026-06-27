@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "aether:block/natural/stripped_skyroot_log",
+    "rings": "aether:block/natural/stripped_skyroot_log_top"
+  }
+}

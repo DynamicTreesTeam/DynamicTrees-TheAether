@@ -1,0 +1,43 @@
+{
+  "only_if_loaded": "deep_aether",
+  "type": "underground_roots",
+  "family": "dtaether:yagroot",
+  "tapering": 0.25,
+  "signal_energy": 20.0,
+  "up_probability": 0,
+  "lowest_branch_height": 6,
+  "growth_rate": 0.6,
+  "soil_longevity": 10,
+  "root_tapering": 0.1,
+  "root_signal_energy": 20.0,
+  "min_world_gen_height_offset": 2,
+  "max_world_gen_height_offset": 3,
+  "leaves_properties": "dtaether:yagroot",
+  "growth_logic_kit": "dark_oak",
+  "roots_growth_logic_kit": "dtaddon_lib:yagroot_roots",
+  "environment_factors" : {
+    "#forge:is_cold": 0.75,
+    "#forge:is_dry": 0.2
+  },
+  "perfect_biomes": { "tag": "#aether:is_aether" },
+  "primitive_sapling": "deep_aether:yagroot_sapling",
+  "sapling_shape": "slim_sapling",
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/water_sapling_thin"
+  },
+  "acceptable_soils": ["dirt_like", "mud_like"],
+  "plantable_on_fluid": false,
+  "features" : [
+    {
+      "name": "vines",
+      "properties": {
+        "block": "deep_aether:yagroot_vine",
+        "max_length": 7,
+        "quantity": 48
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Yagroot Propagule"
+  }
+}

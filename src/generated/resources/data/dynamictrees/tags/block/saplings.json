@@ -1,16 +1,32 @@
 {
   "values": [
-    "dttwilightforest:canopy_sapling",
-    "dttwilightforest:darkwood_sapling",
-    "dttwilightforest:giga_spruce_sapling",
-    "dttwilightforest:mangrove_sapling",
-    "dttwilightforest:mega_canopy_sapling",
-    "dttwilightforest:mining_sapling",
-    "dttwilightforest:rainbow_oak_sapling",
-    "dttwilightforest:robust_twilight_oak_sapling",
-    "dttwilightforest:sorting_sapling",
-    "dttwilightforest:time_sapling",
-    "dttwilightforest:transformation_sapling",
-    "dttwilightforest:twilight_oak_sapling"
+    {
+      "id": "dtaether:blue_roseroot_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:conberry_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:cruderoot_sapling",
+      "required": false
+    },
+    "dtaether:crystal_sapling",
+    "dtaether:golden_oak_sapling",
+    "dtaether:holiday_sapling",
+    {
+      "id": "dtaether:roseroot_sapling",
+      "required": false
+    },
+    "dtaether:skyroot_sapling",
+    {
+      "id": "dtaether:sunroot_sapling",
+      "required": false
+    },
+    {
+      "id": "dtaether:yagroot_sapling",
+      "required": false
+    }
   ]
 }

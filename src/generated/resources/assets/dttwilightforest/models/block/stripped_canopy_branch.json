@@ -1,7 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "twilightforest:block/stripped_canopy_log",
-    "rings": "twilightforest:block/stripped_canopy_log_top"
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "aether:block/natural/skyroot_log",
+    "rings": "aether:block/natural/skyroot_log_top"
+  }
+}
